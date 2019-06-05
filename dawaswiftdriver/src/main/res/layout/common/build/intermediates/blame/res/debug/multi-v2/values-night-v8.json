@@ -1,0 +1,150 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/values-night-v8/values-night-v8.xml",
+            "map": [
+                {
+                    "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/material-1.1.0-alpha04.aar/c401e097008123e28e6990d53dcb8fe6/res/values-night-v8/values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,143,245,347,461,581,701",
+                        "endColumns": "87,101,101,113,119,119,111",
+                        "endOffsets": "138,240,342,456,576,696,808"
+                    },
+                    "to": {
+                        "startLines": "15,16,17,18,19,20,21",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "1011,1099,1201,1303,1417,1537,1657",
+                        "endColumns": "87,101,101,113,119,119,111",
+                        "endOffsets": "1094,1196,1298,1412,1532,1652,1764"
+                    }
+                },
+                {
+                    "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-android-about-page-1.2.1.aar/02b6ada57e1b9c0565c228de6bec08bb/res/values-night-v8/values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,112,175,231,287",
+                        "endColumns": "56,62,55,55,50",
+                        "endOffsets": "107,170,226,282,333"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "96,153,216,272,328",
+                        "endColumns": "56,62,55,55,50",
+                        "endOffsets": "148,211,267,323,374"
+                    }
+                },
+                {
+                    "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/values-night-v8/values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593",
+                        "endColumns": "69,83,83,95,101,101,93",
+                        "endOffsets": "120,204,288,384,486,588,682"
+                    },
+                    "to": {
+                        "startLines": "8,9,10,11,12,13,14",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "379,449,533,617,713,815,917",
+                        "endColumns": "69,83,83,95,101,101,93",
+                        "endOffsets": "444,528,612,708,810,912,1006"
+                    }
+                },
+                {
+                    "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/values-night/bool.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "40",
+                        "endOffsets": "52"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "40",
+                        "endOffsets": "91"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "map": [
+                {
+                    "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/material-1.1.0-alpha04.aar/c401e097008123e28e6990d53dcb8fe6/res/values-night-v8/values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,143,245,347,461,581,701",
+                        "endColumns": "87,101,101,113,119,119,111",
+                        "endOffsets": "138,240,342,456,576,696,808"
+                    },
+                    "to": {
+                        "startLines": "15,16,17,18,19,20,21",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "1011,1099,1201,1303,1417,1537,1657",
+                        "endColumns": "87,101,101,113,119,119,111",
+                        "endOffsets": "1094,1196,1298,1412,1532,1652,1764"
+                    }
+                },
+                {
+                    "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-android-about-page-1.2.1.aar/02b6ada57e1b9c0565c228de6bec08bb/res/values-night-v8/values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,112,175,231,287",
+                        "endColumns": "56,62,55,55,50",
+                        "endOffsets": "107,170,226,282,333"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "96,153,216,272,328",
+                        "endColumns": "56,62,55,55,50",
+                        "endOffsets": "148,211,267,323,374"
+                    }
+                },
+                {
+                    "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/values-night-v8/values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593",
+                        "endColumns": "69,83,83,95,101,101,93",
+                        "endOffsets": "120,204,288,384,486,588,682"
+                    },
+                    "to": {
+                        "startLines": "8,9,10,11,12,13,14",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "379,449,533,617,713,815,917",
+                        "endColumns": "69,83,83,95,101,101,93",
+                        "endOffsets": "444,528,612,708,810,912,1006"
+                    }
+                },
+                {
+                    "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/values-night/bool.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "40",
+                        "endOffsets": "52"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "40",
+                        "endOffsets": "91"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_braintree"
+        android:icon="@drawable/braintree"
+        android:visible="@bool/payment_stripe_enabled"
+        tools:ignore="MenuTitle" />
+
+    <item
+        android:id="@+id/menu_stripe"
+        android:icon="@drawable/payment_stripe"
+        android:visible="@bool/payment_stripe_enabled"
+        tools:ignore="MenuTitle" />
+
+
+
+</menu>

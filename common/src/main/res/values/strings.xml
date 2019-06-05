@@ -1,0 +1,262 @@
+<resources>
+    <string name="app_name">DawaSwift</string>
+    <string name="copyright_notice">Copyright© 2019 Cabinzz All Rights reserved. (kcd)</string>
+    <string name="retry">Retry</string>
+
+    <string name="title_phone">Please enter your phone number</string>
+    <string name="ke">+254</string>
+    <string name="phone_hint">Phone(7** *** ***)</string>
+
+    <string name="next">Next</string>
+    <string name="title_id">Please Enter Your Job Id</string>
+    <string name="eric_kogi">Eric Kogi</string>
+    <string name="hello_welcome">Hello , Welcome :</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="confirm_pass_title">Hello please enter and confirm your desired password below</string>
+    <string name="back">Back</string>
+
+    <string name="settings">Settings</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="welcome">Welcome .. Please enter your password</string>
+    <string name="first">First</string>
+    <string name="last">Last</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="enter_your_name_below">Enter your Names.</string>
+    <string name="email">Email</string>
+    <string name="select_your_sex_and_date_of_birth">Select your Sex and Date of Birth</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="new_password">Hello please enter and confirm your desired password below</string>
+    <string name="otp_policy">To continue with registration, you will receive an SMS for verification.</string>
+    <string name="confirm_phone_number">Please confirm that this is your phone number</string>
+    <string name="verification_code_subtext">Please type the verification code sent to</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="resend">Resend</string>
+
+    <string name="phone_holder_value">07XXXXXXXX</string>
+    <string name="validate">Validate</string>
+    <string name="search_hint">Search for Medicine</string>
+    <string name="forgot_you_password">Forgot you password</string>
+    <string name="network_issue_title">Network Issue</string>
+    <string name="network_issue_message">We are having issues connecting to the internet. Make sure your internet is
+        on
+    </string>
+    <string name="identification_number">Identification Number</string>
+    <string name="gender">Gender</string>
+    <string name="choose_avatar">Click to choose Image</string>
+    <string name="sub_county">Sub-County</string>
+    <string name="county">County</string>
+    <string name="ward">Ward</string>
+    <string name="select_services">Add Services</string>
+
+
+
+    <string name="cost">Cost Of Service (KSH)</string>
+    <string name="complete_registration">Complete Registration</string>
+    <string name="checkindates">Check In</string>
+    <string name="checkoutdates">Check Out</string>
+    <string name="apply_filters">Apply Filters</string>
+
+    <string name="abc">
+        <font fgcolor="#000000">Know this place?</font>
+        <font fgcolor="#2d5da1">Answer quick questions</font>
+    </string>
+    <string name="rushabh_patel">Rushabh Patel</string>
+    <string name="_9549990169_rushabhpatel381_gmail_com">9549990169 | rushabhpatel381@gmail.com</string>
+    <string name="my_accounts">My Accounts</string>
+    <string name="addresses_payments_referrals_amp_offers"><![CDATA[Addresses, Payments, Referrals & Offers]]></string>
+    <string name="payment">Payment</string>
+    <string name="bookmarked">Bookmarked</string>
+    <string name="offers">Offers</string>
+    <string name="help">Help</string>
+    <string name="faq_s_amp_links"><![CDATA[FAQ’s & Links]]></string>
+    <string name="get_booking_updates_on_whatsapp">Get Booking updates on WhatsApp</string>
+    <string name="get_notificatoins_on_whatsapp">Get notificatoins on whatsapp</string>
+    <string name="recent_bookings">Recent Bookings</string>
+    <string name="le_roi_udaipur_hotel">Le ROI Udaipur Hotel</string>
+    <string name="udaipur">( Udaipur )</string>
+    <string name="booked_by">Booked by :</string>
+    <string name="booking_com">Booking.com</string>
+    <string name="booked_date">Booked Date :</string>
+    <string name="_1_10_2018">1/10/2018</string>
+    <string name="leela_palace">Leela Palace</string>
+    <string name="upre_1940">Upre 1940</string>
+    <string name="view_more_bookings">View More Bookings</string>
+    <string name="logout">LOGOUT</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="total_guest_2">Total Guest : 2</string>
+    <string name="edit">Edit</string>
+    <string name="checkin_date_today">Checkin Date : Today</string>
+    <string name="checkout_date_7_10_2018">Checkout Date : 7/10/2018</string>
+    <string name="coupon_applied">COUPON APPLIED</string>
+    <string name="you_have_saved">You have saved</string>
+    <string name="_150">- ₹ 150</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="booking_details">Booking Details</string>
+    <string name="for_le_roi_udaipur_hotel_udaipur">For Le ROI Udaipur Hotel | Udaipur</string>
+    <string name="amount_paid_at_hotel">Amount paid at hotel</string>
+    <string name="total_guest">Total Guest :</string>
+    <string name="paymenttext">Payment :</string>
+    <string name="paid_in_cash">Paid in Cash</string>
+    <string name="coupontxt">Coupon Applied :</string>
+    <string name="view_hotel_profle">View Hotel Profle</string>
+    <string name="login">LOGIN</string>
+    <string name="to_use_travel_you_need_to_login">To use travel you need to login.</string>
+    <string name="login_with_facebook">LOGIN WITH FACEBOOK</string>
+    <string name="login_with_google">LOGIN WITH GOOGLE</string>
+    <string name="coupons">Coupons</string>
+    <string name="multi_functional_complex_udaipur_city_railway_station_nudaipur_rajasthan_313001">Multi Functional
+        Complex,Udaipur City Railway Station Udaipur, Rajasthan 313001
+    </string>
+    <string name="_2100">₹ 2100</string>
+    <string name="mehrangarh_fort">Mehrangarh Fort</string>
+    <string name="mehrangarh_fort_is_located_in_jodhpur_the_second_largest_ncity_in_rajasthan_state_in_northern_india">
+        Mehrangarh Fort is located in Jodhpur, the second largest city in Rajasthan state, in Northern India.
+    </string>
+    <string name="from_hotel">From hotel</string>
+    <string name="_4_km">4 KM</string>
+    <string name="udai_kothi">Udai Kothi</string>
+    <string name="starting_at_1999">starting at ₹ 1999</string>
+    <string name="goa_beach">Goa Beach</string>
+    <string name="_3_night_4_days">3 night 4 days</string>
+    <string name="_1999">₹ 1999</string>
+    <string name="make_my_trip">Make My trip</string>
+    <string name="book_now">Book Now</string>
+    <string name="free_cancelation">Free Cancelation</string>
+    <string name="yatra_com">Yatra.com</string>
+    <string name="_2300">₹ 2300</string>
+    <string name="choose_place">Choose Place</string>
+    <string name="check_in">Check - in</string>
+    <string name="check_out">Check - out</string>
+    <string name="today">Today</string>
+    <string name="_05_10_2018">05/10/2018</string>
+    <string name="passengers">Passengers</string>
+    <string name="rooms">Rooms</string>
+    <string name="search_for_hotels_amp_resorts"><![CDATA[Search for hotels & resorts]]></string>
+    <string name="recommended_for_you">Recommended for you</string>
+    <string name="view_more_packages">View More Packages</string>
+    <string name="uiux_design_company">UIUX DESIGN COMPANY</string>
+    <string name="result">Result</string>
+    <string name="for_udaipur">For Udaipur</string>
+    <string name="filter">Filter</string>
+    <string name="today_6_8_2018">Today - 6/8/2018</string>
+    <string name="powered_by">Powered by</string>
+    <string name="room_booked">ROOM BOOKED</string>
+    <string name="for_le_roi_udaipur_hotel">For Le ROI Udaipur Hotel</string>
+    <string name="amount_to_pay_at_hotel">₹Amount to pay at hotel</string>
+    <string name="_6_580">₹ 6,580</string>
+    <string name="booking_receipt">BOOKING RECEIPT</string>
+    <string name="room_type">Room Type :</string>
+    <string name="superior_room_1_king_bed">Superior Room / 1 King bed</string>
+    <string name="checkin_date">Checkin Date :</string>
+    <string name="_6_10_2018_11_00_am">6/10/2018 | 11:00 am</string>
+    <string name="checkout_date">Checkout Date :</string>
+    <string name="_7_10_2018_11_00_am">7/10/2018 | 11:00 am</string>
+    <string name="booking_id">Booking ID :</string>
+    <string name="_1982379182">1982379182</string>
+    <string name="pending">Pending</string>
+    <string name="coupon_appliedtxt">Coupon Applied :</string>
+    <string name="_580_saved">₹ 580 Saved</string>
+    <string name="show_qr_code_at_hotel">SHOW QR CODE AT HOTEL</string>
+    <string name="click_here_to_scan_qr_code">click here to scan QR CODE</string>
+    <string name="view_on_map">VIEW ON MAP</string>
+    <string name="click_here_to_get_navigation_to_the_hotel">click here to get navigation to the hotel</string>
+    <string name="address">Address</string>
+    <string name="_7_jetalpur_rd_sampatrao_colony_alkapuri_vadodara_ngujarat_390020">7, Jetalpur Rd, Sampatrao Colony,
+        Alkapuri, Vadodara, Gujarat 390020
+    </string>
+    <string name="near_by">NEAR BY</string>
+    <string name="places_near_your_hotel_and_some_helpful_places">Places near your hotel and some helpful places.
+    </string>
+    <string name="railway_station">Railway Station</string>
+    <string name="_2_km_s">2 KM’s</string>
+    <string name="bus_station">Bus Station</string>
+    <string name="_2_3_km_s">2.3 KM’s</string>
+    <string name="hospital">Hospital</string>
+    <string name="_0_7_km_s">0.7 KM’s</string>
+    <string name="places">PLACES</string>
+    <string name="popular_places_near_your_hotel">Popular places near your hotel</string>
+    <string name="done">Done</string>
+    <string name="conformation">Conformation</string>
+    <string name="amount_to_pay_2580">Amount to pay : ₹ 2580</string>
+    <string name="paytm">PayTM</string>
+    <string name="link_account">Link Account</string>
+    <string name="phonepe">PhonePe</string>
+    <string name="amazon_pay">Amazon Pay</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="freecharge">Freecharge</string>
+    <string name="mobikwik">Mobikwik</string>
+    <string name="add_card">ADD CARD</string>
+    <string name="save_and_pay_via_cards">Save and pay via cards</string>
+    <string name="pay_at_hotel">PAY AT HOTEL</string>
+    <string name="pay_when_you_checkin_at_hotel">Pay when you checkin at hotel.</string>
+    <string name="connect_with_facebook_and_google">Connect with facebook and google</string>
+    <string name="manage_address">manage address</string>
+    <string name="referrals_txt">referrals</string>
+    <string name="v_total_per_night">V | Total per night</string>
+    <string name="_6_783">₹ 6,783</string>
+    <string name="_2_guest">2 Guest</string>
+    <string name="deluxe_room">Deluxe Room</string>
+    <string name="rs6783">₹ 6,783</string>
+    <string name="_2_guest_breakfast">2 Guest | Breakfast</string>
+    <string name="_70_discount_on_1st_booking_till_31st_dec">70% Discount on 1st booking, till 31st Dec.</string>
+    <string name="superior_room">Superior Room</string>
+    <string name="pool_amp_garden_view_rooms"><![CDATA[Pool & Garden View Rooms]]></string>
+    <string name="cleartrip_com">Cleartrip.com</string>
+    <string name="select_guest">Select Guest</string>
+    <string name="_1">1</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="change_date">Change Date</string>
+    <string name="_6_8_2018">6/8/2018</string>
+    <string name="search_more_rooms">Search more rooms</string>
+    <string name="hotel_details">HOTEL DETAILS</string>
+    <string name="this_unassuming_hotel_on_a_main_road_is_3_km_from_nranapratapnagar_train_station_and_6_km_from_city_npalace_a_lakeside_complex_dating_from_the_16th_century">
+        This unassuming hotel on a main road is 3 km from Ranapratapnagar train station and 6 km from City Palace,a
+        lakeside complex dating from the 16th century.
+    </string>
+    <string name="free_car_parking">Free Car Parking</string>
+    <string name="laundry_service">Laundry service</string>
+    <string name="air_conditioned">Air-conditioned</string>
+    <string name="know_this_place">Know this place?</string>
+    <string name="answer_quick_questions">Answer quick questions</string>
+    <string name="reviews">Reviews</string>
+    <string name="_4_7">4.7</string>
+    <string name="_848_reviews_on_google">848 reviews on Google</string>
+    <string name="what_guests_are_saying">What guests are saying</string>
+    <string name="more">more</string>
+    <string name="great_experience_good">“Great experience Good</string>
+    <string name="service">service</string>
+    <string name="staff">staff</string>
+    <string name="good">Good</string>
+    <string name="room_and_good">room and good</string>
+    <string name="location">location”</string>
+    <string name="_4_0">4.0</string>
+    <string name="similar_hotels">Similar Hotels</string>
+    <string name="enter_coupon_code">Enter Coupon Code</string>
+    <string name="apply">APPLY</string>
+    <string name="available_coupons">AVAILABLE COUPONS</string>
+    <string name="phonepenew">PHONEPENEW</string>
+    <string name="get_30_discount_using_phonepe">Get 30% discount using Phonepe</string>
+    <string name="use_code_phonepenew_amp_get_30_discount_upto_rs_150_on_nyour_booking">
+        <![CDATA[Use code PHONEPENEW & get 30% discount upto Rs. 150 on your booking.]]></string>
+    <string name="more_details">More Details</string>
+    <string name="paytm478">PAYTM478</string>
+    <string name="get_50_discount_using_paytm">Get 50% discount using PAYTM</string>
+    <string name="use_code_paytm478_amp_get_50_discount_upto_rs_200_on_nyour_booking">
+        <![CDATA[Use code PAYTM478 & get 50% discount upto Rs. 200 on your booking.]]></string>
+    <string name="apply_coupon">APPLY COUPON</string>
+    <string name="_2">2</string>
+    <string name="txt4_5">4.5</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="amenities">Amenities and Facilities</string>
+    <string name="type">Ttpe</string>
+    <string name="price_per_night">Price Per Night</string>
+    <string name="house_rules">House Rules</string>
+    <string name="cancellation_policy">Cancellation Policy</string>
+
+</resources>

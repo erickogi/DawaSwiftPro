@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/menu/ucrop_menu_activity.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-ucrop-2.2.1.aar/a3d911df3b397b8d19364c6a17c680b5/res/menu/ucrop_menu_activity.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/menu/actionbar_save.xml",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/menu/actionbar_save.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/menu/ef_image_picker_menu_main.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-imagepicker-1.12.0.aar/cea9afaf9c68ed7b710c9dab47c99783/res/menu/ef_image_picker_menu_main.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/menu/payment_methods.xml",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/menu/payment_methods.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/menu/bt_card_io.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-drop-in-3.7.1.aar/31206ed99ef2e2ba8e68988c83c3103d/res/menu/bt_card_io.xml"
+    }
+]

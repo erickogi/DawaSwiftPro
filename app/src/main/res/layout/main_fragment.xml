@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--android:background="@drawable/splash"-->
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/white">
+
+
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:background="@color/colorPrimary"
+                  android:id="@+id/search_bar"
+
+                  android:layout_height="wrap_content">
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent"
+                                                           app:cardUseCompatPadding="true"
+
+                                                           android:layout_marginTop="12dp"
+                                                           android:layout_marginStart="12dp"
+                                                           android:layout_marginEnd="12dp"
+                                                           app:cardCornerRadius="5dp"
+                                                           app:cardElevation="10dp"
+                                                           android:layout_height="wrap_content">
+
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                <ImageView
+                        android:padding="6dp"
+                        android:id="@+id/cart"
+
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/ic_shopping_cart_black_24dp" android:layout_marginStart="6dp"
+                        android:layout_marginEnd="3dp"/>
+                <androidx.appcompat.widget.SearchView
+                        android:id="@+id/search_view"
+                        android:lines="1"
+                        android:tag="sticky"
+                        android:theme="@style/AppTheme.Toolbar"
+
+                        android:layout_marginEnd="4dp"
+                        android:layout_toStartOf="@+id/cart"
+                        android:layout_width="match_parent"
+                        app:queryBackground="@android:color/transparent"
+                        app:queryHint="Search for health products"
+
+                        app:iconifiedByDefault="false"
+                        android:layout_height="wrap_content"
+                />
+            </RelativeLayout>
+
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+
+
+
+
+    <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                           xmlns:app="http://schemas.android.com/apk/res-auto"
+                                           android:layout_width="match_parent"
+                                           android:layout_below="@+id/search_bar"
+
+                                           android:layout_marginBottom="50dp"
+                                           android:layout_height="match_parent">
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                    android:padding="12dp"
+                    android:id="@+id/main_menus"
+                    android:background="@color/white"
+                    android:layout_below="@+id/toolbar_main"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <com.google.android.material.card.MaterialCardView
+                        android:layout_width="0dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_weight="1"
+                        app:cardForegroundColor="@android:color/transparent"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardElevation="3dp"
+                        app:cardCornerRadius="3dp"
+                        app:cardUseCompatPadding="true"
+                        android:layout_height="150dp">
+                    <RelativeLayout
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/white"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <ImageView
+                                android:background="@color/white"
+                                android:id="@+id/med_"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/meds"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"/>
+
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:orientation="vertical"
+                                      android:layout_below="@+id/med_"
+
+                                      android:layout_height="wrap_content">
+
+                            <TextView android:layout_width="match_parent"
+                                      android:textAlignment="center"
+                                      android:textColor="@color/blacklight"
+                                      android:textSize="13.7sp"
+                                      android:fontFamily="@font/sfpro_display_semibold"
+                                      android:text="Shop "
+                                      android:layout_height="wrap_content"/>
+                            <TextView android:layout_width="match_parent"
+                                      android:textAlignment="center"
+                                      android:fontFamily="@font/sf_pro_display_medium"
+                                      android:textColor="@color/graydark"
+
+                                      android:text="Search for medicine by name"
+                                      android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                        android:layout_width="0dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_weight="1"
+                        app:cardForegroundColor="@android:color/transparent"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardElevation="3dp"
+                        app:cardCornerRadius="3dp"
+                        app:cardUseCompatPadding="true"
+                        android:layout_height="150dp">
+                    <RelativeLayout
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/white"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <ImageView
+                                android:background="@color/white"
+                                android:id="@+id/presc_"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/pres"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"/>
+
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:orientation="vertical"
+                                      android:layout_below="@+id/presc_"
+
+                                      android:layout_height="wrap_content">
+
+                            <TextView android:layout_width="match_parent"
+                                      android:textAlignment="center"
+                                      android:textColor="@color/blacklight"
+                                      android:textSize="13.7sp"
+                                      android:fontFamily="@font/sfpro_display_semibold"
+                                      android:text="Upload prescription"
+                                      android:layout_height="wrap_content"/>
+                            <TextView android:layout_width="match_parent"
+                                      android:textAlignment="center"
+                                      android:fontFamily="@font/sf_pro_display_medium"
+                                      android:textColor="@color/graydark"
+
+
+                                      android:text="With doctors help"
+                                      android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+
+
+
+
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginEnd="4dp"
+
+                            android:padding="3dp"
+                            android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content"
+                          android:textSize="13sp"
+                          android:fontFamily="@font/sf_pro_display_medium"
+
+                          android:layout_alignParentStart="true"
+                          android:textStyle="bold"
+                          android:text="Categories"
+                          android:layout_height="wrap_content"/>
+                <TextView android:layout_width="wrap_content"
+                          android:textSize="14sp"
+                          android:textColor="@color/colorAccent"
+                          android:fontFamily="@font/sf_pro_display_medium"
+                          android:id="@+id/txtViewCategories"
+                          android:layout_marginEnd="5dp"
+
+                          android:layout_alignParentEnd="true"
+                          android:textStyle="bold"
+                          android:text="View All"
+                          android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    app:cardUseCompatPadding="true"
+                    android:id="@+id/card_categories"
+                    android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:id="@+id/recyclerview_categories"
+                        android:layout_height="match_parent">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginEnd="4dp"
+
+                            android:padding="3dp"
+                            android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content"
+                          android:textSize="13sp"
+                          android:fontFamily="@font/sf_pro_display_medium"
+
+                          android:layout_alignParentStart="true"
+                          android:textStyle="bold"
+                          android:text="Health Areas"
+                          android:layout_height="wrap_content"/>
+                <TextView android:layout_width="wrap_content"
+                          android:textSize="14sp"
+                          android:textColor="@color/colorAccent"
+                          android:fontFamily="@font/sf_pro_display_medium"
+
+                          android:layout_marginEnd="5dp"
+                          android:id="@+id/txtViewHealthAreas"
+                          android:layout_alignParentEnd="true"
+                          android:textStyle="bold"
+                          android:text="View All"
+                          android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+            <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    app:cardUseCompatPadding="true"
+                    android:id="@+id/card_health_areas"
+                    android:layout_height="wrap_content">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:id="@+id/recyclerview_health_areas"
+                        android:layout_height="match_parent">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView android:layout_width="match_parent"
+                      android:textSize="13sp"
+                      android:fontFamily="@font/sf_pro_display_medium"
+
+                      android:padding="3dp"
+                      android:layout_marginStart="4dp"
+                      android:textStyle="bold"
+                      android:text="Popular Products"
+                      android:layout_height="wrap_content"/>
+
+            <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    app:cardUseCompatPadding="true"
+                    android:id="@+id/card_popular_products"
+                    android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:id="@+id/recyclerview_popular_products"
+                        android:layout_height="match_parent">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+    <include layout="@layout/loading_avi"/>
+</RelativeLayout>

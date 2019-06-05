@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w700dp-v13/values-w700dp-v13.xml",
+            "map": [
+                {
+                    "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-drop-in-3.7.1.aar/31206ed99ef2e2ba8e68988c83c3103d/res/values-w700dp-v13/values-w700dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "45",
+                        "endOffsets": "96"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/values-w700dp-v13/values-w700dp-v13.xml",
+            "map": [
+                {
+                    "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-drop-in-3.7.1.aar/31206ed99ef2e2ba8e68988c83c3103d/res/values-w700dp-v13/values-w700dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "45",
+                        "endOffsets": "96"
+                    }
+                }
+            ]
+        }
+    ]
+}

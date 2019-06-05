@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-anydpi-v21/alerter_ic_face.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-alerter-2.0.4.aar/33f89724e3bf6a1e6770540ee53f92ce/res/drawable-anydpi-v21/alerter_ic_face.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-anydpi-v21/design_ic_visibility_off.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/material-1.1.0-alpha04.aar/c401e097008123e28e6990d53dcb8fe6/res/drawable-anydpi-v21/design_ic_visibility_off.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-anydpi-v21/alerter_ic_notifications.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-alerter-2.0.4.aar/33f89724e3bf6a1e6770540ee53f92ce/res/drawable-anydpi-v21/alerter_ic_notifications.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-anydpi-v21/md_nav_back.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-core-0.9.6.0.aar/83cb32486be17cd27a7c78a40b004e18/res/drawable-anydpi-v21/md_nav_back.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-anydpi-v21/design_ic_visibility.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/material-1.1.0-alpha04.aar/c401e097008123e28e6990d53dcb8fe6/res/drawable-anydpi-v21/design_ic_visibility.xml"
+    }
+]

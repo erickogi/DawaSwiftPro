@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/layout-ldrtl-v17/md_listitem_multichoice.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-core-0.9.6.0.aar/83cb32486be17cd27a7c78a40b004e18/res/layout-ldrtl-v17/md_listitem_multichoice.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/layout-ldrtl-v17/md_listitem_singlechoice.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-core-0.9.6.0.aar/83cb32486be17cd27a7c78a40b004e18/res/layout-ldrtl-v17/md_listitem_singlechoice.xml"
+    }
+]

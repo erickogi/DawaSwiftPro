@@ -1,0 +1,202 @@
+[
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/btn_radio_to_off_mtrl_ring_outer_animation.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/anim/btn_radio_to_off_mtrl_ring_outer_animation.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/bt_slide_in_up.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-drop-in-3.7.1.aar/31206ed99ef2e2ba8e68988c83c3103d/res/anim/bt_slide_in_up.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/btn_checkbox_to_unchecked_check_path_merged_animation.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/anim/btn_checkbox_to_unchecked_check_path_merged_animation.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/btn_checkbox_to_checked_box_inner_merged_animation.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/anim/btn_checkbox_to_checked_box_inner_merged_animation.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/bt_expiration_date_dialog_close.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-card-form-3.5.0.aar/a11f280edc846d92045f3c1b434e7ce9/res/anim/bt_expiration_date_dialog_close.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/design_snackbar_in.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/material-1.1.0-alpha04.aar/c401e097008123e28e6990d53dcb8fe6/res/anim/design_snackbar_in.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/ucrop_loader_circle_path.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-ucrop-2.2.1.aar/a3d911df3b397b8d19364c6a17c680b5/res/anim/ucrop_loader_circle_path.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/alerter_slide_out_to_top.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-alerter-2.0.4.aar/33f89724e3bf6a1e6770540ee53f92ce/res/anim/alerter_slide_out_to_top.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/fui_slide_out_left.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-firebase-ui-auth-3.3.1.aar/76cb9ce87390a8d6bf238806dac3441d/res/anim/fui_slide_out_left.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/abc_tooltip_exit.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/anim/abc_tooltip_exit.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/btn_checkbox_to_checked_box_outer_merged_animation.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/anim/btn_checkbox_to_checked_box_outer_merged_animation.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/fui_slide_in_right.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-firebase-ui-auth-3.3.1.aar/76cb9ce87390a8d6bf238806dac3441d/res/anim/fui_slide_in_right.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/btn_radio_to_on_mtrl_ring_outer_animation.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/anim/btn_radio_to_on_mtrl_ring_outer_animation.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/alerter_pulse.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-alerter-2.0.4.aar/33f89724e3bf6a1e6770540ee53f92ce/res/anim/alerter_pulse.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/interpolator_slight_anticipate.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-alerter-2.0.4.aar/33f89724e3bf6a1e6770540ee53f92ce/res/anim/interpolator_slight_anticipate.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/bt_expiration_date_dialog_open.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-card-form-3.5.0.aar/a11f280edc846d92045f3c1b434e7ce9/res/anim/bt_expiration_date_dialog_open.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/abc_tooltip_enter.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/anim/abc_tooltip_enter.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/btn_checkbox_to_unchecked_box_inner_merged_animation.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/anim/btn_checkbox_to_unchecked_box_inner_merged_animation.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/btn_checkbox_to_unchecked_icon_null_animation.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/anim/btn_checkbox_to_unchecked_icon_null_animation.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/mtrl_card_lowers_interpolator.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/material-1.1.0-alpha04.aar/c401e097008123e28e6990d53dcb8fe6/res/anim/mtrl_card_lowers_interpolator.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/ucrop_loader_circle_scale.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-ucrop-2.2.1.aar/a3d911df3b397b8d19364c6a17c680b5/res/anim/ucrop_loader_circle_scale.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_out.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/material-1.1.0-alpha04.aar/c401e097008123e28e6990d53dcb8fe6/res/anim/design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/popup_enter.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-core-0.9.6.0.aar/83cb32486be17cd27a7c78a40b004e18/res/anim/popup_enter.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/design_snackbar_out.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/material-1.1.0-alpha04.aar/c401e097008123e28e6990d53dcb8fe6/res/anim/design_snackbar_out.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/bt_slide_out_down.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-drop-in-3.7.1.aar/31206ed99ef2e2ba8e68988c83c3103d/res/anim/bt_slide_out_down.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_in.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/material-1.1.0-alpha04.aar/c401e097008123e28e6990d53dcb8fe6/res/anim/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/btn_radio_to_on_mtrl_dot_group_animation.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/anim/btn_radio_to_on_mtrl_dot_group_animation.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/btn_radio_to_off_mtrl_ring_outer_path_animation.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/anim/btn_radio_to_off_mtrl_ring_outer_path_animation.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/mtrl_bottom_sheet_slide_out.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/material-1.1.0-alpha04.aar/c401e097008123e28e6990d53dcb8fe6/res/anim/mtrl_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/interpolator_slight_overshoot.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-alerter-2.0.4.aar/33f89724e3bf6a1e6770540ee53f92ce/res/anim/interpolator_slight_overshoot.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/btn_radio_to_on_mtrl_ring_outer_path_animation.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/anim/btn_radio_to_on_mtrl_ring_outer_path_animation.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/bt_error_animation.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-card-form-3.5.0.aar/a11f280edc846d92045f3c1b434e7ce9/res/anim/bt_error_animation.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/bt_bottom_sheet_dialog_close.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-drop-in-3.7.1.aar/31206ed99ef2e2ba8e68988c83c3103d/res/anim/bt_bottom_sheet_dialog_close.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/alerter_slide_in_from_top.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-alerter-2.0.4.aar/33f89724e3bf6a1e6770540ee53f92ce/res/anim/alerter_slide_in_from_top.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/popup_exit.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-core-0.9.6.0.aar/83cb32486be17cd27a7c78a40b004e18/res/anim/popup_exit.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/btn_radio_to_off_mtrl_dot_group_animation.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/anim/btn_radio_to_off_mtrl_dot_group_animation.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/bt_bottom_sheet_dialog_open.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-drop-in-3.7.1.aar/31206ed99ef2e2ba8e68988c83c3103d/res/anim/bt_bottom_sheet_dialog_open.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/btn_checkbox_to_checked_icon_null_animation.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/anim/btn_checkbox_to_checked_icon_null_animation.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/decelerate_cubic.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-core-0.9.6.0.aar/83cb32486be17cd27a7c78a40b004e18/res/anim/decelerate_cubic.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/anim/mtrl_bottom_sheet_slide_in.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/material-1.1.0-alpha04.aar/c401e097008123e28e6990d53dcb8fe6/res/anim/mtrl_bottom_sheet_slide_in.xml"
+    }
+]

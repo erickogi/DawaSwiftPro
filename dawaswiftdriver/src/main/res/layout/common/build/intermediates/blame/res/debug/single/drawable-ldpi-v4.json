@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-ldpi-v4/ucrop_ic_done.png",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-ucrop-2.2.1.aar/a3d911df3b397b8d19364c6a17c680b5/res/drawable-ldpi-v4/ucrop_ic_done.png"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-ldpi-v4/marker_taxi.png",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable-ldpi/marker_taxi.png"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-ldpi-v4/ucrop_ic_reset.png",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-ucrop-2.2.1.aar/a3d911df3b397b8d19364c6a17c680b5/res/drawable-ldpi-v4/ucrop_ic_reset.png"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-ldpi-v4/ucrop_ic_next.png",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-ucrop-2.2.1.aar/a3d911df3b397b8d19364c6a17c680b5/res/drawable-ldpi-v4/ucrop_ic_next.png"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-ldpi-v4/ucrop_ic_scale.png",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-ucrop-2.2.1.aar/a3d911df3b397b8d19364c6a17c680b5/res/drawable-ldpi-v4/ucrop_ic_scale.png"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-ldpi-v4/marker_pickup.png",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable-ldpi/marker_pickup.png"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-ldpi-v4/alerter_ic_face.png",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-alerter-2.0.4.aar/33f89724e3bf6a1e6770540ee53f92ce/res/drawable-ldpi-v4/alerter_ic_face.png"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-ldpi-v4/ucrop_ic_crop.png",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-ucrop-2.2.1.aar/a3d911df3b397b8d19364c6a17c680b5/res/drawable-ldpi-v4/ucrop_ic_crop.png"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-ldpi-v4/ucrop_ic_rotate.png",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-ucrop-2.2.1.aar/a3d911df3b397b8d19364c6a17c680b5/res/drawable-ldpi-v4/ucrop_ic_rotate.png"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-ldpi-v4/ucrop_ic_angle.png",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-ucrop-2.2.1.aar/a3d911df3b397b8d19364c6a17c680b5/res/drawable-ldpi-v4/ucrop_ic_angle.png"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-ldpi-v4/md_nav_back.png",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-core-0.9.6.0.aar/83cb32486be17cd27a7c78a40b004e18/res/drawable-ldpi-v4/md_nav_back.png"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-ldpi-v4/ucrop_ic_cross.png",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-ucrop-2.2.1.aar/a3d911df3b397b8d19364c6a17c680b5/res/drawable-ldpi-v4/ucrop_ic_cross.png"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-ldpi-v4/alerter_ic_notifications.png",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-alerter-2.0.4.aar/33f89724e3bf6a1e6770540ee53f92ce/res/drawable-ldpi-v4/alerter_ic_notifications.png"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-ldpi-v4/marker_destination.png",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable-ldpi/marker_destination.png"
+    }
+]

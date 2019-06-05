@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-watch-v20/abc_dialog_material_background.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable-watch-v20/abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-watch-v20/common_google_signin_btn_text_disabled.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-play-services-auth-15.0.0.aar/e25835247486198fca7899e512f18361/res/drawable-watch-v20/common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-play-services-auth-15.0.0.aar/e25835247486198fca7899e512f18361/res/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-play-services-auth-15.0.0.aar/e25835247486198fca7899e512f18361/res/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml"
+    }
+]

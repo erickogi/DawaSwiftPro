@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/font/roboto_medium.ttf",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/font/roboto_medium.ttf"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/font/roboto_thin.ttf",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/font/roboto_thin.ttf"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/font/roboto_regular.ttf",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/font/roboto_regular.ttf"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/font/roboto_bold.ttf",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/font/roboto_bold.ttf"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/font/roboto.xml",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/font/roboto.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/font/roboto_light.ttf",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/font/roboto_light.ttf"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/font/roboto_black.ttf",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/font/roboto_black.ttf"
+    }
+]

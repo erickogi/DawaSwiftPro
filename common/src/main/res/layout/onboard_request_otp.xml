@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include layout="@layout/toolback_bar"
+             android:visibility="visible"/>
+    <ScrollView
+            android:layout_below="@+id/toolback"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+            <TextView
+
+                    android:padding="6dp"
+                    android:id="@+id/txt_password_view_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/otp_policy"
+                    android:textSize="16.8sp"/>
+            <TextView
+
+                    android:padding="6dp"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/txt_confirm_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/confirm_phone_number"
+                    android:textSize="16.8sp"/>
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal"
+                    android:padding="4dp">
+
+
+                <TextView
+                        android:id="@+id/txt_ke"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="1dp"
+                        android:text="@string/ke"
+                        android:textSize="18.5sp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_phone"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:padding="4dp"
+
+                        app:endIconDrawable="@string/next"
+
+                        app:boxCornerRadiusTopStart="1dp"
+                        app:boxCornerRadiusTopEnd="1dp"
+                        app:boxCornerRadiusBottomStart="1dp"
+                        app:boxCornerRadiusBottomEnd="1dp"
+
+                        app:boxStrokeWidth="1dp"
+                        app:boxBackgroundMode="outline"
+                        app:boxStrokeColor="@color/colorPrimary"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="11"
+                >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edt_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            app:helperText="7** *** ***"
+                            app:helperTextEnabled="true"
+                            android:hint="@string/phone_hint"
+                            android:inputType="phone"
+
+                            android:maxLength="11"
+
+
+                            app:counterEnabled="true"
+                            app:counterMaxLength="11"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+            <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:padding="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingBottom="0dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="6dp"
+
+
+                    android:textColor="@color/white"
+                    app:cornerRadius="5dp"
+                    app:rippleColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/colorPrimary"
+                    style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
+                    android:text="@string/next"/>
+
+            <include layout="@layout/loading_avi"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

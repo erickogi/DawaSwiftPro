@@ -1,0 +1,714 @@
+[
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/ic_pickup_dropoff.xml",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/ic_pickup_dropoff.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/ucrop_vector_loader_animated.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-ucrop-2.2.1.aar/a3d911df3b397b8d19364c6a17c680b5/res/drawable/ucrop_vector_loader_animated.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/card_color_round_rect_brown.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-CreditCardView-v1.0.4.aar/5ac908a5e61ece99e3fc5c8cefff617c/res/drawable/card_color_round_rect_brown.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/payment_stripe.xml",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/payment_stripe.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/ic_error.xml",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/ic_error.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/abc_btn_check_material_anim.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/abc_btn_check_material_anim.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/nav_item_travels.xml",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/nav_item_travels.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/visacard_back_bg.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-CreditCardView-v1.0.4.aar/5ac908a5e61ece99e3fc5c8cefff617c/res/drawable/visacard_back_bg.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/travel_card_duration.xml",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/travel_card_duration.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/ic_mtrl_chip_close_circle.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/material-1.1.0-alpha04.aar/c401e097008123e28e6990d53dcb8fe6/res/drawable/ic_mtrl_chip_close_circle.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/fui_idp_button_background_email.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-firebase-ui-auth-3.3.1.aar/76cb9ce87390a8d6bf238806dac3441d/res/drawable/fui_idp_button_background_email.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/design_password_eye.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/material-1.1.0-alpha04.aar/c401e097008123e28e6990d53dcb8fe6/res/drawable/design_password_eye.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/about_icon_youtube.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-android-about-page-1.2.1.aar/02b6ada57e1b9c0565c228de6bec08bb/res/drawable/about_icon_youtube.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/ic_billing_mastercard_logo.png",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-CreditCardView-v1.0.4.aar/5ac908a5e61ece99e3fc5c8cefff617c/res/drawable/ic_billing_mastercard_logo.png"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/md_btn_selected_dark.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-core-0.9.6.0.aar/83cb32486be17cd27a7c78a40b004e18/res/drawable/md_btn_selected_dark.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/cancel.xml",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/cancel.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/stripe.png",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/stripe.png"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/about_icon_link.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-android-about-page-1.2.1.aar/02b6ada57e1b9c0565c228de6bec08bb/res/drawable/about_icon_link.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/card_color_round_rect_pink.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-CreditCardView-v1.0.4.aar/5ac908a5e61ece99e3fc5c8cefff617c/res/drawable/card_color_round_rect_pink.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/fui_done_check_mark.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-firebase-ui-auth-3.3.1.aar/76cb9ce87390a8d6bf238806dac3441d/res/drawable/fui_done_check_mark.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/user_placeholder.png",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/user_placeholder.png"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/empty_state.png",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/empty_state.png"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/btn_radio_on_mtrl.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/btn_radio_on_mtrl.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/sign_strip.png",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-CreditCardView-v1.0.4.aar/5ac908a5e61ece99e3fc5c8cefff617c/res/drawable/sign_strip.png"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark_focused.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/d4ac6af426543fb20794c99113df5a16/res/drawable/common_google_signin_btn_icon_dark_focused.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/abc_ic_search_api_material.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/phone_auth_icon.png",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/phone_auth_icon.png"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material_anim.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/abc_btn_radio_material_anim.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/ef_image_placeholder.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-imagepicker-1.12.0.aar/cea9afaf9c68ed7b710c9dab47c99783/res/drawable/ef_image_placeholder.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/ic_mtrl_checked_circle.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/material-1.1.0-alpha04.aar/c401e097008123e28e6990d53dcb8fe6/res/drawable/ic_mtrl_checked_circle.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/ef_folder_placeholder.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-imagepicker-1.12.0.aar/cea9afaf9c68ed7b710c9dab47c99783/res/drawable/ef_folder_placeholder.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/chip.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-CreditCardView-v1.0.4.aar/5ac908a5e61ece99e3fc5c8cefff617c/res/drawable/chip.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/md_selector.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-core-0.9.6.0.aar/83cb32486be17cd27a7c78a40b004e18/res/drawable/md_selector.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/md_transparent.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-core-0.9.6.0.aar/83cb32486be17cd27a7c78a40b004e18/res/drawable/md_transparent.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/d4ac6af426543fb20794c99113df5a16/res/drawable/common_google_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/abc_ic_go_search_api_material.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/ic_info.xml",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/ic_info.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/visacard_back.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-CreditCardView-v1.0.4.aar/5ac908a5e61ece99e3fc5c8cefff617c/res/drawable/visacard_back.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/about_icon_instagram.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-android-about-page-1.2.1.aar/02b6ada57e1b9c0565c228de6bec08bb/res/drawable/about_icon_instagram.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark_normal.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/d4ac6af426543fb20794c99113df5a16/res/drawable/common_google_signin_btn_icon_dark_normal.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/about_icon_google_play.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-android-about-page-1.2.1.aar/02b6ada57e1b9c0565c228de6bec08bb/res/drawable/about_icon_google_play.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/md_btn_selector_dark.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-core-0.9.6.0.aar/83cb32486be17cd27a7c78a40b004e18/res/drawable/md_btn_selector_dark.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/img_empty_state.jpg",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-empty-state-recyclerview-1.0.4.aar/9338bb886c753c02c40a721cd0d58438/res/drawable/img_empty_state.jpg"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/fui_ic_twitter_bird_white_24dp.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-firebase-ui-auth-3.3.1.aar/76cb9ce87390a8d6bf238806dac3441d/res/drawable/fui_ic_twitter_bird_white_24dp.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/ic_billing_visa_logo.png",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-CreditCardView-v1.0.4.aar/5ac908a5e61ece99e3fc5c8cefff617c/res/drawable/ic_billing_visa_logo.png"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/about_icon_email.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-android-about-page-1.2.1.aar/02b6ada57e1b9c0565c228de6bec08bb/res/drawable/about_icon_email.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/nav_item_edit_profile.xml",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/nav_item_edit_profile.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/chip_inner.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-CreditCardView-v1.0.4.aar/5ac908a5e61ece99e3fc5c8cefff617c/res/drawable/chip_inner.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/btn_radio_off_mtrl.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/btn_radio_off_mtrl.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/btn_checkbox_unchecked_mtrl.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/btn_checkbox_unchecked_mtrl.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/refresh.xml",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/refresh.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/btn_checkbox_checked_mtrl.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/btn_checkbox_checked_mtrl.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/nav_item_settings.xml",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/nav_item_settings.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/copyright.xml",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/copyright.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/card_color_round_rect_purple.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-CreditCardView-v1.0.4.aar/5ac908a5e61ece99e3fc5c8cefff617c/res/drawable/card_color_round_rect_purple.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_disabled.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/d4ac6af426543fb20794c99113df5a16/res/drawable/common_google_signin_btn_icon_disabled.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/nav_item_invite.xml",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/nav_item_invite.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/notification_icon_background.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/core-1.1.0-alpha03.aar/198ba6cfadc6eb8b6d0ac0452b266131/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/travel_card_distance.xml",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/travel_card_distance.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/fui_idp_button_background_twitter.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-firebase-ui-auth-3.3.1.aar/76cb9ce87390a8d6bf238806dac3441d/res/drawable/fui_idp_button_background_twitter.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/sign_strip_mod.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-CreditCardView-v1.0.4.aar/5ac908a5e61ece99e3fc5c8cefff617c/res/drawable/sign_strip_mod.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/md_selector_dark.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-core-0.9.6.0.aar/83cb32486be17cd27a7c78a40b004e18/res/drawable/md_selector_dark.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/md_btn_selected.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-core-0.9.6.0.aar/83cb32486be17cd27a7c78a40b004e18/res/drawable/md_btn_selected.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/header_material.jpg",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/header_material.jpg"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/card_color_round_rect_green.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-CreditCardView-v1.0.4.aar/5ac908a5e61ece99e3fc5c8cefff617c/res/drawable/card_color_round_rect_green.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/about_icon_github.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-android-about-page-1.2.1.aar/02b6ada57e1b9c0565c228de6bec08bb/res/drawable/about_icon_github.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/d4ac6af426543fb20794c99113df5a16/res/drawable/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/logo.png",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/logo.png"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/master_back.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-CreditCardView-v1.0.4.aar/5ac908a5e61ece99e3fc5c8cefff617c/res/drawable/master_back.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/ic_billing_amex_logo1.png",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-CreditCardView-v1.0.4.aar/5ac908a5e61ece99e3fc5c8cefff617c/res/drawable/ic_billing_amex_logo1.png"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/d4ac6af426543fb20794c99113df5a16/res/drawable/common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/ic_destination.xml",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/ic_destination.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/ucrop_shadow_upside.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-ucrop-2.2.1.aar/a3d911df3b397b8d19364c6a17c680b5/res/drawable/ucrop_shadow_upside.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/abc_edit_text_material.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/design_bottom_navigation_item_background.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/material-1.1.0-alpha04.aar/c401e097008123e28e6990d53dcb8fe6/res/drawable/design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/btn_checkbox_unchecked_to_checked_mtrl_animation.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/btn_checkbox_unchecked_to_checked_mtrl_animation.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/md_item_selected_dark.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-core-0.9.6.0.aar/83cb32486be17cd27a7c78a40b004e18/res/drawable/md_item_selected_dark.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/bt_submit_button_background.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-drop-in-3.7.1.aar/31206ed99ef2e2ba8e68988c83c3103d/res/drawable/bt_submit_button_background.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/nav_item_transactions.xml",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/nav_item_transactions.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/md_btn_selector.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-core-0.9.6.0.aar/83cb32486be17cd27a7c78a40b004e18/res/drawable/md_btn_selector.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/abc_seekbar_tick_mark_material.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/navigation_empty_icon.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/material-1.1.0-alpha04.aar/c401e097008123e28e6990d53dcb8fe6/res/drawable/navigation_empty_icon.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/abc_btn_colored_material.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/abc_list_divider_material.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/abc_list_divider_material.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/material-1.1.0-alpha04.aar/c401e097008123e28e6990d53dcb8fe6/res/drawable/design_fab_background.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/menu.xml",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/menu.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/chevron_left.xml",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/chevron_left.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/d4ac6af426543fb20794c99113df5a16/res/drawable/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/img_coffee.png",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-empty-state-recyclerview-1.0.4.aar/9338bb886c753c02c40a721cd0d58438/res/drawable/img_coffee.png"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/travel_card_cost.xml",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/travel_card_cost.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/img_amex_center_face.png",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-CreditCardView-v1.0.4.aar/5ac908a5e61ece99e3fc5c8cefff617c/res/drawable/img_amex_center_face.png"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/braintree.png",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/braintree.png"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/chip_yellow.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-CreditCardView-v1.0.4.aar/5ac908a5e61ece99e3fc5c8cefff617c/res/drawable/chip_yellow.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/about_icon_twitter.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-android-about-page-1.2.1.aar/02b6ada57e1b9c0565c228de6bec08bb/res/drawable/about_icon_twitter.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/btn_radio_off_to_on_mtrl_animation.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/btn_radio_off_to_on_mtrl_animation.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/finish_travel.xml",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/finish_travel.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light_normal.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/d4ac6af426543fb20794c99113df5a16/res/drawable/common_google_signin_btn_icon_light_normal.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/ic_mtrl_chip_checked_circle.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/material-1.1.0-alpha04.aar/c401e097008123e28e6990d53dcb8fe6/res/drawable/ic_mtrl_chip_checked_circle.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/ucrop_vector_loader.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-ucrop-2.2.1.aar/a3d911df3b397b8d19364c6a17c680b5/res/drawable/ucrop_vector_loader.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/core-1.1.0-alpha03.aar/198ba6cfadc6eb8b6d0ac0452b266131/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/fui_idp_button_background_phone.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-firebase-ui-auth-3.3.1.aar/76cb9ce87390a8d6bf238806dac3441d/res/drawable/fui_idp_button_background_phone.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/fui_idp_button_background_facebook.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-firebase-ui-auth-3.3.1.aar/76cb9ce87390a8d6bf238806dac3441d/res/drawable/fui_idp_button_background_facebook.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/sv_thumb.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-slideview-1.1.0.aar/d1a12435f2fa25b0c73a2ca4d65bab3f/res/drawable/sv_thumb.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/card_color_round_rect_blue.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-CreditCardView-v1.0.4.aar/5ac908a5e61ece99e3fc5c8cefff617c/res/drawable/card_color_round_rect_blue.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/fui_ic_mail_white_24dp.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-firebase-ui-auth-3.3.1.aar/76cb9ce87390a8d6bf238806dac3441d/res/drawable/fui_ic_mail_white_24dp.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/btn_checkbox_checked_to_unchecked_mtrl_animation.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/btn_checkbox_checked_to_unchecked_mtrl_animation.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/in_location.xml",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/in_location.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/bt_payment_method_list_item_bg.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-drop-in-3.7.1.aar/31206ed99ef2e2ba8e68988c83c3103d/res/drawable/bt_payment_method_list_item_bg.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/mastercard_back_bg.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-CreditCardView-v1.0.4.aar/5ac908a5e61ece99e3fc5c8cefff617c/res/drawable/mastercard_back_bg.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/notification_bg_low.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/core-1.1.0-alpha03.aar/198ba6cfadc6eb8b6d0ac0452b266131/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/bt_list_view_divider.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-drop-in-3.7.1.aar/31206ed99ef2e2ba8e68988c83c3103d/res/drawable/bt_list_view_divider.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/abc_btn_check_material.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/sv_view_bg.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-slideview-1.1.0.aar/d1a12435f2fa25b0c73a2ca4d65bab3f/res/drawable/sv_view_bg.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/abc_ratingbar_indicator_material.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/ic_photo_camera.xml",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/ic_photo_camera.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/divider_8dp.xml",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/divider_8dp.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/about_icon_facebook.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-android-about-page-1.2.1.aar/02b6ada57e1b9c0565c228de6bec08bb/res/drawable/about_icon_facebook.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark_normal.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/d4ac6af426543fb20794c99113df5a16/res/drawable/common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/abc_ic_menu_overflow_material.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/call.xml",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/call.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/fui_ic_facebook_white_22dp.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-firebase-ui-auth-3.3.1.aar/76cb9ce87390a8d6bf238806dac3441d/res/drawable/fui_ic_facebook_white_22dp.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/mtrl_tabs_default_indicator.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/material-1.1.0-alpha04.aar/c401e097008123e28e6990d53dcb8fe6/res/drawable/mtrl_tabs_default_indicator.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light_focused.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/d4ac6af426543fb20794c99113df5a16/res/drawable/common_google_signin_btn_icon_light_focused.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/check.xml",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/check.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/nav_item_exit.xml",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/nav_item_exit.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark_focused.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/d4ac6af426543fb20794c99113df5a16/res/drawable/common_google_signin_btn_text_dark_focused.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/start_travel.xml",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/start_travel.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/ic_mtrl_chip_checked_black.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/material-1.1.0-alpha04.aar/c401e097008123e28e6990d53dcb8fe6/res/drawable/ic_mtrl_chip_checked_black.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/bt_payment_button_background.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-drop-in-3.7.1.aar/31206ed99ef2e2ba8e68988c83c3103d/res/drawable/bt_payment_button_background.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/add.xml",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/add.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/mtrl_clear_text_button.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/material-1.1.0-alpha04.aar/c401e097008123e28e6990d53dcb8fe6/res/drawable/mtrl_clear_text_button.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/ic_billing_amex_logo.png",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-CreditCardView-v1.0.4.aar/5ac908a5e61ece99e3fc5c8cefff617c/res/drawable/ic_billing_amex_logo.png"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/abc_ic_voice_search_api_material.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/tooltip_frame_dark.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/tooltip_frame_dark.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/nav_item_charge_account.xml",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/nav_item_charge_account.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light_normal.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/d4ac6af426543fb20794c99113df5a16/res/drawable/common_google_signin_btn_text_light_normal.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/nav_item_about.xml",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/nav_item_about.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/ic_warning.xml",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/ic_warning.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/abc_ratingbar_material.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/tooltip_frame_light.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/tooltip_frame_light.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/fui_ic_phone_white_24dp.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-firebase-ui-auth-3.3.1.aar/76cb9ce87390a8d6bf238806dac3441d/res/drawable/fui_ic_phone_white_24dp.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/payment_online.xml",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/payment_online.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/card_color_round_rect_default.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-CreditCardView-v1.0.4.aar/5ac908a5e61ece99e3fc5c8cefff617c/res/drawable/card_color_round_rect_default.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/btn_radio_on_to_off_mtrl_animation.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/btn_radio_on_to_off_mtrl_animation.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/abc_ic_ab_back_material.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light_focused.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/d4ac6af426543fb20794c99113df5a16/res/drawable/common_google_signin_btn_text_light_focused.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/fui_idp_button_background_google.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-firebase-ui-auth-3.3.1.aar/76cb9ce87390a8d6bf238806dac3441d/res/drawable/fui_idp_button_background_google.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/material-1.1.0-alpha04.aar/c401e097008123e28e6990d53dcb8fe6/res/drawable/design_snackbar_background.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/notification_bg.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/core-1.1.0-alpha03.aar/198ba6cfadc6eb8b6d0ac0452b266131/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/ucrop_vector_ic_crop.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-ucrop-2.2.1.aar/a3d911df3b397b8d19364c6a17c680b5/res/drawable/ucrop_vector_ic_crop.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/chevron_right.xml",
+        "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/drawable/chevron_right.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/md_item_selected.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-core-0.9.6.0.aar/83cb32486be17cd27a7c78a40b004e18/res/drawable/md_item_selected.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/fui_ic_googleg_color_24dp.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-firebase-ui-auth-3.3.1.aar/76cb9ce87390a8d6bf238806dac3441d/res/drawable/fui_ic_googleg_color_24dp.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/chip_yellow_inner.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-CreditCardView-v1.0.4.aar/5ac908a5e61ece99e3fc5c8cefff617c/res/drawable/chip_yellow_inner.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_disabled.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/d4ac6af426543fb20794c99113df5a16/res/drawable/common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable/abc_vector_test.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable/abc_vector_test.xml"
+    }
+]

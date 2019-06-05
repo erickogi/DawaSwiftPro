@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <dimen name="bottom_sheet_corner_radius">16dp</dimen>
+    <dimen name="bottom_sheet_top_padding">8dp</dimen>
+    <dimen name="peekHeight">260dp</dimen>
+    <dimen name="text">15dp</dimen>
+    <dimen name="textsub">14dp</dimen>
+    <dimen name="textlist">16dp</dimen>
+    <dimen name="spacing">19dp</dimen>
+
+</resources>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<layout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools">-->
+
+<androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardElevation="@dimen/card_elevation"
+        app:cardUseCompatPadding="true" xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--ProgressBar
+                android:id="@+id/progress_timeout"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/button_accept" /-->
+
+            <ImageView
+                android:id="@+id/image_location"
+                android:layout_width="24dp"
+                android:layout_height="72dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_destination"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/label_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/from"
+                app:layout_constraintStart_toEndOf="@+id/image_location"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_from"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:singleLine="true"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/image_location"
+                app:layout_constraintTop_toBottomOf="@+id/label_from" />
+
+            <TextView
+                android:id="@+id/label_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:text="@string/to"
+                app:layout_constraintBottom_toBottomOf="@+id/image_location"
+                app:layout_constraintStart_toEndOf="@+id/image_location" />
+
+            <TextView
+                android:id="@+id/text_to"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:singleLine="true"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/image_location"
+                app:layout_constraintTop_toBottomOf="@+id/label_to" />
+
+            <ImageView
+                android:id="@+id/image_distance"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="50dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_location"
+                app:srcCompat="@drawable/ic_place"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/label_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/request_card_travel_distance"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/image_distance"
+                app:layout_constraintStart_toEndOf="@+id/image_distance"
+                app:layout_constraintTop_toTopOf="@+id/image_distance" />
+
+            <TextView
+                android:id="@+id/text_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBaseline_toBaselineOf="@id/label_distance"
+                app:layout_constraintStart_toEndOf="@+id/label_distance" />
+
+            <ImageView
+                android:id="@+id/image_from_you"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_distance"
+                app:srcCompat="@drawable/ic_near_me"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/label_from_you"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:text="@string/request_card_distance_from_you"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/image_from_you"
+                app:layout_constraintStart_toEndOf="@+id/image_from_you"
+                app:layout_constraintTop_toTopOf="@+id/image_from_you" />
+
+            <TextView
+                android:id="@+id/text_from_you"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBaseline_toBaselineOf="@id/label_from_you"
+                app:layout_constraintStart_toEndOf="@id/label_from_you" />
+
+            <ImageView
+                android:id="@+id/image_cost"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_from_you"
+                app:srcCompat="@drawable/travel_card_cost"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/label_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:text="@string/request_card_cost"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/image_cost"
+                app:layout_constraintStart_toEndOf="@+id/image_cost"
+                app:layout_constraintTop_toTopOf="@+id/image_cost" />
+
+            <TextView
+                android:id="@+id/text_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBaseline_toBaselineOf="@id/label_cost"
+                app:layout_constraintStart_toEndOf="@id/label_cost" />
+
+
+            <Button
+                android:id="@+id/button_decline"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/request_decline"
+                android:layout_marginEnd="20dp"
+                android:textSize="18sp"
+                android:background="@color/colorAccent"
+                android:backgroundTint="@color/red"
+
+                app:layout_constraintBottom_toBottomOf="@+id/button_accept"
+                app:layout_constraintEnd_toStartOf="@+id/button_accept"
+                app:layout_constraintTop_toTopOf="@+id/button_accept" />
+
+            <Button
+                android:id="@+id/button_accept"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="16dp"
+                android:textSize="18sp"
+                android:text="@string/request_accept"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_cost" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+<!--</layout>-->

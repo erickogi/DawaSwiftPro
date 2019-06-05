@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/core-1.1.0-alpha03.aar/198ba6cfadc6eb8b6d0ac0452b266131/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/core-1.1.0-alpha03.aar/198ba6cfadc6eb8b6d0ac0452b266131/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/core-1.1.0-alpha03.aar/198ba6cfadc6eb8b6d0ac0452b266131/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/core-1.1.0-alpha03.aar/198ba6cfadc6eb8b6d0ac0452b266131/res/layout-v21/notification_template_custom_big.xml"
+    }
+]

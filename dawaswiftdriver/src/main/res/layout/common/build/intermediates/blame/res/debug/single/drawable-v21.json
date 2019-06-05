@@ -1,0 +1,82 @@
+[
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-v21/fui_idp_button_background_email.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-firebase-ui-auth-3.3.1.aar/76cb9ce87390a8d6bf238806dac3441d/res/drawable-v21/fui_idp_button_background_email.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-v21/avd_hide_password.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/material-1.1.0-alpha04.aar/c401e097008123e28e6990d53dcb8fe6/res/drawable-v21/avd_hide_password.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-v21/md_btn_selector_ripple_dark.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-core-0.9.6.0.aar/83cb32486be17cd27a7c78a40b004e18/res/drawable-v21/md_btn_selector_ripple_dark.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-v21/fui_idp_button_background_phone.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-firebase-ui-auth-3.3.1.aar/76cb9ce87390a8d6bf238806dac3441d/res/drawable-v21/fui_idp_button_background_phone.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-v21/fui_idp_button_background_twitter.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-firebase-ui-auth-3.3.1.aar/76cb9ce87390a8d6bf238806dac3441d/res/drawable-v21/fui_idp_button_background_twitter.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-v21/abc_list_divider_material.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable-v21/abc_list_divider_material.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-v21/bt_payment_method_list_item_bg.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-drop-in-3.7.1.aar/31206ed99ef2e2ba8e68988c83c3103d/res/drawable-v21/bt_payment_method_list_item_bg.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-v21/avd_show_password.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/material-1.1.0-alpha04.aar/c401e097008123e28e6990d53dcb8fe6/res/drawable-v21/avd_show_password.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-v21/design_password_eye.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/material-1.1.0-alpha04.aar/c401e097008123e28e6990d53dcb8fe6/res/drawable-v21/design_password_eye.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-v21/abc_dialog_material_background.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable-v21/abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-v21/fui_idp_button_background_google.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-firebase-ui-auth-3.3.1.aar/76cb9ce87390a8d6bf238806dac3441d/res/drawable-v21/fui_idp_button_background_google.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-v21/notification_action_background.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/core-1.1.0-alpha03.aar/198ba6cfadc6eb8b6d0ac0452b266131/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-v21/fui_idp_button_background_facebook.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-firebase-ui-auth-3.3.1.aar/76cb9ce87390a8d6bf238806dac3441d/res/drawable-v21/fui_idp_button_background_facebook.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-v21/mtrl_popupmenu_background.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/material-1.1.0-alpha04.aar/c401e097008123e28e6990d53dcb8fe6/res/drawable-v21/mtrl_popupmenu_background.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-v21/md_btn_selector_ripple.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-core-0.9.6.0.aar/83cb32486be17cd27a7c78a40b004e18/res/drawable-v21/md_btn_selector_ripple.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-v21/design_bottom_navigation_item_background.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/material-1.1.0-alpha04.aar/c401e097008123e28e6990d53dcb8fe6/res/drawable-v21/design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-v21/md_btn_shape.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-core-0.9.6.0.aar/83cb32486be17cd27a7c78a40b004e18/res/drawable-v21/md_btn_shape.xml"
+    },
+    {
+        "merged": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/eec2ce1dffe76f8def7ed37fa166dcae/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    }
+]

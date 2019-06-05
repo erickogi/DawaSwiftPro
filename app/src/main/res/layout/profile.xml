@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+                <RelativeLayout android:layout_width="match_parent"
+                                android:layout_marginTop="15.3dp"
+                                android:layout_height="wrap_content">
+
+
+                    <com.dev.common.utils.CircleImageView
+                            android:layout_width="60dp"
+                            android:id="@+id/avatar"
+                            android:src="@drawable/ic_person_black_24dp"
+                            app:civ_border_color="@color/colorPrimary"
+                            app:civ_fill_color="@color/white"
+                            app:civ_border_width="1dp"
+                            android:layout_height="60dp"/>
+                    <LinearLayout
+                            android:layout_toEndOf="@+id/avatar"
+                            android:layout_marginStart="10dp"
+
+
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+
+                            android:orientation="vertical">
+
+
+                        <TextView
+                                android:id="@+id/names"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sfpro_display_bold"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="16.7sp"/>
+
+                        <TextView
+                                android:id="@+id/email"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2.3dp"
+                                android:fontFamily="@font/sf_pro_display_medium"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="11.7sp"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="20.8dp"
+                        android:background="@color/graylight"/>
+
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:orientation="vertical"
+                              android:clickable="true"
+                              android:focusable="true"
+                              android:foreground="?android:attr/selectableItemBackground"
+                              android:layout_weight="1"
+                              android:layout_height="wrap_content">
+
+                    <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        <LinearLayout
+                                android:id="@+id/linear1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20.8dp"
+                                android:orientation="horizontal">
+
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/blacklight"
+                                    android:textSize="13.7sp"
+                                    android:fontFamily="@font/sfpro_display_semibold"
+                                    android:text="@string/my_accounts"
+                            />
+
+                            <ImageView
+                                    android:id="@+id/up_button"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_navigate_next_black_24dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:id="@+id/linear2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20.8dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+
+                            <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/sfpro_display_semibold"
+                                    android:text="@string/my_accounts"
+                                    android:textColor="@color/blacklight"
+                                    android:textSize="13.7sp"/>
+
+                            <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_navigate_next_black_24dp"/>
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/sf_pro_display_medium"
+                            android:text="@string/addresses_payments_referrals_amp_offers"
+                            android:textColor="@color/graydark"
+                            android:textSize="13.7sp"/>
+                </LinearLayout>
+
+
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="20.8dp"
+                        android:background="@color/graylight"/>
+
+
+                <LinearLayout
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+
+
+                        android:orientation="horizontal">
+
+                    <LinearLayout android:layout_width="0dp"
+                                  android:layout_weight="1"
+                                  android:orientation="vertical"
+                                  android:layout_height="wrap_content">
+                        <LinearLayout android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content">
+                            <TextView
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/sfpro_display_semibold"
+                                    android:textColor="@color/blacklight"
+                                    android:textSize="13.7sp"
+                                    android:text="Messages and Notifications"/>
+                            <ImageView
+                                    android:id="@+id/message_notifications"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_notifications_none_black_24dp"/>
+                        </LinearLayout>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/sf_pro_display_medium"
+                                android:text="Host and Visitor communications and other notifications"
+                                android:textColor="@color/graydark"
+                                android:textSize="13.7sp"/>
+                    </LinearLayout>
+
+
+                    <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_navigate_next_black_24dp"/>
+                </LinearLayout>
+
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="20.8dp"
+                        android:background="@color/graylight"/>
+
+
+                <LinearLayout
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:id="@+id/linear_log_out"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/sfpro_display_semibold"
+                            android:textColor="@color/blacklight"
+                            android:textSize="13.7sp"
+                            android:text="Logout"/>
+
+                    <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_navigate_next_black_24dp"/>
+                </LinearLayout>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/graylight"/>
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:orientation="vertical"
+                              android:clickable="true"
+                              android:focusable="true"
+                              android:foreground="?android:attr/selectableItemBackground"
+
+                              android:layout_height="wrap_content">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20.8dp"
+                            android:fontFamily="@font/sfpro_display_semibold"
+                            android:text="@string/help"
+                            android:textColor="@color/blacklight"
+                            android:textSize="13.7sp"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/sf_pro_display_medium"
+                            android:text="@string/faq_s_amp_links"
+                            android:textColor="@color/graydark"
+                            android:textSize="13.7sp"/>
+
+                </LinearLayout>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="21dp"
+                        android:background="@color/smokegray"/>
+
+
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="21dp"
+                    android:background="@color/smokegray"/>
+
+            <LinearLayout
+                    android:id="@+id/recentBookings"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="21dp"
+                        android:fontFamily="@font/sfpro_display_semibold"
+                        android:text="My Orders"
+                        android:letterSpacing="0.0225"
+                        android:textColor="@color/blacklight"
+                        android:textSize="13.7sp"/>
+
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_marginTop="20.8dp"
+                        android:layerType="software"
+                        android:src="@drawable/dotted_line_horizontal"/>
+
+
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="18.3dp"
+                    android:background="@color/smokegray"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <include layout="@layout/loading_avi"/>
+</RelativeLayout>

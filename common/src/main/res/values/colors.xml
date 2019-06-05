@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#77B655</color>
+    <color name="colorPrimaryDark">#77B655</color>
+    <color name="colorAccent">#030089</color>
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="textblack">#232121</color>
+
+    <color name="textSub">#76818a</color>
+
+    <color name="yellow">#ffd21d</color>
+    <color name="gray">#8f8f8f</color>
+    <color name="graylight">#e2e2e2</color>
+    <color name="blacklight">#2f2f39</color>
+    <color name="graydark">#9398a0</color>
+    <color name="smokegray">#f2f2f2</color>
+    <color name="blue">#21549c</color>
+    <color name="lightgray">#33707070</color>
+    <color name="darkblue">#2d5da1</color>
+    <color name="green">#159a0a</color>
+    <color name="graylight1">#aaaaaa</color>
+    <color name="graydark1">#80000000</color>
+    <color name="graylight2">#999999</color>
+    <color name="bluedarkcode">#003580</color>
+    <color name="red">#d10f0f</color>
+    <color name="orange">#b96f19</color>
+    <color name="graylight3">#acacac</color>
+    <color name="yellowtxt">#e8a31f</color>
+    <color name="graylight4">#149398a0</color>
+    <color name="transferent">#00000000</color>
+    <color name="bluelight">#a62d5da1</color>
+</resources>

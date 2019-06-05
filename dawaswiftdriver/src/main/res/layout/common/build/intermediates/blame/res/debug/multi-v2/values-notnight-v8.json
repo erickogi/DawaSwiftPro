@@ -1,0 +1,82 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/incremental/mergeDebugResources/merged.dir/values-notnight-v8/values-notnight-v8.xml",
+            "map": [
+                {
+                    "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/values-notnight/bool.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "41",
+                        "endOffsets": "53"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "41",
+                        "endOffsets": "92"
+                    }
+                },
+                {
+                    "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-android-about-page-1.2.1.aar/02b6ada57e1b9c0565c228de6bec08bb/res/values-notnight-v8/values-notnight-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,112,175,231,287",
+                        "endColumns": "56,62,55,55,50",
+                        "endOffsets": "107,170,226,282,333"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "97,154,217,273,329",
+                        "endColumns": "56,62,55,55,50",
+                        "endOffsets": "149,212,268,324,375"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/kogi/StudioProjects/tufkePamoja/common/build/intermediates/res/merged/debug/values-notnight-v8/values-notnight-v8.xml",
+            "map": [
+                {
+                    "source": "/home/kogi/StudioProjects/tufkePamoja/common/src/main/res/values-notnight/bool.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "41",
+                        "endOffsets": "53"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "41",
+                        "endOffsets": "92"
+                    }
+                },
+                {
+                    "source": "/home/kogi/.gradle/caches/transforms-1/files-1.1/jetified-android-about-page-1.2.1.aar/02b6ada57e1b9c0565c228de6bec08bb/res/values-notnight-v8/values-notnight-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,112,175,231,287",
+                        "endColumns": "56,62,55,55,50",
+                        "endOffsets": "107,170,226,282,333"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "97,154,217,273,329",
+                        "endColumns": "56,62,55,55,50",
+                        "endOffsets": "149,212,268,324,375"
+                    }
+                }
+            ]
+        }
+    ]
+}

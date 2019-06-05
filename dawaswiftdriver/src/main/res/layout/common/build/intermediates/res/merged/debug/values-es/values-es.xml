@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="fui_error_weak_password"> <item quantity="one">La contraseña no es lo suficientemente segura. Usa %1$d carácter como mínimo y combina letras y números.</item> <item quantity="other">La contraseña no es lo suficientemente segura. Usa %1$d caracteres como mínimo y combina letras y números.</item> </plurals>
+    <string msgid="7903180715631665059" name="abc_action_bar_home_description">"Ir a inicio"</string>
+    <string msgid="6794660482873516081" name="abc_action_bar_up_description">"Desplazarse hacia arriba"</string>
+    <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"Más opciones"</string>
+    <string msgid="2571498368472823490" name="abc_action_mode_done">"Listo"</string>
+    <string msgid="3732416590524162402" name="abc_activity_chooser_view_see_all">"Ver todo"</string>
+    <string msgid="1798588241954930982" name="abc_activitychooserview_choose_application">"Seleccionar una aplicación"</string>
+    <string msgid="3403923230105792483" name="abc_capital_off">"NO"</string>
+    <string msgid="7831734969929204599" name="abc_capital_on">"SÍ"</string>
+    <string msgid="5725160506500770567" name="abc_menu_alt_shortcut_label">"Alt +"</string>
+    <string msgid="944415252197684443" name="abc_menu_ctrl_shortcut_label">"Ctrl +"</string>
+    <string msgid="129742188101734366" name="abc_menu_delete_shortcut_label">"Suprimir"</string>
+    <string msgid="6840127756824236027" name="abc_menu_enter_shortcut_label">"Intro"</string>
+    <string msgid="4974283687810130415" name="abc_menu_function_shortcut_label">"Función +"</string>
+    <string msgid="8046416353848716905" name="abc_menu_meta_shortcut_label">"Meta +"</string>
+    <string msgid="3271697756921353410" name="abc_menu_shift_shortcut_label">"Mayús +"</string>
+    <string msgid="2304645930658438191" name="abc_menu_space_shortcut_label">"Espacio"</string>
+    <string msgid="8327365089695024394" name="abc_menu_sym_shortcut_label">"Sym +"</string>
+    <string msgid="3570106412128999382" name="abc_prepend_shortcut_label">"Menú +"</string>
+    <string msgid="940844115270746197" name="abc_search_hint">"Buscar…"</string>
+    <string msgid="1769270744562318534" name="abc_searchview_description_clear">"Borrar consulta"</string>
+    <string msgid="908784302972860853" name="abc_searchview_description_query">"Consulta de búsqueda"</string>
+    <string msgid="5466662225065974044" name="abc_searchview_description_search">"Buscar"</string>
+    <string msgid="8203855622131699655" name="abc_searchview_description_submit">"Enviar consulta"</string>
+    <string msgid="3478748990613108725" name="abc_searchview_description_voice">"Búsqueda por voz"</string>
+    <string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"Compartir con"</string>
+    <string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"Compartir con <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"Ocultar"</string>
+    <string name="about_contact_us">Contáctenos</string>
+    <string name="about_facebook">Síganos en Facebook</string>
+    <string name="about_github">Haga una copia en GitHub</string>
+    <string name="about_instagram">Síganos en Instagram</string>
+    <string name="about_play_store">Puntúanos en Play Store</string>
+    <string name="about_twitter">Síganos en Twitter</string>
+    <string name="about_website">Visite nuestro sitio web</string>
+    <string name="about_youtube">Mire nuestros vídeos en Youtube</string>
+    <string name="bt_add_card">Añadir tarjeta</string>
+    <string name="bt_cancel">Cancelar</string>
+    <string name="bt_card_details">Datos de la tarjeta</string>
+    <string name="bt_card_not_accepted">Tarjeta no aceptada</string>
+    <string name="bt_card_number_invalid">Número de tarjeta no válido</string>
+    <string name="bt_card_number_required">El número de tarjeta es obligatorio</string>
+    <string name="bt_cardholder_name_required">El nombre del titular de la tarjeta es obligatorio</string>
+    <string name="bt_cid">CID</string>
+    <string name="bt_confirm">Confirmar</string>
+    <string name="bt_confirm_enrollment">Confirmar inscripción</string>
+    <string name="bt_country_code_invalid">Código de país no válido</string>
+    <string name="bt_country_code_required">El código de país es obligatorio.</string>
+    <string name="bt_cvc">CVC</string>
+    <string name="bt_cvn">CVN</string>
+    <string name="bt_cvv">CVV</string>
+    <string name="bt_cvv_invalid">El valor %s no es válido</string>
+    <string name="bt_cvv_required">El valor %s es obligatorio</string>
+    <string name="bt_delete">Eliminar</string>
+    <string name="bt_delete_confirmation_description">Ya no podrá utilizar esta forma de pago en la aplicación.</string>
+    <string name="bt_delete_confirmation_title">¿Desea eliminar esta forma de pago?</string>
+    <string name="bt_descriptor_amex">Amex</string>
+    <string name="bt_descriptor_android_pay">Android Pay</string>
+    <string name="bt_descriptor_diners">Diners</string>
+    <string name="bt_descriptor_discover">Discover</string>
+    <string name="bt_descriptor_google_pay">Google Pay</string>
+    <string name="bt_descriptor_jcb">JCB</string>
+    <string name="bt_descriptor_maestro">Maestro</string>
+    <string name="bt_descriptor_mastercard">MasterCard</string>
+    <string name="bt_descriptor_pay_with_venmo">Venmo</string>
+    <string name="bt_descriptor_paypal">PayPal</string>
+    <string name="bt_descriptor_unionpay">UnionPay</string>
+    <string name="bt_descriptor_unknown">Tarjeta de débito o crédito</string>
+    <string name="bt_descriptor_visa">Visa</string>
+    <string name="bt_done">Hecho</string>
+    <string name="bt_edit">Modificar</string>
+    <string name="bt_expiration_invalid">Fecha de vencimiento no válida</string>
+    <string name="bt_expiration_required">La fecha de vencimiento es obligatoria</string>
+    <string name="bt_form_hint_card_number">Número de tarjeta</string>
+    <string name="bt_form_hint_cardholder_name">Nombre del titular de la tarjeta</string>
+    <string name="bt_form_hint_country_code">Código de país</string>
+    <string name="bt_form_hint_cvv">@string/bt_cvv</string>
+    <string name="bt_form_hint_expiration">Fecha de vencimiento</string>
+    <string name="bt_form_hint_mobile_number">N.º de móvil</string>
+    <string name="bt_form_hint_postal_code">Código postal</string>
+    <string name="bt_mobile_number_invalid">Número de móvil no válido</string>
+    <string name="bt_mobile_number_required">El número de móvil es obligatorio.</string>
+    <string name="bt_month">Mes</string>
+    <string name="bt_next">Siguiente</string>
+    <string name="bt_other">Otra</string>
+    <string name="bt_postal_code_invalid">Código postal no válido</string>
+    <string name="bt_postal_code_required">El código postal es obligatorio.</string>
+    <string name="bt_recent">Reciente(s)</string>
+    <string name="bt_scan_with_card_io">Escanear con card.io</string>
+    <string name="bt_select_payment_method">Seleccionar forma de pago</string>
+    <string name="bt_sms_code">Código SMS</string>
+    <string name="bt_sms_code_required">El código SMS es obligatorio</string>
+    <string name="bt_sms_code_sent_to">Introduce el código SMS enviado al %s</string>
+    <string name="bt_unionpay_mobile_number_explanation">Puede que para esta tarjeta sea necesario inscribirse. Se enviará un código SMS a este número si es necesario.</string>
+    <string name="bt_unionpay_sms_code_invalid">Código SMS no válido</string>
+    <string name="bt_use_a_different_phone_number">Usar otro número de teléfono</string>
+    <string name="bt_vault_manager_delete_failure">No hemos podido eliminar la forma de pago en este momento. Inténtelo de nuevo más tarde.</string>
+    <string name="bt_vault_manager_title">Modificar guardado</string>
+    <string name="bt_year">Año</string>
+    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Habilitar"</string>
+    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> no funcionará hasta que no habilites Servicios de Google Play."</string>
+    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Habilita Servicios de Google Play"</string>
+    <string msgid="9115728400623041681" name="common_google_play_services_install_button">"Instalar"</string>
+    <string msgid="8179894293032530091" name="common_google_play_services_install_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> no se ejecutará si los Servicios de Google Play no están instalados en tu dispositivo."</string>
+    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Descargar Servicios de Google Play"</string>
+    <string msgid="4293541511340436975" name="common_google_play_services_notification_channel_name">"Disponibilidad Servicios de Google Play"</string>
+    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Error de Servicios de Google Play"</string>
+    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"La aplicación <ns1:g id="APP_NAME">%1$s</ns1:g> tiene problemas con los Servicios de Google Play. Vuelve a intentarlo."</string>
+    <string msgid="5501187292256987189" name="common_google_play_services_unsupported_text">"No es posible ejecutar la aplicación <ns1:g id="APP_NAME">%1$s</ns1:g> sin los Servicios de Google Play, que no son compatibles con tu dispositivo."</string>
+    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"Actualizar"</string>
+    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> no funcionará hasta que no actualices Servicios de Google Play."</string>
+    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Actualiza Servicios de Google Play"</string>
+    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> no se ejecutará hasta que finalice la actualización en curso de Servicios de Google Play."</string>
+    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"Se necesita una nueva versión de Servicios de Google Play. Se actualizará en breve."</string>
+    <string msgid="5201977337835724196" name="common_open_on_phone">"Abrir en teléfono"</string>
+    <string msgid="3441753203274453993" name="common_signin_button_text">"Iniciar sesión"</string>
+    <string msgid="669893613918351210" name="common_signin_button_text_long">"Iniciar sesión con Google"</string>
+    <string msgid="4133737464567140336" name="fcm_fallback_notification_channel_label">"Varias"</string>
+    <string name="fui_accessibility_logo">Logotipo de la aplicación</string>
+    <string name="fui_button_text_save">Guardar</string>
+    <string name="fui_button_text_send">Enviar</string>
+    <string name="fui_code_sent">Se ha enviado el código.</string>
+    <string name="fui_confirm_recovery_body">Sigue las instrucciones que te hemos enviado a %1$s para recuperar la contraseña.</string>
+    <string name="fui_continue_phone_login">Continuar</string>
+    <string name="fui_create_account_preamble_pp_only">Al tocar %1$s, indicas que aceptas la %2$s.</string>
+    <string name="fui_create_account_preamble_tos_and_pp">Al tocar %1$s, indicas que aceptas las %2$s y la %3$s.</string>
+    <string name="fui_create_account_preamble_tos_only">Al tocar %1$s, indicas que aceptas las %2$s.</string>
+    <string name="fui_done">Listo</string>
+    <string name="fui_email_account_creation_error">No se ha podido registrar la cuenta de correo electrónico</string>
+    <string name="fui_email_hint">Correo electrónico</string>
+    <string name="fui_enter_confirmation_code">Introduce el código de seis dígitos que hemos enviado a</string>
+    <string name="fui_error_email_does_not_exist">La dirección de correo electrónico no coincide con ninguna cuenta</string>
+    <string name="fui_error_invalid_password">La contraseña no es correcta.</string>
+    <string name="fui_error_quota_exceeded">No se ha podido verificar el número de teléfono</string>
+    <string name="fui_error_session_expired">Este código ya no es válido</string>
+    <string name="fui_error_too_many_attempts">Este número de teléfono se ha usado demasiadas veces</string>
+    <string name="fui_error_unknown">Se ha producido un error desconocido.</string>
+    <string name="fui_idp_name_facebook">Facebook</string>
+    <string name="fui_idp_name_google">Google</string>
+    <string name="fui_idp_name_twitter">Twitter</string>
+    <string name="fui_incorrect_code_dialog_body">El código es incorrecto. Vuelve a intentarlo.</string>
+    <string name="fui_incorrect_code_dialog_positive_button_text">Aceptar</string>
+    <string name="fui_invalid_email_address">La dirección de correo electrónico no es correcta</string>
+    <string name="fui_invalid_phone_number">Introduce un número de teléfono válido</string>
+    <string name="fui_missing_email_address">Para continuar, introduce tu dirección de correo electrónico</string>
+    <string name="fui_name_hint">Nombre y apellidos</string>
+    <string name="fui_next_default">Siguiente</string>
+    <string name="fui_password_hint">Contraseña</string>
+    <string name="fui_password_recovery_body">Recibe un correo electrónico con instrucciones sobre cómo cambiar la contraseña.</string>
+    <string name="fui_phone_hint">Número de teléfono</string>
+    <string name="fui_privacy_policy">Política de Privacidad</string>
+    <string name="fui_progress_dialog_checking_accounts">Buscando cuentas ya disponibles…</string>
+    <string name="fui_progress_dialog_loading">Cargando…</string>
+    <string name="fui_progress_dialog_sending">Enviando…</string>
+    <string name="fui_progress_dialog_signing_in">Iniciando sesión…</string>
+    <string name="fui_progress_dialog_signing_up">Registrando…</string>
+    <string name="fui_required_field">No puedes dejar este campo en blanco.</string>
+    <string name="fui_resend_code">Volver a enviar código</string>
+    <string name="fui_resend_code_in">Volver a enviar el código en 0:%02d</string>
+    <string name="fui_resending">Enviándolo de nuevo…</string>
+    <string name="fui_retrieving_sms">Recuperando SMS…</string>
+    <string name="fui_sign_in_default">Iniciar sesión</string>
+    <string name="fui_sign_in_with_email">Iniciar sesión con el correo electrónico</string>
+    <string name="fui_sign_in_with_facebook">Iniciar sesión con Facebook</string>
+    <string name="fui_sign_in_with_google">Iniciar sesión con Google</string>
+    <string name="fui_sign_in_with_phone">Iniciar sesión con el teléfono</string>
+    <string name="fui_sign_in_with_phone_number">Iniciar sesión con el número de teléfono</string>
+    <string name="fui_sign_in_with_twitter">Iniciar sesión con Twitter</string>
+    <string name="fui_sms_terms_of_service">Al tocar “%1$s”, podría enviarse un SMS. Es posible que se apliquen cargos de mensajería y de uso de datos.</string>
+    <string name="fui_terms_of_service">Condiciones de Servicio</string>
+    <string name="fui_title_confirm_recover_password">Consulta tu correo electrónico</string>
+    <string name="fui_title_recover_password_activity">Recuperar contraseña</string>
+    <string name="fui_title_register_email">Registrarse</string>
+    <string name="fui_trouble_signing_in">¿No puedes iniciar sesión?</string>
+    <string name="fui_verified">Verificado</string>
+    <string name="fui_verify_phone_number">Verificar número de teléfono</string>
+    <string name="fui_verify_phone_number_title">Introduce tu número de teléfono</string>
+    <string name="fui_verify_your_phone_title">Verificar el número de teléfono</string>
+    <string name="fui_verifying">Verificando…</string>
+    <string name="fui_welcome_back_email_header">¡Hola de nuevo!</string>
+    <string name="fui_welcome_back_idp_header">Ya tienes una cuenta</string>
+    <string name="fui_welcome_back_idp_prompt">Ya has usado %1$s. Para continuar, inicia sesión con %2$s.</string>
+    <string name="fui_welcome_back_password_prompt_body">Ya has usado %1$s para iniciar sesión. Introduce la contraseña de esa cuenta.</string>
+    <string msgid="730395136688082741" name="search_menu_title">"Buscar"</string>
+    <string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string>
+</resources>

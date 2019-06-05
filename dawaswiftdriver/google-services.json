@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "407115293525",
+    "firebase_url": "https://dawaswiftdriver.firebaseio.com",
+    "project_id": "dawaswiftdriver",
+    "storage_bucket": "dawaswiftdriver.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:407115293525:android:4c09043630d96a22",
+        "android_client_info": {
+          "package_name": "com.dev.dawaswiftdriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "407115293525-b22q97io20q7sqrpki7iptq66gktnjta.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dev.dawaswiftdriver",
+            "certificate_hash": "e300a51250f989fc28b5a91d2f92c45871ebe67a"
+          }
+        },
+        {
+          "client_id": "407115293525-b7dl5cli4l5nmhkgkg20hq4v0dop227d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArhBu7Usq_ZoHsA4G-M5wjAl6pZZr8LKU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "407115293525-b7dl5cli4l5nmhkgkg20hq4v0dop227d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
