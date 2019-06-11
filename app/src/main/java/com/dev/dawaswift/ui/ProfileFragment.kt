@@ -107,6 +107,11 @@ class ProfileFragment : Fragment() {
 
 
 
+        account.setOnClickListener{
+
+
+        }
+
 
 
     }

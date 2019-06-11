@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+                                                   android:clickable="true"
+                                                   android:focusable="true"
+                                                   android:foreground="?android:attr/selectableItemBackground"
+                                                   android:layout_weight="1"
+                                                   app:cardForegroundColor="@android:color/transparent"
+                                                   app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:layout_height="wrap_content">
+
+
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_weight="2"
+                          android:orientation="vertical"
+                          android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/name"
+                        android:textStyle="bold"
+                        android:textColor="@color/blacklight"
+                        android:textSize="15.7sp"
+                        android:fontFamily="@font/sfpro_display_semibold"
+                        android:text="Erick kogi Kimani"
+                />
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/address"
+                        android:textSize="13.7sp"
+                        android:fontFamily="@font/sfpro_display_semibold"
+                        android:text="14 Main Street Muhuri Road Kinoo kiambu Kenya"
+                />
+
+                <LinearLayout android:layout_width="wrap_content"
+                              android:orientation="vertical"
+                              android:visibility="gone"
+                              android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:orientation="horizontal"
+                                  android:layout_height="wrap_content">
+
+                        <TextView android:layout_width="0dp"
+                                  android:layout_weight="1"
+                                  android:text="Country :"
+                                  android:textSize="11.7sp"
+                                  android:fontFamily="@font/sfpro_display_semibold"
+                                  android:layout_height="wrap_content"/>
+                        <TextView android:layout_width="0dp"
+                                  android:layout_weight="1"
+                                  android:text="Kenya"
+                                  android:textSize="11.7sp"
+                                  android:fontFamily="@font/sfpro_display_semibold"
+                                  android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:orientation="horizontal"
+                                  android:layout_height="wrap_content">
+
+                        <TextView android:layout_width="0dp"
+                                  android:layout_weight="1"
+                                  android:text="State/County :"
+                                  android:textSize="11.7sp"
+                                  android:fontFamily="@font/sfpro_display_semibold"
+                                  android:layout_height="wrap_content"/>
+                        <TextView android:layout_width="0dp"
+                                  android:layout_weight="1"
+                                  android:text="Kiambu"
+                                  android:textSize="11.7sp"
+                                  android:fontFamily="@font/sfpro_display_semibold"
+                                  android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:orientation="horizontal"
+                                  android:layout_height="wrap_content">
+
+                        <TextView android:layout_width="0dp"
+                                  android:layout_weight="1"
+                                  android:text="Town :"
+                                  android:textSize="11.7sp"
+                                  android:fontFamily="@font/sfpro_display_semibold"
+                                  android:layout_height="wrap_content"/>
+                        <TextView android:layout_width="0dp"
+                                  android:layout_weight="1"
+                                  android:text="Kinoo"
+                                  android:textSize="11.7sp"
+                                  android:fontFamily="@font/sfpro_display_semibold"
+                                  android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:orientation="horizontal"
+                                  android:layout_height="wrap_content">
+
+                        <TextView android:layout_width="0dp"
+                                  android:layout_weight="1"
+                                  android:text="Street :"
+                                  android:textSize="11.7sp"
+                                  android:fontFamily="@font/sfpro_display_semibold"
+                                  android:layout_height="wrap_content"/>
+                        <TextView android:layout_width="match_parent"
+                                  android:layout_weight="1"
+                                  android:text="Muhuri Road"
+                                  android:textSize="11.7sp"
+                                  android:fontFamily="@font/sfpro_display_semibold"
+                                  android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:orientation="horizontal"
+                              android:layout_marginTop="10dp"
+                              android:layout_height="wrap_content">
+
+                    <TextView android:layout_width="wrap_content"
+                              android:text="P : "
+                              android:textSize="11.7sp"
+                              android:fontFamily="@font/sfpro_display_semibold"
+                              android:layout_height="wrap_content"/>
+                    <TextView android:layout_width="0dp"
+                              android:layout_weight="1"
+                              android:id="@+id/phone"
+                              android:text="0714406984"
+                              android:textSize="11.7sp"
+                              android:fontFamily="@font/sfpro_display_semibold"
+                              android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent"
+                              android:orientation="horizontal"
+                              android:layout_height="wrap_content">
+
+                    <TextView android:layout_width="wrap_content"
+                              android:text="E : "
+                              android:textSize="11.7sp"
+                              android:fontFamily="@font/sfpro_display_semibold"
+                              android:layout_height="wrap_content"/>
+                    <TextView android:layout_width="0dp"
+                              android:layout_weight="1"
+                              android:id="@+id/email"
+                              android:text="erickogi14@gmail.com"
+                              android:textSize="11.7sp"
+                              android:fontFamily="@font/sfpro_display_semibold"
+                              android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_weight="2"
+                          android:orientation="vertical"
+                          android:layout_height="wrap_content">
+
+                <TextView android:layout_width="wrap_content"
+                          android:text="Default"
+                          android:id="@+id/isdefault"
+
+                          android:textColor="@color/blacklight"
+                          android:textSize="15.7sp"
+                          android:fontFamily="@font/sfpro_display_semibold"
+                          android:layout_height="wrap_content"/>
+
+                <com.google.android.material.switchmaterial.SwitchMaterial android:layout_width="wrap_content"
+                        android:id="@+id/switch_shipping"
+                        app:switchPadding="6dp"
+                        android:text="Ship order to this address"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+
+            <TextView android:layout_width="wrap_content"
+                      android:text="EDIT"
+                      android:padding="20dp"
+                      android:textStyle="bold"
+                      android:textAllCaps="true"
+                      android:textColor="@color/colorAccent"
+                      android:layout_height="wrap_content"/>
+            <TextView android:layout_width="wrap_content"
+                      android:text="DELETE"
+                      android:padding="20dp"
+                      android:textStyle="bold"
+                      android:textAllCaps="true"
+                      android:textColor="@color/colorAccent"
+                      android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</com.google.android.material.card.MaterialCardView>

@@ -16,14 +16,19 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true">
-        <activity android:name=".ui.category.Categories"
-                  android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".ui.profile.ProfileActivity">
         </activity>
-        <activity android:name=".ui.productview.ProductView"
-                  android:theme="@style/AppTheme.NoActionBar">
+        <activity
+                android:name=".ui.category.Categories"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".ui.productsearch.ProductSearch"
-                  android:theme="@style/AppTheme.NoActionBar">
+        <activity
+                android:name=".ui.productview.ProductView"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".ui.productsearch.ProductSearch"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
                 android:name=".SplashActivity"

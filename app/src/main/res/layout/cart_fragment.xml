@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <TextView
+            android:id="@+id/titleItems"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+
+            android:text="Items"
+            android:textStyle="bold" />
+
+    <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_above="@+id/actions"
+            android:layout_below="@+id/titleItems"
+
+            app:cardUseCompatPadding="true">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerCartItems"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/actions"
+                android:layout_below="@+id/shippingCard"></androidx.recyclerview.widget.RecyclerView>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+            android:id="@+id/actions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+        <TextView
+                android:id="@+id/total"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="3dp"
+
+
+                android:layout_weight="1"
+                android:gravity="center"
+
+                android:text="Total  Ksh"
+
+                android:textAppearance="@style/Widget.MaterialComponents.Button.TextButton"
+                android:textColor="@color/colorAccent"
+
+                android:textSize="16.5sp"
+                android:textStyle="bold"
+
+
+        />
+
+        <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCheckOut"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="3dp"
+
+
+                android:layout_weight="1"
+                android:gravity="center"
+
+                android:text="Next"
+
+                android:textAppearance="@style/Widget.MaterialComponents.Button.TextButton"
+                android:textColor="@color/white"
+
+                android:textSize="16.5sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/colorAccent"
+                app:cornerRadius="5dp"
+
+                app:rippleColor="@color/colorPrimary"
+
+
+        />
+    </LinearLayout>
+
+</RelativeLayout>

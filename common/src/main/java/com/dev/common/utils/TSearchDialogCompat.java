@@ -46,8 +46,8 @@ public class TSearchDialogCompat<T extends Searchable> extends BaseSearchDialogC
         setContentView(view);
         Objects.requireNonNull(getWindow()).setBackgroundDrawableResource(android.R.color.transparent);
         setCancelable(true);
-        TextView txtTitle = (TextView) view.findViewById(ir.mirrajabi.searchdialog.R.id.txt_title);
-        final EditText searchBox = (EditText) view.findViewById(getSearchBoxId());
+        TextView txtTitle = view.findViewById(ir.mirrajabi.searchdialog.R.id.txt_title);
+        final EditText searchBox = view.findViewById(getSearchBoxId());
         txtTitle.setText(mTitle);
         searchBox.setHint(mSearchHint);
         view.findViewById(ir.mirrajabi.searchdialog.R.id.dummy_background)

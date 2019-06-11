@@ -164,14 +164,17 @@
 
                         android:background="@drawable/bg_gray"
                         android:orientation="horizontal"
+                        android:padding="2dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
                     <com.dev.common.utils.CircleImageView android:layout_width="60dp"
                                                           android:id="@+id/avatar"
 
+                                                          android:layout_margin="3dp"
+                                                          android:layout_gravity="center"
                                                           app:civ_border_width="2dp"
                                                           android:src="@drawable/imgplaceholder"
-                                                          android:layout_height="60dp"/>
+                                                          android:layout_height="55dp"/>
 
                     <com.google.android.material.textfield.TextInputLayout
                             android:id="@+id/til_pick_avatar"
