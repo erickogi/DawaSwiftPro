@@ -8,9 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.dev.agenda.Adapters.AddressItemViewHolder
+import com.dev.dawaswift.R
+import com.dev.dawaswift.models.Address.Address
 import com.dev.lishabora.Utils.OnAddressItemEvent
-import com.kogicodes.sokoni.R
-import com.kogicodes.sokoni.models.v1.Address.Address
 
 class AddressItemsAdapter(internal var main: Activity,
 
@@ -34,9 +34,9 @@ class AddressItemsAdapter(internal var main: Activity,
 
         val model = modelList!![position]
         holder.name.text = model.name
-        holder.phone.text = "" + model.phone
+        holder.phone.text = "" + model.mobile
         holder.location.text = "" + model.country + " -> " + model.state + " -> " + model.town
-        holder.radio.isChecked = model._default!!
+       // holder.radio.isChecked = model._default!!
 
 
     }

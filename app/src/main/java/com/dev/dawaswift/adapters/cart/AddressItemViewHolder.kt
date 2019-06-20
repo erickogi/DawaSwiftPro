@@ -5,15 +5,15 @@ import android.view.View
 import android.widget.RadioButton
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.dev.dawaswift.R
 import com.dev.lishabora.Utils.OnAddressItemEvent
-import com.kogicodes.sokoni.R
+import com.google.android.material.switchmaterial.SwitchMaterial
 import java.lang.ref.WeakReference
 
 
 class AddressItemViewHolder(itemView: View, listener: OnAddressItemEvent) : RecyclerView.ViewHolder(itemView), View.OnClickListener {
     override fun onClick(v: View?) {
-        if (v == edit)
-            listenerWeakReference.get()?.edit(adapterPosition)
+
         if (v == delete)
             listenerWeakReference.get()?.delete(adapterPosition)
         if (v == radio)
@@ -26,9 +26,9 @@ class AddressItemViewHolder(itemView: View, listener: OnAddressItemEvent) : Recy
     var name: TextView
     var phone: TextView
     var location: TextView
-    var edit: TextView
+    //var edit: TextView
     var delete: TextView
-    var radio: RadioButton
+    var radio: SwitchMaterial
 
 
     init {
@@ -36,12 +36,12 @@ class AddressItemViewHolder(itemView: View, listener: OnAddressItemEvent) : Recy
 
         name = itemView.findViewById(R.id.name)
         phone = itemView.findViewById(R.id.phone)
-        location = itemView.findViewById(R.id.location)
-        edit = itemView.findViewById(R.id.edit)
+        location = itemView.findViewById(R.id.address)
+       // edit = itemView.findViewById(R.id.edit)
         delete = itemView.findViewById(R.id.delete)
-        radio = itemView.findViewById(R.id.radioUse)
+        radio = itemView.findViewById(R.id.switch_shipping)
 
-        edit.setOnClickListener(this)
+       /// edit.setOnClickListener(this)
         delete.setOnClickListener(this)
         radio.setOnClickListener(this)
 

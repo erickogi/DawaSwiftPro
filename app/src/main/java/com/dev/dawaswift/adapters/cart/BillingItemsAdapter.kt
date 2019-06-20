@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.dev.agenda.Adapters.BillingItemViewHolder
+import com.dev.dawaswift.adapters.cart.BillingItemViewHolder
 import com.dev.lishabora.Utils.OnAddressItemEvent
 import com.kogicodes.sokoni.Config
 import com.kogicodes.sokoni.R

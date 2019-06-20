@@ -27,7 +27,7 @@ class CommonUtils {
         var haveConnectedWifi = false
         var haveConnectedMobile = false
 
-        val cm = activity.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager ?: return true
+        val cm = activity.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
         val netInfo = cm.allNetworkInfo
         for (ni in netInfo) {
             if (ni.typeName.equals("WIFI", ignoreCase = true))
