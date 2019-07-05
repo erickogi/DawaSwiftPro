@@ -66,6 +66,7 @@ class Validator {
             return valid
         }
 
+
         /**
          * Checks if the email is valid.
          * @param data - can be EditText or String

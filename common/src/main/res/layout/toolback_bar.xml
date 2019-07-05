@@ -31,6 +31,7 @@
                   android:layout_gravity="center_horizontal"
                   android:gravity="center_horizontal"
                   android:text=""
+                  android:textColor="@color/white"
                   android:id="@+id/txt_title"
                   android:layout_height="wrap_content"/>
     </LinearLayout>

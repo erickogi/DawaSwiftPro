@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">DawaSwift</string>
     <string name="file_provider" translatable="false">com.dev.dawaswift.fileprovider</string>
+    <string name="default_notification_channel_id">354</string>
 
+
+    <string name="money">Money &amp; Loan Services</string>
 </resources>

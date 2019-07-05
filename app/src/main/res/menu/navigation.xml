@@ -7,8 +7,8 @@
     <item
 
             android:id="@+id/navigation_categories"
-            android:icon="@drawable/ic_style_black_24dp"
-            android:title="Categories"/>
+            android:icon="@drawable/ic_bookmark_border_black_24dp"
+            android:title="Orders"/>
 
 
 

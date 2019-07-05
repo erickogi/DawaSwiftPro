@@ -9,16 +9,18 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-import com.bumptech.glide.Glide
-import com.dev.badge.BadgeView
 import com.dev.common.listeners.OnViewItemClick
 import com.dev.common.models.custom.Status
+import com.dev.common.ui.web.WebviewActivity
 import com.dev.common.utils.CommonUtils
 import com.dev.common.utils.viewUtils.SimpleDialogModel
 import com.dev.common.utils.viewUtils.ViewUtils
 import com.dev.dawaswift.R
 import com.dev.dawaswift.SplashActivity
 import com.dev.dawaswift.ui.MainViewModel
+import com.dev.dawaswift.ui.cart.delivery.CreateDelivery
+import com.dev.dawaswift.ui.chat.ChatActivity
+import com.dev.dawaswift.ui.profile.ProfileActivity
 import kotlinx.android.synthetic.main.profile.*
 
 class ProfileFragment : Fragment() {
@@ -80,7 +82,8 @@ class ProfileFragment : Fragment() {
                 email.text = it.email
 
                 if (it.avatar != null) {
-                    Glide.with(context!!).load(CommonUtils().decode(it.avatar!!)).into(avatar)
+
+                    CommonUtils().loadImage(context!!, it.avatar, avatar)
                 }
             }
         })
@@ -103,14 +106,53 @@ class ProfileFragment : Fragment() {
             }
 
         })
-        BadgeView(context).bindTarget(message_notifications).badgeText = "2"
-
-
-
-        account.setOnClickListener{
+        //BadgeView(context).bindTarget(message_notifications).badgeText = "2"
+        account.setOnClickListener {
+            startActivity(Intent(activity, ProfileActivity::class.java))
 
 
         }
+        billing.setOnClickListener {
+            startActivity(Intent(activity, ProfileActivity::class.java))
+
+
+        }
+        delivery.setOnClickListener {
+            startActivity(Intent(activity, CreateDelivery::class.java))
+
+
+        }
+        chats.setOnClickListener {
+            startActivity(Intent(activity, ChatActivity::class.java))
+
+
+        }
+
+
+
+        privacy_policy.setOnClickListener {
+            var intent: Intent = Intent(activity, WebviewActivity::class.java)
+            intent.putExtra("url", "http://resource.calista.co.ke/docs/privacypolicy.html")
+            startActivity(intent)
+
+
+        }
+        terms.setOnClickListener {
+            var intent: Intent = Intent(activity, WebviewActivity::class.java)
+            intent.putExtra("url", "http://resource.calista.co.ke/docs/terms.html")
+            startActivity(intent)
+
+
+        }
+        returnpolicy.setOnClickListener {
+
+            var intent: Intent = Intent(activity, WebviewActivity::class.java)
+            intent.putExtra("url", "http://resource.calista.co.ke/docs/returnpolicy.html")
+            startActivity(intent)
+
+
+        }
+
 
 
 

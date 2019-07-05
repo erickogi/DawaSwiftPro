@@ -2,7 +2,6 @@ package com.dev.dawaswift.ui
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,28 +13,31 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.dev.badge.BadgeView
 import com.dev.common.data.Constants
+import com.dev.common.models.ProductSearchAndFilter
 import com.dev.common.models.custom.Status
 import com.dev.common.utils.OnRecyclerViewItemClick
 import com.dev.common.utils.viewUtils.ViewUtils
 import com.dev.dawaswift.R
-import com.dev.dawaswift.SplashActivity
 import com.dev.dawaswift.adapters.category.CategoryAdapter
 import com.dev.dawaswift.adapters.healtharea.HealthAreaAdapter
 import com.dev.dawaswift.adapters.product.ProductAdapter
 import com.dev.dawaswift.models.Product.Product
-import com.dev.dawaswift.models.Product.ProductSearchAndFilter
-import com.dev.dawaswift.models.Product.ProductsResponse
 import com.dev.dawaswift.models.category.Category
 import com.dev.dawaswift.models.category.HealthArea
+import com.dev.dawaswift.ui.cart.CartActivity
 import com.dev.dawaswift.ui.category.Categories
+import com.dev.dawaswift.ui.money.MoneyActivity
+import com.dev.dawaswift.ui.pharmacies.Pharmacy
+import com.dev.dawaswift.ui.prescription.PrescriptionActivity
 import com.dev.dawaswift.ui.productsearch.ProductSearch
 import com.dev.dawaswift.ui.productview.ProductView
-import com.google.gson.Gson
 import kotlinx.android.synthetic.main.main_fragment.*
 import java.util.*
 
 
 class MainFragment : Fragment() {
+    lateinit var qBadgeView: BadgeView
+
 
     companion object {
         fun newInstance() = MainFragment()
@@ -53,14 +55,16 @@ class MainFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(MainViewModel::class.java)
-        BadgeView(context).bindTarget(cart).badgeText = "2"
+        qBadgeView = BadgeView(context)
+
+
 
         initCategories()
         initViewHealthAreas()
         initPopularProducts()
 
-        viewModel.fetchCategories()
-        viewModel.fetchHealthAreas()
+        // viewModel.fetchCategories()
+        //viewModel.fetchHealthAreas()
         viewModel.fetchPopularProducts(ProductSearchAndFilter())
 
 
@@ -76,7 +80,6 @@ class MainFragment : Fragment() {
                     it.exception
                 )
                 if (it.status == Status.SUCCESS) {
-                    Log.d("DATAONLOADMESSAGE",""+ Gson().toJson(it.data))
 
                     updateCategories(it.data?.data)
 
@@ -118,19 +121,110 @@ class MainFragment : Fragment() {
 
         })
 
+
+        viewModel.viewCart()
+        viewModel.observeCart().observe(this, androidx.lifecycle.Observer {
+
+
+            if (it.status == Status.SUCCESS) {
+
+                setCartCount(it.data?.data?.itemsCount)
+            } else {
+                setCartCount(0)
+
+            }
+
+
+        })
+
+
+
         txtViewCategories.setOnClickListener{
-            val intent=Intent(activity,Categories::class.java)
+
+            viewModel.saveSearch(ProductSearchAndFilter())
+            val intent = Intent(activity, Categories::class.java)
+            intent.putExtra(Constants().RESOURCE, Constants().CATEGORIES)
+            intent.putExtra(Constants().CATEGORYACTION, Constants().CALLPRODUCTSEARCH)
+            startActivity(intent)
+        }
+        categoriescard.setOnClickListener {
+
+            viewModel.saveSearch(ProductSearchAndFilter())
+            val intent = Intent(activity, Categories::class.java)
+            intent.putExtra(Constants().CATEGORYACTION, Constants().CALLPRODUCTSEARCH)
+
             intent.putExtra(Constants().RESOURCE,Constants().CATEGORIES)
             startActivity(intent)
         }
         txtViewHealthAreas.setOnClickListener{
+
+            viewModel.saveSearch(ProductSearchAndFilter())
             val intent=Intent(activity,Categories::class.java)
+            intent.putExtra(Constants().CATEGORYACTION, Constants().CALLPRODUCTSEARCH)
+
             intent.putExtra(Constants().RESOURCE,Constants().HEALTHAREAS)
             startActivity(intent)        }
 
-        search_view.setOnClickListener { startActivity(Intent(activity, ProductSearch::class.java)) }
+
+        healthAreascard.setOnClickListener {
 
 
+            viewModel.saveSearch(ProductSearchAndFilter())
+            val intent = Intent(activity, Categories::class.java)
+            intent.putExtra(Constants().CATEGORYACTION, Constants().CALLPRODUCTSEARCH)
+
+            intent.putExtra(Constants().RESOURCE, Constants().HEALTHAREAS)
+            startActivity(intent)
+        }
+
+
+
+
+        search_view.queryHint = "Search here"
+        search_view.setOnClickListener {
+            viewModel.saveSearch(ProductSearchAndFilter())
+            startActivity(Intent(activity, ProductSearch::class.java))
+        }
+        cart.setOnClickListener {
+            viewModel.saveSearch(ProductSearchAndFilter())
+
+            startActivity(Intent(activity, CartActivity::class.java))
+        }
+
+
+        pharmacies.setOnClickListener {
+            viewModel.saveSearch(ProductSearchAndFilter())
+
+            val intent = Intent(activity, Pharmacy::class.java)
+            intent.putExtra(Constants().PHARMACYACTION, Constants().TOPHARMACY)
+
+            intent.putExtra(Constants().RESOURCE, Constants().HEALTHAREAS)
+            startActivity(intent)
+
+
+        }
+
+
+        prescriprion.setOnClickListener {
+            viewModel.saveSearch(ProductSearchAndFilter())
+
+            startActivity(Intent(activity, PrescriptionActivity::class.java))
+        }
+
+
+        moneycard.setOnClickListener {
+            viewModel.saveSearch(ProductSearchAndFilter())
+
+            startActivity(Intent(activity, MoneyActivity::class.java))
+        }
+
+    }
+
+    private fun setCartCount(itemsCount: Int?) {
+        if (itemsCount == null) {
+            qBadgeView.bindTarget(cart).badgeText = ""
+        }
+        qBadgeView.bindTarget(cart).badgeText = "" + itemsCount
 
     }
 
@@ -227,6 +321,12 @@ class MainFragment : Fragment() {
         recyclerview_popular_products.adapter = productsAdapter
         productsAdapter!!.notifyDataSetChanged()
 
+    }
+
+
+    override fun onResume() {
+        super.onResume()
+        viewModel.viewCart()
     }
 
 

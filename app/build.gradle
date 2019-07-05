@@ -4,6 +4,10 @@ apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-android-extensions'
 
 android {
+    configurations {
+        all*.exclude group: 'com.google.guava', module: 'listenablefuture'
+    }
+
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.dev.dawaswift"
@@ -58,6 +62,23 @@ dependencies {
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.0.1'
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.0.1"
     implementation 'com.afollestad.material-dialogs:core:3.0.0-alpha3'
-    implementation 'com.google.firebase:firebase-core:16.0.9'
     implementation 'com.stepstone.stepper:material-stepper:4.3.1'
+
+
+    implementation 'com.google.firebase:firebase-core:17.0.0'
+
+    //compile 'com.google.android.gms:play-services-location:8.1.0'
+
+
+    // implementation 'com.google.android.libraries.places:places-compat:1.1.0'
+
+//    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+//    implementation 'com.google.android.gms:play-services-location:17.0.0'
+//    implementation 'com.google.android.gms:play-services-places:17.0.0'
+    // implementation 'com.google.android.libraries.places:places:1.1.0'
+    // implementation 'com.github.rtchagas:pingplacepicker:1.0.'
+
+    implementation 'com.google.firebase:firebase-messaging:19.0.1'
+    implementation 'com.schibstedspain.android:leku:6.2.1'
 }
+apply plugin: 'com.google.gms.google-services'

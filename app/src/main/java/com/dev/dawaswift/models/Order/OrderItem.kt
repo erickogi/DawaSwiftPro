@@ -1,14 +1,12 @@
 package com.dev.dawaswift.models.Order
 
+import com.dev.dawaswift.models.Product.Product
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 
-
-class OrderItem {
-    @SerializedName("id")
-    @Expose
-    var id: Int? = null
+class OrderItem : Serializable {
     @SerializedName("name")
     @Expose
     var name: String? = null
@@ -24,30 +22,44 @@ class OrderItem {
     @SerializedName("description")
     @Expose
     var description: String? = null
+
+
+    @SerializedName("id")
+    @Expose
+    var id: Int? = null
+    @SerializedName("code")
+    @Expose
+    var code: Int? = null
+    @SerializedName("orderDocNo")
+    @Expose
+    var orderDocNo: String? = null
+    @SerializedName("productId")
+    @Expose
+    var productId: Int? = null
+    @SerializedName("quantity")
+    @Expose
+    var quantity: Int? = null
     @SerializedName("price")
     @Expose
     var price: Int? = null
     @SerializedName("discountCash")
     @Expose
-    var discountCash: Int? = null
+    var discountCash: String? = null
     @SerializedName("discountPercentage")
     @Expose
-    var discountPercentage: Int? = null
+    var discountPercentage: String? = null
     @SerializedName("discountedPrice")
     @Expose
-    var discountedPrice: Int? = null
-
-    @SerializedName("quantity")
+    var discountedPrice: String? = null
+    @SerializedName("productModel")
     @Expose
-    var quantity: Int? = null
-
-
-    @SerializedName("totalPrice")
+    var productModel: Product? = null
+    @SerializedName("shopId")
     @Expose
-    var totalPrice: Int? = null
-
-
-
+    var shopId: Int? = null
+    @SerializedName("createdAt")
+    @Expose
+    var createdAt: String? = null
 
 
 

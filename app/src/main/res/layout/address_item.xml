@@ -22,6 +22,9 @@
 
 
             <LinearLayout android:layout_width="0dp"
+                          android:layout_marginStart="3dp"
+                          android:padding="2dp"
+                          android:layout_marginEnd="6dp"
                           android:layout_weight="2"
                           android:orientation="vertical"
                           android:layout_height="wrap_content">
@@ -34,7 +37,7 @@
                         android:textColor="@color/blacklight"
                         android:textSize="15.7sp"
                         android:fontFamily="@font/sfpro_display_semibold"
-                        android:text="Erick kogi Kimani"
+                        android:text=""
                 />
                 <TextView
                         android:layout_width="wrap_content"
@@ -42,7 +45,7 @@
                         android:id="@+id/address"
                         android:textSize="13.7sp"
                         android:fontFamily="@font/sfpro_display_semibold"
-                        android:text="14 Main Street Muhuri Road Kinoo kiambu Kenya"
+                        android:text=""
                 />
 
                 <LinearLayout android:layout_width="wrap_content"
@@ -137,30 +140,13 @@
                     <TextView android:layout_width="0dp"
                               android:layout_weight="1"
                               android:id="@+id/phone"
-                              android:text="0714406984"
+                              android:text=""
                               android:textSize="11.7sp"
                               android:fontFamily="@font/sfpro_display_semibold"
                               android:layout_height="wrap_content"/>
 
                 </LinearLayout>
-                <LinearLayout android:layout_width="match_parent"
-                              android:orientation="horizontal"
-                              android:layout_height="wrap_content">
 
-                    <TextView android:layout_width="wrap_content"
-                              android:text="E : "
-                              android:textSize="11.7sp"
-                              android:fontFamily="@font/sfpro_display_semibold"
-                              android:layout_height="wrap_content"/>
-                    <TextView android:layout_width="0dp"
-                              android:layout_weight="1"
-                              android:id="@+id/email"
-                              android:text="erickogi14@gmail.com"
-                              android:textSize="11.7sp"
-                              android:fontFamily="@font/sfpro_display_semibold"
-                              android:layout_height="wrap_content"/>
-
-                </LinearLayout>
 
             </LinearLayout>
             <LinearLayout android:layout_width="0dp"
@@ -172,6 +158,7 @@
                           android:text="Default"
                           android:id="@+id/isdefault"
 
+                          android:visibility="gone"
                           android:textColor="@color/blacklight"
                           android:textSize="15.7sp"
                           android:fontFamily="@font/sfpro_display_semibold"
@@ -180,7 +167,10 @@
                 <com.google.android.material.switchmaterial.SwitchMaterial android:layout_width="wrap_content"
                         android:id="@+id/switch_shipping"
                         app:switchPadding="6dp"
-                        android:text="Ship order to this address"
+
+                                                                           android:padding="2dp"
+                                                                           android:text="Use this"
+
                         android:layout_height="wrap_content"/>
             </LinearLayout>
 
@@ -191,6 +181,8 @@
 
             <TextView android:layout_width="wrap_content"
                       android:text="EDIT"
+                      android:visibility="gone"
+                      android:id="@+id/edit"
                       android:padding="20dp"
                       android:textStyle="bold"
                       android:textAllCaps="true"
@@ -198,10 +190,11 @@
                       android:layout_height="wrap_content"/>
             <TextView android:layout_width="wrap_content"
                       android:text="DELETE"
+                      android:id="@+id/delete"
                       android:padding="20dp"
                       android:textStyle="bold"
                       android:textAllCaps="true"
-                      android:textColor="@color/colorAccent"
+                      android:textColor="@color/red"
                       android:layout_height="wrap_content"/>
         </LinearLayout>
     </LinearLayout>

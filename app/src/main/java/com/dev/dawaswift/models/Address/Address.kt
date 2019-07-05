@@ -75,8 +75,9 @@ class Address {
     var longitude: String? = null
 
 
-
-
+    @SerializedName("isDefault")
+    @Expose
+    var isDefault: Boolean? = false
 
 
 

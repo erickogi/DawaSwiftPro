@@ -38,6 +38,8 @@ class PrefrenceManager(internal var _context: Context) {
     fun setFirebase(token: String) {
         editor.putString(FIREBASE_TOKEN, token)
         editor.commit()
+
+
     }
 
     fun getFirebase(): String {

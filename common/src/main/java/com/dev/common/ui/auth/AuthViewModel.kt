@@ -2,6 +2,7 @@ package com.dev.common.ui.auth
 
 
 import android.app.Application
+import android.net.Uri
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
@@ -10,6 +11,7 @@ import com.dev.common.data.repository.OauthRepository
 import com.dev.common.models.custom.Resource
 import com.dev.common.models.location.LocationSearchModel
 import com.dev.common.models.location.LocationsResponse
+import com.dev.common.models.oauth.ImageUploadResponse
 import com.dev.common.models.oauth.Oauth
 import com.dev.common.models.oauth.Profile
 
@@ -26,6 +28,7 @@ class AuthViewModel(application: Application) : AndroidViewModel(application) {
     private val createProfileObservable = MediatorLiveData<Resource<Oauth>>()
     private val updateProfileObservable = MediatorLiveData<Resource<Oauth>>()
     private val updatePasswordObservable = MediatorLiveData<Resource<Oauth>>()
+    private val uploadImageObservable = MediatorLiveData<Resource<ImageUploadResponse>>()
 
 
     private val countiesObservable = MediatorLiveData<Resource<LocationsResponse>>()
@@ -34,6 +37,11 @@ class AuthViewModel(application: Application) : AndroidViewModel(application) {
 
 
     init {
+        uploadImageObservable.addSource(oauthRepository.uploadImageObservable) { data ->
+            uploadImageObservable.setValue(
+                data
+            )
+        }
 
 
         signInObservable.addSource(oauthRepository.signInObserver) { data -> signInObservable.setValue(data) }
@@ -121,6 +129,14 @@ class AuthViewModel(application: Application) : AndroidViewModel(application) {
         return confirmOtpObservable
     }
 
+    fun observeUploadImage(): LiveData<Resource<ImageUploadResponse>> {
+        return uploadImageObservable
+    }
+
+    fun uploadImage(uri: Uri) {
+        oauthRepository.uploadImage(uri)
+
+    }
 
     //UPDATE PROFILE
     fun updateProfile(parameters: Oauth) {

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pharmacy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:background="@color/colorPrimary"
+                  android:id="@+id/search_bar"
+                  android:gravity="center"
+                  android:orientation="horizontal"
+
+                  android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="wrap_content"
+                      android:visibility="visible"
+                      android:gravity="center_vertical"
+
+                      android:layout_marginTop="6dp"
+                      android:orientation="horizontal"
+                      android:layout_marginBottom="6dp"
+                      android:padding="6dp"
+                      android:id="@+id/linear_back"
+                      android:layout_height="wrap_content">
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_marginEnd="6dp"
+                       android:id="@+id/img_back"
+                       android:tint="@color/white"
+                       android:src="@drawable/ic_arrow_back_black_24dp"
+                       android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent"
+                                                           app:cardUseCompatPadding="true"
+
+                                                           android:layout_marginStart="12dp"
+                                                           android:layout_marginEnd="12dp"
+                                                           app:cardCornerRadius="5dp"
+                                                           app:cardElevation="10dp"
+                                                           android:layout_height="wrap_content">
+
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                <androidx.appcompat.widget.SearchView
+                        android:id="@+id/search_view"
+                        android:lines="1"
+                        android:tag="sticky"
+                        android:theme="@style/AppTheme.Toolbar"
+
+                        android:layout_marginEnd="4dp"
+                        android:layout_width="match_parent"
+                        app:queryBackground="@android:color/transparent"
+                        app:queryHint="Search Pharmacy"
+
+                        app:iconifiedByDefault="false"
+                        android:layout_height="wrap_content"
+                />
+            </RelativeLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_below="@+id/search_bar"
+                  android:orientation="vertical"
+                  android:layout_height="match_parent">
+
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent"
+                                                           app:cardUseCompatPadding="true"
+
+                                                           android:layout_below="@+id/search_bar"
+
+                                                           android:layout_marginTop="4dp"
+                                                           android:layout_marginStart="4dp"
+                                                           android:layout_marginEnd="4dp"
+                                                           android:id="@+id/location_card"
+                                                           android:layout_height="wrap_content">
+
+
+            <RelativeLayout android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="8dp"
+                            android:background="@drawable/bg_gray"
+                            android:layout_height="match_parent">
+                <ImageView android:layout_width="wrap_content"
+                           android:layout_gravity="center_vertical"
+                           android:id="@+id/loc_img"
+                           android:layout_centerVertical="true"
+                           android:src="@drawable/ic_location_on_black_24dp"
+                           android:layout_height="wrap_content"/>
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:orientation="vertical"
+                              android:layout_toEndOf="@+id/loc_img"
+
+                              android:layout_toStartOf="@+id/checkbox"
+                              android:layout_centerVertical="true"
+                              android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content"
+                              android:textSize="13sp"
+                              android:fontFamily="@font/sf_pro_display_medium"
+
+                              android:id="@+id/location_label"
+                              android:layout_marginStart="4dp"
+                              android:textStyle="bold"
+                              android:text="Search Near Me : "
+                              android:layout_height="wrap_content"/>
+                    <TextView android:layout_width="match_parent"
+                              android:textSize="13sp"
+                              android:fontFamily="@font/sf_pro_display_medium"
+
+                              android:id="@+id/txt_location"
+
+                              android:textColor="@color/black"
+                              android:layout_marginStart="4dp"
+                              android:textStyle="bold"
+                              android:text=" "
+                              android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+                <CheckBox android:layout_width="wrap_content"
+                          android:layout_alignParentEnd="true"
+                          android:id="@+id/checkbox"
+                          android:layout_height="wrap_content"/>
+
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:padding="8dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:id="@+id/recyclerview_categories"
+                android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+    <include layout="@layout/loading_avi"/>
+
+</RelativeLayout>

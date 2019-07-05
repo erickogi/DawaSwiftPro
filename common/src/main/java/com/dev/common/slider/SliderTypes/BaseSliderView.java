@@ -5,9 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import androidx.annotation.Nullable;
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.bumptech.glide.request.RequestOptions;
 import com.dev.common.R;
 import com.dev.common.utils.CommonUtils;
 import org.jetbrains.annotations.NotNull;
@@ -213,8 +210,11 @@ public abstract class BaseSliderView implements MyImageRequestListener.Callback{
 //                    .error(R.drawable.ic_sentiment_dissatisfied)
 //                    .centerCrop().diskCacheStrategy(DiskCacheStrategy.RESOURCE)).listener(new MyImageRequestListener(this)).into(targetImageView);
 
-            new CommonUtils().loadImage(getContext(),mUrl,targetImageView);
+            new CommonUtils().loadImage(getContext(), "http://resource.calista.co.ke/repo/2/" + mUrl, targetImageView);
 
+            if (v.findViewById(R.id.loading_bar) != null) {
+                v.findViewById(R.id.loading_bar).setVisibility(View.INVISIBLE);
+            }
         } else if (mFile != null) {
             //rq = p.load(mFile);
 
@@ -234,9 +234,9 @@ public abstract class BaseSliderView implements MyImageRequestListener.Callback{
            // new CommonUtils().loadImage(getContext(),mUrl,targetImageView);
 
 
-            if (v.findViewById(R.id.loading_bar) != null) {
-                v.findViewById(R.id.loading_bar).setVisibility(View.INVISIBLE);
-            }
+//            if (v.findViewById(R.id.loading_bar) != null) {
+//                v.findViewById(R.id.loading_bar).setVisibility(View.INVISIBLE);
+//            }
         } else {
             return;
         }

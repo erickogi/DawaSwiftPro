@@ -19,7 +19,7 @@ object RequestService {
         .setLenient()
         .create()
 
-    public fun getRetrofit(token: String, baseUrl: String): Retrofit {
+    fun getRetrofit(token: String, baseUrl: String): Retrofit {
         return Retrofit.Builder()
             .baseUrl(baseUrl)
             .addConverterFactory(GsonConverterFactory.create(gson))
@@ -27,7 +27,7 @@ object RequestService {
             .build()
     }
 
-    public fun getRetrofit(baseUrl: String, consumerKey: String, secretKey: String): Retrofit {
+    fun getRetrofit(baseUrl: String, consumerKey: String, secretKey: String): Retrofit {
         return Retrofit.Builder()
             .baseUrl(baseUrl)
             .addConverterFactory(GsonConverterFactory.create(gson))
@@ -46,6 +46,15 @@ object RequestService {
         }.build()
     }
 
+    fun getImageService(token: String?): EndPoints {
+        if (token == null) {
+            return getRetrofit("", BaseUrls().IMAGE).create(EndPoints::class.java)
+
+        } else {
+            return getRetrofit(token, BaseUrls().IMAGE).create(EndPoints::class.java)
+
+        }
+    }
 
     fun getService(token: String?): EndPoints {
         if (token == null) {
@@ -59,10 +68,10 @@ object RequestService {
 
     fun getService(token: String?, baseUrl: String): EndPoints {
         if (token == null) {
-            return getRetrofit("", BaseUrls().MOCK).create(EndPoints::class.java)
+            return getRetrofit("", BaseUrls().LIVE).create(EndPoints::class.java)
 
         } else {
-            return getRetrofit(token, BaseUrls().MOCK).create(EndPoints::class.java)
+            return getRetrofit(token, BaseUrls().LIVE).create(EndPoints::class.java)
 
         }
     }

@@ -2,69 +2,59 @@ package com.dev.dawaswift.models.chat
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 
+class Message : Serializable {
 
-class Message {
     @SerializedName("id")
     @Expose
-    var id: String? = null
-
-    @SerializedName("senderId")
+    var id: Int? = null
+    @SerializedName("code")
     @Expose
-    var senderId: String? = null
-
-    @SerializedName("senderName")
+    var code: Int? = null
+    @SerializedName("pharmacyId")
     @Expose
-    var senderName: String? = null
-
-    @SerializedName("senderImage")
+    var pharmacyId: Int? = null
+    @SerializedName("pharmacyName")
     @Expose
-    var senderImage: String? = null
-
-
-
-    @SerializedName("receiverId")
+    var pharmacyName: String? = null
+    @SerializedName("pharmacyImage")
     @Expose
-    var receiverId: String? = null
-
-    @SerializedName("receiverName")
+    var pharmacyImage: String? = null
+    @SerializedName("custId")
     @Expose
-    var receiverName: String? = null
-
-    @SerializedName("receiverImage")
+    var custId: Int? = null
+    @SerializedName("firebasetoken")
     @Expose
-    var receiverImage: String? = null
-
+    var firebasetoken: String? = null
     @SerializedName("message")
     @Expose
     var message: String? = null
-
-    @SerializedName("keyCode")
+    @SerializedName("hasResource")
     @Expose
-    var keyCode: String? = null
-
+    var hasResource: String? = null
+    @SerializedName("resourceId")
+    @Expose
+    var resourceId: String? = null
     @SerializedName("isRead")
     @Expose
     var isRead: String? = null
-
-
-    @SerializedName("dateTimeSent")
+    @SerializedName("sender")
     @Expose
-    var dateTimeSent: String? = null
-
-
-    @SerializedName("dateTimeRead")
+    var sender: String? = null
+    @SerializedName("phamarcistId")
     @Expose
-    var dateTimeRead: String? = null
-
-
-
-
-
-
-
-
+    var phamarcistId: String? = null
+    @SerializedName("image")
+    @Expose
+    var image: String? = null
+    @SerializedName("createdOn")
+    @Expose
+    var createdOn: String? = null
+    @SerializedName("updatedOn")
+    @Expose
+    var updatedOn: String? = null
 
 
 }

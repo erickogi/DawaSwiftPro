@@ -58,6 +58,9 @@ class LocationSearchModel {
     var address: String? = null
     var knownName: String? = null
 
+    var lat: String? = null
+    var lon: String? = null
+
 
 
 

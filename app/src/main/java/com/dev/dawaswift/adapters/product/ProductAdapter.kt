@@ -58,7 +58,7 @@ class ProductAdapter(
         }
 
 
-        holder.ratingtext.text = "" + model.rating + ""
+        holder.ratingtext.text = "" + CommonUtils().roundOff(model.rating) + ""
         holder.ratingbar.rating = model.rating?.toFloat()!!
 
 

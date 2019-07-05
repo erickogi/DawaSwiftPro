@@ -8,11 +8,16 @@
 
 import com.dev.common.models.location.LocationSearchModel
 import com.dev.common.models.location.LocationsResponse
+import com.dev.common.models.oauth.ImageUploadResponse
 import com.dev.common.models.oauth.Oauth
 import com.dev.common.models.oauth.Profile
+import okhttp3.MultipartBody
+import okhttp3.RequestBody
 import retrofit2.Call
 import retrofit2.http.Body
+import retrofit2.http.Multipart
 import retrofit2.http.POST
+import retrofit2.http.Part
 
 /**
  * @author kogi
@@ -73,6 +78,16 @@ interface EndPoints {
 
     @POST("wards.json")
     fun getWards(@Body locationSearchModel: LocationSearchModel): Call<LocationsResponse>
+
+
+    @Multipart
+    @POST("v3.php")
+    fun upload(
+        @Part("appId") appId: Int,
+        @Part("file") re: RequestBody,
+        @Part file: MultipartBody.Part
+    ): Call<ImageUploadResponse>
+
 
 
 }

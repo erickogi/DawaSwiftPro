@@ -111,6 +111,17 @@ class Profile : Serializable {
     var avatarUri: Uri? = null
 
 
+    @SerializedName("lat")
+    @Expose
+    var lat: String? = null
+
+
+    @SerializedName("lon")
+    @Expose
+    var lon: String? = null
+
+
+
     @Ignore
     constructor(firstName: String?, lastName: String?, email: String?, mobile: String?, password: String?) {
         this.firstName = firstName

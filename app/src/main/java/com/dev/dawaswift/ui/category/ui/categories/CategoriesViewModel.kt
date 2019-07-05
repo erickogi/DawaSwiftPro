@@ -4,14 +4,13 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
-import androidx.lifecycle.ViewModel
 import com.dev.common.data.repository.OauthRepository
+import com.dev.common.models.ProductSearchAndFilter
 import com.dev.common.models.custom.Resource
 import com.dev.common.models.oauth.Oauth
 import com.dev.common.models.oauth.Profile
 import com.dev.dawaswift.models.Product.Product
 import com.dev.dawaswift.models.Product.ProductResponse
-import com.dev.dawaswift.models.Product.ProductSearchAndFilter
 import com.dev.dawaswift.models.Product.ProductsResponse
 import com.dev.dawaswift.models.category.CategoriesResponse
 import com.dev.dawaswift.models.category.HealthAreasResponse
@@ -157,5 +156,16 @@ class CategoriesViewModel (application: Application) : AndroidViewModel(applicat
         healthAreaRepository.getHealthAreas()
     }
 
+    fun saveSearch(searchAndFilter: ProductSearchAndFilter) {
+        productsRepository.saveSearch(searchAndFilter)
+    }
+
+    fun getSearch(): LiveData<ProductSearchAndFilter> {
+        return productsRepository.getSearch()
+    }
+
+    fun fetchSearch(): ProductSearchAndFilter {
+        return productsRepository.fetchSearch()
+    }
 
 }

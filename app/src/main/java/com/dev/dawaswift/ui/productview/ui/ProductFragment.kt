@@ -8,12 +8,13 @@ import android.view.ViewGroup
 import android.widget.RatingBar
 import androidx.fragment.app.Fragment
 import com.dev.common.data.Constants
-import com.dev.dawaswift.R
-import com.dev.dawaswift.models.Product.Product
 import com.dev.common.slider.Animations.DescriptionAnimation
 import com.dev.common.slider.SliderLayout
 import com.dev.common.slider.SliderTypes.BaseSliderView
 import com.dev.common.slider.SliderTypes.TextSliderView
+import com.dev.common.utils.CommonUtils
+import com.dev.dawaswift.R
+import com.dev.dawaswift.models.Product.Product
 import kotlinx.android.synthetic.main.product_view_fragment.*
 
 class ProductFragment : Fragment(), BaseSliderView.OnSliderClickListener, RatingBar.OnRatingBarChangeListener, View.OnClickListener {
@@ -76,10 +77,10 @@ class ProductFragment : Fragment(), BaseSliderView.OnSliderClickListener, Rating
         if (data != null) {
 
             title.text = data.name
-            ratingtext.text = data.rating
+            ratingtext.text = "" + CommonUtils().roundOff(data.rating) + ""
             cutprice.text = "Ksh" + data.price
             price.text = "Ksh" + data.discountedPrice
-            description.text = "Ksh" + data.description
+            description.text = "" + data.description
             cutprice.paintFlags = cutprice.paintFlags or Paint.STRIKE_THRU_TEXT_FLAG
 
 

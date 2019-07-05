@@ -4,26 +4,32 @@ import NetworkUtils
 import RequestService
 import android.app.Application
 import android.content.Context
+import android.net.Uri
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import com.dev.common.R
 import com.dev.common.data.local.AppDatabase
 import com.dev.common.data.local.PrefrenceManager
 import com.dev.common.data.local.daos.ProfileDao
 import com.dev.common.models.custom.Resource
+import com.dev.common.models.oauth.ImageUploadResponse
 import com.dev.common.models.oauth.Oauth
 import com.dev.common.models.oauth.Profile
 import com.dev.common.utils.AgriException
 import com.dev.common.utils.ErrorUtils
 import com.dev.common.utils.FailureUtils
-import com.dev.common.R
 import com.google.gson.Gson
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
+import okhttp3.MediaType
+import okhttp3.MultipartBody
+import okhttp3.RequestBody
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import java.io.File
 
 class OauthRepository(application: Application) {
     private val profileDao: ProfileDao
@@ -39,6 +45,7 @@ class OauthRepository(application: Application) {
     val updateProfileObservable = MutableLiveData<Resource<Oauth>>()
     val createProfileObservable = MutableLiveData<Resource<Oauth>>()
     val switchProfileObservable = MutableLiveData<Resource<Oauth>>()
+    val uploadImageObservable = MutableLiveData<Resource<ImageUploadResponse>>()
 
 
 
@@ -265,7 +272,7 @@ class OauthRepository(application: Application) {
 
 
     private fun excuteUpdateAccount(parameters: Oauth) {
-        Log.d("CallOnStart", Gson().toJson(parameters))
+        Log.d("CallOnStart", "UPDATE ACCOUNT  " + Gson().toJson(parameters))
 
         GlobalScope.launch(context = Dispatchers.Main) {
             val call = RequestService.getService(parameters.profile?.token).updateAccount(parameters.profile as Profile)
@@ -301,6 +308,37 @@ class OauthRepository(application: Application) {
         }
     }
 
+    private fun excuteUpLoadImage(parameters: Uri) {
+        var file = File(getPath(parameters))
+        val requestFile = RequestBody.create(MediaType.parse("multipart/form-data"), file)
+
+        val body = MultipartBody.Part.createFormData(
+            "methodName[headerData][relation][relative_image]",
+            file.name,
+            requestFile
+        )
+
+
+        // Parsing any Media type file
+        val requestBody = RequestBody.create(MediaType.parse("*/*"), file)
+        val fileToUpload = MultipartBody.Part.createFormData("file", file.name, requestBody)
+        val filename = RequestBody.create(MediaType.parse("text/plain"), file.name)
+
+
+        GlobalScope.launch(context = Dispatchers.Main) {
+            val call = RequestService.getImageService("").upload(1, filename, fileToUpload)
+            call.enqueue(object : Callback<ImageUploadResponse> {
+                override fun onFailure(call: Call<ImageUploadResponse>?, t: Throwable?) {
+                    onFailure(Observable.UPLOAD_IMAGE, t, FailureUtils().parseError(call, t))
+                }
+
+                override fun onResponse(call: Call<ImageUploadResponse>?, response: Response<ImageUploadResponse>?) {
+                    onResponseImage(response, Observable.UPLOAD_IMAGE)
+                }
+            })
+        }
+    }
+
 
     private fun setNetworkError(observable: Observable) {
         setIsError(
@@ -319,26 +357,35 @@ class OauthRepository(application: Application) {
         if (response != null) {
             if (response.isSuccessful) {
                 if (response.body()?.statusCode!! > 0 && response.body()?.success!!) {
-                    if (observable == Observable.UPDATE_PASSWORD) {
+                    setIsSuccesful(observable, response.body()!!)
 
-                        if (response.body() != null && response.body()?.profile != null) {
-                            setIsSuccesful(observable, response.body()!!)
-
-                        } else {
-                            setIsError(
-                                observable,
-                                "Failed",
-                                AgriException("Password reset was unsuccessful, please contact our help center")
-                            )
-
-                        }
-                    } else {
-                        setIsSuccesful(observable, response.body()!!)
-                    }
-
-                    if (observable == Observable.CREATE_PROFILE || observable == Observable.UPDATE_PROFILE || observable == Observable.SWITCH_PROFILE) {
+                    if (observable == Observable.CREATE_PROFILE || observable == Observable.UPDATE_PROFILE) {
                         saveProfile(response.body() as Oauth)
                     }
+                } else {
+                    response.body()?.statusMessage?.let {
+                        setIsError(
+                            observable, it,
+                            AgriException(it, it, response.body()?.errors)
+                        )
+                    }
+                }
+            } else {
+                setIsError(observable, "", ErrorUtils().parseError(response))
+            }
+        } else {
+            setIsError(observable, "", AgriException("Error Loading Data"))
+        }
+    }
+
+    private fun onResponseImage(response: Response<ImageUploadResponse>?, observable: Observable) {
+        Log.d("CallOnResponse", "" + observable.name + " ----- " + Gson().toJson(response))
+        if (response != null) {
+            if (response.isSuccessful) {
+                if (response.body()?.statusCode!! > 0 && response.body()?.success!!) {
+                    setIsSuccesful(observable, response.body()!!)
+
+
                 } else {
                     response.body()?.statusMessage?.let {
                         setIsError(
@@ -367,6 +414,8 @@ class OauthRepository(application: Application) {
             Observable.VERIFY_EMAIL -> verifyEmailObserve.postValue(Resource.loading(null))
             Observable.UPDATE_PASSWORD -> updatePasswordObservable.postValue(Resource.loading(null))
             Observable.SWITCH_PROFILE -> switchProfileObservable.postValue(Resource.loading(null))
+            Observable.UPLOAD_IMAGE -> uploadImageObservable.postValue(Resource.loading(null))
+
         }
     }
 
@@ -381,6 +430,8 @@ class OauthRepository(application: Application) {
             Observable.VERIFY_EMAIL -> verifyEmailObserve.postValue(Resource.success(data as Oauth))
             Observable.UPDATE_PASSWORD -> updatePasswordObservable.postValue(Resource.success(data as Oauth))
             Observable.SWITCH_PROFILE -> switchProfileObservable.postValue(Resource.success(data as Oauth))
+            Observable.UPLOAD_IMAGE -> uploadImageObservable.postValue(Resource.success(data as ImageUploadResponse))
+
         }
 
     }
@@ -396,6 +447,8 @@ class OauthRepository(application: Application) {
             Observable.VERIFY_EMAIL -> verifyEmailObserve.postValue(Resource.error(message, null, exception))
             Observable.UPDATE_PASSWORD -> updatePasswordObservable.postValue(Resource.error(message, null, exception))
             Observable.SWITCH_PROFILE -> switchProfileObservable.postValue(Resource.error(message, null, exception))
+            Observable.UPLOAD_IMAGE -> uploadImageObservable.postValue(Resource.error(message, null, exception))
+
         }
     }
 
@@ -407,6 +460,8 @@ class OauthRepository(application: Application) {
         CONFIRM_OTP,
         UPDATE_PROFILE,
         UPDATE_PASSWORD,
+        UPLOAD_IMAGE,
+
         SWITCH_PROFILE,
         CREATE_PROFILE
     }
@@ -414,6 +469,10 @@ class OauthRepository(application: Application) {
     fun saveProfile(data: Oauth) {
         Log.d("AgriDb", Gson().toJson(data))
         profileDao.delete()
+        if (data.profile?.firebaseToken == "" || data.profile?.firebaseToken == null) {
+            data.profile?.firebaseToken = prefrenceManager.getFirebase()
+            // updateAccount(data)
+        }
         data.profile?.let { profileDao.insertProfile(it) }
         prefrenceManager.saveProfile(data)
     }
@@ -434,7 +493,30 @@ class OauthRepository(application: Application) {
         prefrenceManager.setLoginStatus(0)
         prefrenceManager.clearUser()
         profileDao.delete()
+
+
     }
 
+    fun getPath(uri: Uri): String? {
+//        val projection = arrayOf(MediaStore.Images.Media.DATA)
+//        val cursor = context.contentResolver.query(uri, projection, null, null, null) ?: return null
+//        val columnIndex = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA)
+//        cursor.moveToFirst()
+//        val s = cursor.getString(columnIndex)
+//        cursor.close()
+        return uri.path
+    }
+
+    fun uploadImage(uri: Uri) {
+        setIsLoading(Observable.UPLOAD_IMAGE)
+        if (NetworkUtils.isConnected(context)) {
+            excuteUpLoadImage(uri)
+        } else {
+            setNetworkError(Observable.UPLOAD_IMAGE)
+
+        }
+
+
+    }
 
 }

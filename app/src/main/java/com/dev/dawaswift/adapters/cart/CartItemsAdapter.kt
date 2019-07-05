@@ -7,24 +7,25 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
+import com.agriclinic.common.adapters.cart.CartItemViewHolder
 import com.dev.common.utils.CommonUtils
 import com.dev.dawaswift.R
-import com.dev.dawaswift.adapters.cart.CartItemViewHolder
-import com.dev.dawaswift.models.Cart.CartItem
+import com.dev.dawaswift.models.cart.CartItem
 import com.dev.lishabora.Utils.OnCartItemEvent
 
-class CartItemsAdapter(private val type: Int, internal var main: Activity,
+class CartItemsAdapter(
+    private val type: Int, internal var main: Activity,
 
-                       private val context: Context,
-                       private var modelList: List<CartItem>?,
-                       private val recyclerListener: OnCartItemEvent) : RecyclerView.Adapter<CartItemViewHolder>() {
+    private val context: Context,
+    private var modelList: List<CartItem>?,
+    private val recyclerListener: OnCartItemEvent
+) : RecyclerView.Adapter<CartItemViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CartItemViewHolder {
         var itemView: View? = null
 
-          itemView = LayoutInflater.from(parent.context).inflate(R.layout.cart_item, parent, false)
+        itemView = LayoutInflater.from(parent.context).inflate(R.layout.cart_item, parent, false)
 
 
 
@@ -37,14 +38,14 @@ class CartItemsAdapter(private val type: Int, internal var main: Activity,
 
         val model = modelList!![position]
         holder.name.text = "Item  : " + model.name
-        holder.price.text = "Price : " + model.discountedPrice
+        holder.price.text = "Price : " + model.price
         if (type == 0) {
             holder.quantity.text = "" + model.quantity
         } else {
             holder.quantity.text = "Quantity :" + model.quantity
 
         }
-        CommonUtils().loadImageUrl(context,model.image,holder.image)
+        CommonUtils().loadImage(context, model.image, holder.image)
 
 
     }

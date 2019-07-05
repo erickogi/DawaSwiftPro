@@ -7,16 +7,16 @@
  */
 
 package com.dev.dawaswift.adapters.product
+
+import android.graphics.Paint
 import android.view.View
 import android.widget.ImageView
-import android.widget.LinearLayout
 import android.widget.RatingBar
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.dev.common.utils.OnRecyclerViewItemClick
 import com.dev.dawaswift.R
 import com.google.android.material.card.MaterialCardView
-
 import java.lang.ref.WeakReference
 
 
@@ -30,17 +30,23 @@ class ProductItemHolder(itemView: View, lst: OnRecyclerViewItemClick) : Recycler
     var itemVew: View
     var productItem: MaterialCardView=itemView.findViewById(R.id.linear_product)
 
-    init {
-        this.productItem.setOnClickListener(this)
-        this.itemVew = itemView
-        this.itemVew.setOnClickListener(this)
-    }
-
     var productname: TextView = itemView.findViewById(R.id.productname)
     var image: ImageView = itemView.findViewById(R.id.image)
     var productprice: TextView = itemView.findViewById(R.id.productprice)
     var discount: TextView = itemView.findViewById(R.id.discount)
     var cutprice: TextView = itemView.findViewById(R.id.cutprice)
+
+
+    init {
+        this.productItem.setOnClickListener(this)
+        this.itemVew = itemView
+        this.itemVew.setOnClickListener(this)
+
+        ///  cutprice = itemView.findViewById(R.id.cutprice)
+
+        cutprice.paintFlags = cutprice.paintFlags or Paint.STRIKE_THRU_TEXT_FLAG
+
+    }
 
 
 

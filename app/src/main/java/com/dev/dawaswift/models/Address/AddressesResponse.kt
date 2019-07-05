@@ -1,9 +1,7 @@
 package com.dev.dawaswift.models.Address
 
-import com.dev.dawaswift.models.Address.Address
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
-
 
 
 class AddressesResponse {
@@ -14,7 +12,7 @@ class AddressesResponse {
     var success: Boolean? = null
     @SerializedName("errors")
     @Expose
-    var errors: Any? = null
+    var errors: List<String>? = null
     @SerializedName("status_code")
     @Expose
     var statusCode: Int? = null

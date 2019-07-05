@@ -9,7 +9,6 @@ import androidx.annotation.IdRes;
 import androidx.annotation.LayoutRes;
 import androidx.annotation.Nullable;
 import com.dev.common.R;
-import com.dev.common.utils.viewUtils.TModelAdapter;
 import ir.mirrajabi.searchdialog.core.BaseSearchDialogCompat;
 import ir.mirrajabi.searchdialog.core.FilterResultListener;
 import ir.mirrajabi.searchdialog.core.SearchResultListener;

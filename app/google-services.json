@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "185225155339",
+    "firebase_url": "https://dawasift.firebaseio.com",
+    "project_id": "dawasift",
+    "storage_bucket": "dawasift.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:185225155339:android:c23fac2264f994b3",
+        "android_client_info": {
+          "package_name": "com.dev.dawaswift"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "185225155339-2o5fuonu52oja3ilg0bdsu055a6rcs9d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dev.dawaswift",
+            "certificate_hash": "61fc2a678f55095480a6a9201ef04d42cf7b73ac"
+          }
+        },
+        {
+          "client_id": "185225155339-jisjq28af7rhi0unvrvvamo154fb7rp6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkMWJ0p-e5jxdc643zcVQ6pfyYwESDQMc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "185225155339-jisjq28af7rhi0unvrvvamo154fb7rp6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

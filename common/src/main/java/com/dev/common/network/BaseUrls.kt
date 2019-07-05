@@ -6,12 +6,11 @@
  *
  */
 
-public class BaseUrls {
+class BaseUrls {
 
 
-    var LIVE: String = "http://agri-clinic.calista.co.ke/api/"
-    var MOCK: String = "http://calista.co.ke/mock-agriclinic/"
-    var MOCKDAWASIFT: String = "http://calista.co.ke/dawaswift_mock/"
+    var LIVE: String = "http://dawaswift.calista.co.ke/api/"
 
 
+    var IMAGE: String = "http://resource.calista.co.ke/api/upload/"
 }

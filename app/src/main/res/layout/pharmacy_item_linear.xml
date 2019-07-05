@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<com.google.android.material.card.MaterialCardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardUseCompatPadding="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_weight="1"
+        app:cardForegroundColor="@android:color/transparent"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="4dp" app:cardElevation="1dp">
+
+    <!--        "name": "Test Pharmacy 1",-->
+    <!--        "email": "info@testpharmacy.com",-->
+    <!--        "tel": "0200452",-->
+
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+        <com.dev.common.utils.CircleImageView
+
+                android:paddingStart="3dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"
+                android:id="@+id/image"
+                app:civ_border_width="0dp"
+                app:civ_fill_color="@color/white"
+                app:civ_border_color="@color/colorPrimary"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/pharmacy"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:padding="3dp"
+                      android:layout_toEndOf="@+id/image"
+                      android:layout_height="wrap_content">
+            <TextView
+
+                    android:layout_marginStart="8dp"
+
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_display_medium"
+                    android:textColor="@color/black"
+                    android:textSize="15.3sp"
+                    android:text="Product Name"
+            />
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:layout_height="wrap_content">
+                <TextView
+
+                        android:layout_marginStart="8dp"
+                        android:maxLines="2"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sf_pro_display_medium"
+                        android:textColor="@color/black"
+                        android:textSize="13.3sp"
+                        android:text="Email : "
+                />
+
+
+                <TextView
+
+                        android:layout_marginStart="8dp"
+                        android:maxLines="2"
+                        android:id="@+id/email"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sf_pro_display_medium"
+                        android:textColor="@color/black"
+                        android:textSize="13.3sp"
+                        android:text=" "
+                />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:layout_height="wrap_content">
+                <TextView
+
+                        android:layout_marginStart="8dp"
+                        android:maxLines="2"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sf_pro_display_medium"
+                        android:textColor="@color/black"
+                        android:textSize="13.3sp"
+                        android:text="Phone : "
+                />
+
+
+                <TextView
+
+                        android:layout_marginStart="8dp"
+                        android:maxLines="2"
+                        android:id="@+id/phone"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sf_pro_display_medium"
+                        android:textColor="@color/black"
+                        android:textSize="13.3sp"
+                        android:text=" "
+                />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:layout_height="wrap_content">
+                <TextView
+
+                        android:layout_marginStart="8dp"
+                        android:maxLines="2"
+                        android:id="@+id/open"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sf_pro_display_medium"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="13.3sp"
+                        android:text="Open  "
+                />
+
+
+                <TextView
+
+                        android:layout_marginStart="8dp"
+                        android:maxLines="2"
+                        android:id="@+id/closed"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sf_pro_display_medium"
+                        android:textColor="@color/red"
+                        android:textSize="13.3sp"
+                        android:text="Closed"
+                />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

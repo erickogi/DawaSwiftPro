@@ -1,4 +1,4 @@
-package com.dev.cabinzz.ui.main
+package com.dev.dawaswift.ui.productview
 
 import android.content.Context
 import android.os.Bundle
@@ -6,16 +6,12 @@ import android.text.TextUtils
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.bumptech.glide.Glide
 import com.dev.common.data.Constants
 import com.dev.common.utils.CommonUtils
 import com.dev.dawaswift.R
-import com.dev.dawaswift.models.Cart.AddItem
 import com.dev.dawaswift.models.Product.Product
-import com.dev.dawaswift.ui.RoundedBottomSheetDialogFragment
-import com.dev.dawaswift.ui.productview.ProductView
+import com.dev.dawaswift.models.cart.AddItem
 import kotlinx.android.synthetic.main.add_item_fragment.*
-import kotlinx.android.synthetic.main.main_fragment.*
 
 
 class MenuFragment : RoundedBottomSheetDialogFragment() {
@@ -58,6 +54,7 @@ class MenuFragment : RoundedBottomSheetDialogFragment() {
         cancel.setOnClickListener { (activity as ProductView).dismissSheet() }
 
         okay.setOnClickListener {
+            (activity as ProductView).dismissSheet(addItem!!)
 
         }
 

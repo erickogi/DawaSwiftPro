@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/money"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+            android:textColor="@color/blacklight"
+            android:textSize="15.7sp"
+            android:fontFamily="@font/sfpro_display_semibold"
+
+            android:layout_centerInParent="true"
+            android:padding="12dp"
+            android:textAlignment="center"
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get a micro-loan (DawaSwift Maisha Loan-for emergencies if you run short on cash) "
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+            android:textColor="@color/blacklight"
+            android:textSize="15.7sp"
+            android:fontFamily="@font/sfpro_display_semibold"
+
+            android:layout_centerInParent="true"
+            android:padding="12dp"
+            android:textAlignment="center"
+            android:id="@+id/com"
+            android:layout_below="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coming soon \n Keep checking here "
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+</RelativeLayout>

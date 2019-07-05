@@ -7,14 +7,13 @@
  */
 
 package com.dev.dawaswift.adapters.category
+
 import android.view.View
 import android.widget.ImageView
-import android.widget.RatingBar
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.dev.common.utils.OnRecyclerViewItemClick
 import com.dev.dawaswift.R
-
 import java.lang.ref.WeakReference
 
 
@@ -34,5 +33,6 @@ class HealthAreaItemHolder(itemView: View, lst: OnRecyclerViewItemClick) : Recyc
 
     init {
         itemView.setOnClickListener(this)
+        image.setOnClickListener(this)
     }
 }

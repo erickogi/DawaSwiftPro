@@ -239,5 +239,6 @@
 
         </LinearLayout>
     </ScrollView>
+    <include layout="@layout/loading_avi"/>
 
 </RelativeLayout>

@@ -1,10 +1,12 @@
 package com.dev.dawaswift.repository
 
+import CustomerRequestService
 import NetworkUtils
 import android.app.Application
 import android.content.Context
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import com.dev.common.R
 import com.dev.common.data.local.AppDatabase
 import com.dev.common.data.local.PrefrenceManager
 import com.dev.common.data.local.daos.ProfileDao
@@ -14,7 +16,6 @@ import com.dev.common.models.oauth.Profile
 import com.dev.common.utils.AgriException
 import com.dev.common.utils.ErrorUtils
 import com.dev.common.utils.FailureUtils
-import com.dev.common.R
 import com.dev.dawaswift.models.category.HealthAreasResponse
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
@@ -49,7 +50,7 @@ class HealthAreaRepository(application: Application) {
 
     private fun executeHealtAreas( ) {
         GlobalScope.launch(context = Dispatchers.Main) {
-            val call = CustomerRequestService.getService(fetchProfile().token, "http://calista.co.ke/dawaswift_mock/").getHealthAreas(fetchProfile())
+            val call = CustomerRequestService.getService(fetchProfile().token).getHealthAreas()
             call.enqueue(object : Callback<HealthAreasResponse> {
                 override fun onFailure(call: Call<HealthAreasResponse>?, t: Throwable?) {
                     onFailure(Observable.HEALTHAREAS, t, FailureUtils().parseError(call, t))
@@ -145,6 +146,15 @@ class HealthAreaRepository(application: Application) {
     }
 
     fun fetchProfile(): Profile {
-        return profileDao.fetch()
+
+        var p = profileDao.fetch()
+
+        if (p == null) {
+            p = Profile()
+        }
+        if (p.token == null) {
+            p.token = ""
+        }
+        return p
     }
 }

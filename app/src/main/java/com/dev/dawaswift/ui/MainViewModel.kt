@@ -4,15 +4,16 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
-import androidx.lifecycle.MutableLiveData
 import com.dev.common.data.repository.OauthRepository
+import com.dev.common.models.ProductSearchAndFilter
 import com.dev.common.models.custom.Resource
 import com.dev.common.models.oauth.Oauth
 import com.dev.common.models.oauth.Profile
+import com.dev.dawaswift.data.CartRepository
 import com.dev.dawaswift.models.Product.Product
 import com.dev.dawaswift.models.Product.ProductResponse
-import com.dev.dawaswift.models.Product.ProductSearchAndFilter
 import com.dev.dawaswift.models.Product.ProductsResponse
+import com.dev.dawaswift.models.cart.CartResponse
 import com.dev.dawaswift.models.category.CategoriesResponse
 import com.dev.dawaswift.models.category.HealthAreasResponse
 import com.dev.dawaswift.repository.CategoriesRepository
@@ -26,6 +27,10 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     private var healthAreaRepository: HealthAreaRepository = HealthAreaRepository(application)
 
     private val switchProfileObservable = MediatorLiveData<Resource<Oauth>>()
+    private var cartRepository: CartRepository = CartRepository(application)
+
+
+    private val cartObservable = MediatorLiveData<Resource<CartResponse>>()
 
 
     private val productsObservable = MediatorLiveData<Resource<ProductsResponse>>()
@@ -76,6 +81,21 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
             )
         }
 
+        cartObservable.addSource(cartRepository.cartObservable) { data ->
+            cartObservable.setValue(
+                data
+            )
+        }
+
+    }
+
+    fun observeCart(): LiveData<Resource<CartResponse>> {
+        return cartObservable
+    }
+
+
+    fun viewCart() {
+        cartRepository.getCart()
     }
 
     fun getProfile(): Oauth {
@@ -157,5 +177,17 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         healthAreaRepository.getHealthAreas()
     }
 
+
+    fun saveSearch(searchAndFilter: ProductSearchAndFilter) {
+        productsRepository.saveSearch(searchAndFilter)
+    }
+
+    fun getSearch(): LiveData<ProductSearchAndFilter> {
+        return productsRepository.getSearch()
+    }
+
+    fun fetchSearch(): ProductSearchAndFilter {
+        return productsRepository.fetchSearch()
+    }
 
 }

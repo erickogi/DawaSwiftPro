@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import com.dev.common.R
 import com.dev.common.data.FRAGMENTS_NAV_KEYS
 import com.dev.common.listeners.BackPressHandler
 import com.dev.common.listeners.ReplaceFragmentListener
@@ -17,7 +18,6 @@ import com.dev.common.models.oauth.Oauth
 import com.dev.common.models.oauth.Profile
 import com.dev.common.utils.Validator
 import com.dev.common.utils.textWatchers.PhoneTextWatcher
-import com.dev.common.R
 import com.dev.common.utils.viewUtils.ViewUtils
 import kotlinx.android.synthetic.main.onboard_header_view.*
 import kotlinx.android.synthetic.main.onboard_phone.*
@@ -112,6 +112,7 @@ class OnBoardPhoneFragment : Fragment(), View.OnClickListener {
                     )
 
                 } else {
+
                     replaceFragmentListener.replace(
                         FRAGMENTS_NAV_KEYS.ONBOARD_PHONE,
                         FRAGMENTS_NAV_KEYS.ONBOARD_REQUEST_0TP,
@@ -119,6 +120,7 @@ class OnBoardPhoneFragment : Fragment(), View.OnClickListener {
                     )
 
                 }
+
 
             }
 

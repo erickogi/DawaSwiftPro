@@ -1,4 +1,4 @@
-package com.dev.dawaswift.adapters.cart
+package com.agriclinic.common.adapters.cart
 
 
 import android.view.View
@@ -9,7 +9,8 @@ import com.dev.dawaswift.R
 import com.dev.lishabora.Utils.OnCartItemEvent
 import java.lang.ref.WeakReference
 
-class CartItemViewHolder(type: Int, itemView: View, listener: OnCartItemEvent) : RecyclerView.ViewHolder(itemView), View.OnClickListener {
+class CartItemViewHolder(type: Int, itemView: View, listener: OnCartItemEvent) : RecyclerView.ViewHolder(itemView),
+    View.OnClickListener {
     override fun onClick(v: View?) {
         if (v == add)
             listenerWeakReference.get()?.add(adapterPosition)
@@ -39,7 +40,9 @@ class CartItemViewHolder(type: Int, itemView: View, listener: OnCartItemEvent) :
         quantity = itemView.findViewById(R.id.quantity)
         image = itemView.findViewById(R.id.image)
 
+
         if (type == 0) {
+
             add = itemView.findViewById(R.id.add)
             remove = itemView.findViewById(R.id.remove)
             delete = itemView.findViewById(R.id.delete)
@@ -48,7 +51,6 @@ class CartItemViewHolder(type: Int, itemView: View, listener: OnCartItemEvent) :
             remove.setOnClickListener(this)
             delete.setOnClickListener(this)
         }
-
 
 
     }

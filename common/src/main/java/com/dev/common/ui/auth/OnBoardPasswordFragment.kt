@@ -9,13 +9,13 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import com.dev.common.R
 import com.dev.common.data.FRAGMENTS_NAV_KEYS
 import com.dev.common.listeners.ReplaceFragmentListener
 import com.dev.common.models.custom.Status
 import com.dev.common.models.oauth.Oauth
 import com.dev.common.utils.Validator
 import com.dev.common.utils.textWatchers.PasswordTextWatcher
-import com.dev.common.R
 import com.dev.common.utils.viewUtils.ViewUtils
 import kotlinx.android.synthetic.main.onboard_password.*
 import kotlinx.android.synthetic.main.toolback_bar.*
@@ -101,8 +101,10 @@ class OnBoardPasswordFragment : Fragment(), View.OnClickListener {
                 it.exception
             )
             if (it.status == Status.SUCCESS) {
+
                 replaceFragmentListener.toActivity(FRAGMENTS_NAV_KEYS.ONBOARD_PASSWORD, it.data, true)
 
+                viewModel.observeSignIn().removeObservers(this)
             }
         })
 

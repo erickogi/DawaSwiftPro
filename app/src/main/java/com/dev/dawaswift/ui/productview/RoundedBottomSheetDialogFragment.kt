@@ -1,4 +1,4 @@
-package com.dev.dawaswift.ui
+package com.dev.dawaswift.ui.productview
 
 import android.app.Dialog
 import android.os.Bundle

@@ -1,10 +1,12 @@
 package com.dev.dawaswift.repository
 
+import CustomerRequestService
 import NetworkUtils
 import android.app.Application
 import android.content.Context
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import com.dev.common.R
 import com.dev.common.data.local.AppDatabase
 import com.dev.common.data.local.PrefrenceManager
 import com.dev.common.data.local.daos.ProfileDao
@@ -14,10 +16,6 @@ import com.dev.common.models.oauth.Profile
 import com.dev.common.utils.AgriException
 import com.dev.common.utils.ErrorUtils
 import com.dev.common.utils.FailureUtils
-import com.dev.common.R
-import com.dev.dawaswift.models.Product.Product
-import com.dev.dawaswift.models.Product.ProductResponse
-import com.dev.dawaswift.models.Product.ProductSearchAndFilter
 import com.dev.dawaswift.models.category.CategoriesResponse
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
@@ -52,7 +50,7 @@ class CategoriesRepository(application: Application) {
 
     private fun executeCategories( ) {
         GlobalScope.launch(context = Dispatchers.Main) {
-            val call = CustomerRequestService.getService(fetchProfile().token, "http://calista.co.ke/dawaswift_mock/").getCategories(fetchProfile())
+            val call = CustomerRequestService.getService(fetchProfile().token).getCategories()
             call.enqueue(object : Callback<CategoriesResponse> {
                 override fun onFailure(call: Call<CategoriesResponse>?, t: Throwable?) {
                     onFailure(Observable.CATEGORIES, t, FailureUtils().parseError(call, t))
@@ -148,6 +146,15 @@ class CategoriesRepository(application: Application) {
     }
 
     fun fetchProfile(): Profile {
-        return profileDao.fetch()
+
+        var p = profileDao.fetch()
+
+        if (p == null) {
+            p = Profile()
+        }
+        if (p.token == null) {
+            p.token = ""
+        }
+        return p
     }
 }

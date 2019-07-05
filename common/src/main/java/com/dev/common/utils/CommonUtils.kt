@@ -4,12 +4,17 @@ import android.content.Context
 import android.location.LocationManager
 import android.net.ConnectivityManager
 import android.net.Uri
+import android.util.Log
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.dev.common.models.custom.SearchModel
 import ir.mirrajabi.searchdialog.SimpleSearchDialogCompat
 import ir.mirrajabi.searchdialog.core.SearchResultListener
+import java.text.SimpleDateFormat
+import java.util.*
+
 
 class CommonUtils {
 
@@ -45,10 +50,47 @@ class CommonUtils {
     fun <T> loadImage(context: Context, url: T?, imageView: ImageView) {
 
 
-        Glide.with(context).load("http://calista.co.ke/dawaswift_mock/images/"+url).into(imageView)
+        Glide.with(context).load(url).placeholder(com.dev.common.R.drawable.placeholder)
+            .error(com.dev.common.R.drawable.logo).into(imageView)
 
     }
 
+
+    fun displayFormattedDate(actualDate: String, txtDay: TextView, txtMonth: TextView, txtYear: TextView) {
+        val sdf = SimpleDateFormat("yyyy-MM-dd")
+
+
+        val month_date = SimpleDateFormat("MMM ", Locale.ENGLISH)
+        val day_date = SimpleDateFormat("dd ", Locale.ENGLISH)
+        val year_date = SimpleDateFormat("yyyy", Locale.ENGLISH)
+
+
+        val date = sdf.parse(actualDate)
+
+        //val month_name = month_date.format(date)
+
+
+        txtDay.text = day_date.format(date)
+        txtMonth.text = month_date.format(date)
+        txtYear.text = year_date.format(date)
+    }
+
+
+    fun roundOff(number: String?): Double {
+
+        try {
+
+            val number3digits: Double = String.format("%.3f", number?.toDouble()).toDouble()
+            val number2digits: Double = String.format("%.2f", number3digits).toDouble()
+            val solution: Double = String.format("%.1f", number2digits).toDouble()
+            return solution
+
+        } catch (x: Exception) {
+            Log.d("roundsfsa", "Error \n" + x.toString())
+            return 0.0
+        }
+
+    }
     fun <T> simpleSearchDialog(
         context: Context,
         title: String,

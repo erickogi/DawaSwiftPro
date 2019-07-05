@@ -9,6 +9,20 @@ class Constants {
 
     val CATEGORIES=12
     val RESOURCE="RESOURCEID"
+    val CATEGORYACTION = "ACTION"
+    val PHARMACYACTION = "pharmacyAction"
+
+    val CALLPRODUCTSEARCH = "CALLSEARCH"
+    val DONOTING = "DONOTHING"
+
+
+    val TOCHAT = "TOCHAT"
+    val TOPRESCRIPTION = "TOPRESCRIOTION"
+    val TOPHARMACY = "TOPHARMACY"
+
+
+    val PHARMACY = "PHARMACY"
+    val MESSAGE = "MESSAGE"
     val HEALTHAREAS=13
 
     val GRID=22
@@ -18,5 +32,14 @@ class Constants {
 
     val PRODUCT="PRODUCTRESOURCEID"
     val CATEGORY="CATEGORY"
+
+
+    val products = 8
+    val pharmacy = 13
+    val heaalthareas = 14
+    val category = 5
+    val subcategory = 6
+    val subcategoryitem = 7
+
 
 }

@@ -1,4 +1,4 @@
-package com.dev.common.utils.viewUtils;
+package com.dev.common.utils;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -11,9 +11,6 @@ import androidx.annotation.LayoutRes;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 import com.dev.common.R;
-import com.dev.common.models.custom.SearchModel;
-import com.dev.common.utils.CircleImageView;
-import com.dev.common.utils.CommonUtils;
 import ir.mirrajabi.searchdialog.StringsHelper;
 import ir.mirrajabi.searchdialog.core.BaseSearchDialogCompat;
 import ir.mirrajabi.searchdialog.core.SearchResultListener;

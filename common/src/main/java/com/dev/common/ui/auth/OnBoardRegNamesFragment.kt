@@ -11,15 +11,14 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import com.dev.common.R
 import com.dev.common.data.FRAGMENTS_NAV_KEYS
-import com.bumptech.glide.Glide
 import com.dev.common.listeners.ReplaceFragmentListener
 import com.dev.common.models.custom.Status
 import com.dev.common.models.oauth.Oauth
 import com.dev.common.utils.CommonUtils
 import com.dev.common.utils.Validator
 import com.dev.common.utils.textWatchers.NameTextWatcher
-import com.dev.common.R
 import com.dev.common.utils.viewUtils.ViewUtils
 import com.dev.imagepicker.BottomSheetImagePicker
 import com.dev.imagepicker.ButtonType
@@ -29,11 +28,9 @@ import kotlinx.android.synthetic.main.toolback_bar.*
 
 class OnBoardRegNamesFragment : Fragment(), View.OnClickListener, BottomSheetImagePicker.OnImagesSelectedListener {
     override fun onImagesSelected(uris: List<Uri>, tag: String?) {
-        Glide.with(this).load(uris[0]).into(avatar)
-        val oauth = viewModel.getProfile()
-        oauth.profile?.avatarUri = uris[0]
-        oauth.profile?.avatar = CommonUtils().encode(uris[0], context!!)
-        viewModel.saveProfile(oauth)
+
+
+        viewModel.uploadImage(uri = uris[0])
 
     }
 
@@ -49,7 +46,7 @@ class OnBoardRegNamesFragment : Fragment(), View.OnClickListener, BottomSheetIma
                 )
             ) {
                 if (Validator.isRadioGroupdSelected(radio_gender)) {
-                    if (getOauth().profile?.avatarUri != null) {
+                    if (getOauth().profile?.avatar != null) {
                         verify()
                     } else {
                         edt_avatar.error = "Please select profile image"
@@ -70,8 +67,8 @@ class OnBoardRegNamesFragment : Fragment(), View.OnClickListener, BottomSheetIma
         BottomSheetImagePicker.Builder(getString(R.string.file_provider))
             .cameraButton(ButtonType.Button)
             .galleryButton(ButtonType.Button)
-            .singleSelectTitle(R.string.confirm_pass_title)
-            .peekHeight(R.dimen.design_bottom_sheet_peek_height_min)
+            .singleSelectTitle(R.string.pick_single)
+            .peekHeight(R.dimen.peekHeight)
             .requestTag("single")
             .show(childFragmentManager)
     }
@@ -139,6 +136,31 @@ class OnBoardRegNamesFragment : Fragment(), View.OnClickListener, BottomSheetIma
 
             }
         })
+
+        viewModel.observeUploadImage().observe(this, Observer {
+            ViewUtils.setStatus(
+                activity,
+                view,
+                it.status,
+                it.message,
+                false,
+                ViewUtils.ErrorViewTypes.TOAST,
+                it.exception
+            )
+            if (it.status == Status.SUCCESS) {
+
+                val oauth = viewModel.getProfile()
+                oauth.profile?.avatar = it.data?.data?.urls?.get(0)?.hyperLinkUrl
+
+                CommonUtils().loadImage(context!!, oauth.profile?.avatar, avatar)
+
+
+                viewModel.saveProfile(oauth)
+
+                Toast.makeText(context!!, it.message, Toast.LENGTH_LONG).show()
+            }
+        })
+
 
         edt_email.setText(viewModel.getProfile().profile?.email)
 

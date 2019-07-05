@@ -1,9 +1,7 @@
 package com.dev.dawaswift.models.Order
 
-import com.dev.dawaswift.models.Order.OrderItem
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
-
 
 
 class OrderResponse {
@@ -14,7 +12,7 @@ class OrderResponse {
     var success: Boolean? = null
     @SerializedName("errors")
     @Expose
-    var errors: Any? = null
+    var errors: List<String>? = null
     @SerializedName("status_code")
     @Expose
     var statusCode: Int? = null
@@ -26,5 +24,5 @@ class OrderResponse {
     var message: String? = null
     @SerializedName("data")
     @Expose
-    var data: OrderItem? = null
+    var data: List<OrderItems>? = null
 }

@@ -18,7 +18,7 @@
 
     <string name="file_provider" translatable="false">com.kroegerama.imgpicker.demo.fileprovider</string>
 
-    <string name="pick_single">Please select your image</string>
+    <string name="pick_single">Please select image</string>
 
     <plurals name="pick_multi">
         <item quantity="one">One image selected</item>

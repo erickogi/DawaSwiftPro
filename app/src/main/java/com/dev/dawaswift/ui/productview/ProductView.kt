@@ -1,25 +1,34 @@
 package com.dev.dawaswift.ui.productview
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProviders
 import androidx.viewpager.widget.ViewPager
 import com.dev.badge.BadgeView
-import com.dev.cabinzz.ui.main.MenuFragment
 import com.dev.common.data.Constants
+import com.dev.common.models.custom.Status
+import com.dev.common.utils.viewUtils.ViewUtils
 import com.dev.dawaswift.R
 import com.dev.dawaswift.adapters.product.ViewPagerAdapter
 import com.dev.dawaswift.models.Product.Product
+import com.dev.dawaswift.models.cart.AddItem
+import com.dev.dawaswift.ui.CommonMainViewModel
+import com.dev.dawaswift.ui.cart.CartActivity
 import com.dev.dawaswift.ui.productview.ui.DetilsFragment
 import com.dev.dawaswift.ui.productview.ui.ProductFragment
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.tabs.TabLayout
-import kotlinx.android.synthetic.main.main_fragment.*
-import kotlinx.android.synthetic.main.product_search_activity.*
+import kotlinx.android.synthetic.main.product_search_activity.container
+import kotlinx.android.synthetic.main.product_view_activity.*
+import kotlinx.android.synthetic.main.toolbar_product_view.*
 
 class ProductView : AppCompatActivity() {
 
     lateinit var qBadgeView: BadgeView
+    private lateinit var viewModel: CommonMainViewModel
 
 
     var productId: Int? = 0
@@ -38,6 +47,11 @@ class ProductView : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.product_view_activity)
+        linear_back.setOnClickListener {
+            onBackPressed()
+        }
+        viewModel = ViewModelProviders.of(this).get(CommonMainViewModel::class.java)
+
         product= intent.getSerializableExtra(Constants().PRODUCT) as Product
 
 
@@ -68,13 +82,38 @@ class ProductView : AppCompatActivity() {
             menuFragment.show(supportFragmentManager, menuFragment.tag)
         }
 
-//        cart.setOnClickListener {
-//            //startActivity(Intent(this@ProductView, Cart::class.java))
-//
-//        }
+        viewModel.viewCart()
+        viewModel.observeCart().observe(this, Observer {
+
+            ViewUtils.setStatus(
+                this,
+                container,
+                it.status,
+                it.message,
+                false,
+                ViewUtils.ErrorViewTypes.NON,
+                it.exception
+            )
+            if (it.status == Status.SUCCESS) {
+
+
+                setCartCount(it.data?.data?.itemsCount)
+
+            }
+        })
+
+
+        cart.setOnClickListener {
+            startActivity(Intent(this, CartActivity::class.java))
+            finish()
+        }
+
     }
 
     private fun setCartCount(count: Int?) {
+        if (count == null) {
+            qBadgeView.bindTarget(cart).badgeText = ""
+        }
         qBadgeView.bindTarget(cart).badgeText = "" + count
 
 
@@ -82,6 +121,11 @@ class ProductView : AppCompatActivity() {
 
     fun dismissSheet() {
         menuFragment.dismiss()
+    }
+
+    fun dismissSheet(addItem: AddItem) {
+        menuFragment.dismiss()
+        viewModel.addCart(addItem)
     }
 
     fun snack(text: String) {
@@ -123,12 +167,6 @@ class ProductView : AppCompatActivity() {
 
 
     }
-
-    override fun onResume() {
-        super.onResume()
-
-    }
-
 
 
 }

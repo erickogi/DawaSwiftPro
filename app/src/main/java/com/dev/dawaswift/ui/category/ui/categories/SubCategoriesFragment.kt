@@ -18,6 +18,7 @@ import com.dev.dawaswift.adapters.category.SubCategoryAdapter
 import com.dev.dawaswift.models.category.Category
 import com.dev.dawaswift.models.category.SubCategory
 import com.dev.dawaswift.models.category.SubCategoryItem
+import com.dev.dawaswift.ui.category.Categories
 import kotlinx.android.synthetic.main.sub_categories_fragment.*
 import java.util.*
 
@@ -80,7 +81,22 @@ class SubCategoriesFragment : Fragment() {
                             position: Int
                         ) {
 
+                            val search = viewModel.fetchSearch()
 
+
+
+                            search.subCategoryId = null
+                            search.subcategoryName = null
+
+                            search.categoryId = null
+                            search.categoryName = null
+
+
+                            search.subCategoryItemId = item?.getServices()?.id
+                            search.subcategoryItemName = item?.getServices()?.name
+
+                            viewModel.saveSearch(search)
+                            (activity as Categories).onselection()
 
 
                         }
@@ -91,6 +107,24 @@ class SubCategoriesFragment : Fragment() {
                 }
 
                 override fun onLongClickListener(position: Int) {
+
+
+                    val search = viewModel.fetchSearch()
+
+
+                    search.categoryId = null
+                    search.categoryName = null
+
+                    search.subCategoryItemId = null
+                    search.subcategoryItemName = null
+
+
+                    search.subCategoryId = subcategories!![position].id
+                    search.subcategoryName = subcategories!![position].name
+
+                    viewModel.saveSearch(search)
+                    (activity as Categories).onselection()
+
                 }
             })
         }!!

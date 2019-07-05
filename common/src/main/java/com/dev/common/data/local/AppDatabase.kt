@@ -6,9 +6,11 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 import com.dev.common.data.local.daos.ProfileDao
+import com.dev.common.data.local.daos.SearchDao
+import com.dev.common.models.ProductSearchAndFilter
 import com.dev.common.models.oauth.Profile
 
-@Database(entities = arrayOf(Profile::class), version = 2, exportSchema = false)
+@Database(entities = arrayOf(Profile::class, ProductSearchAndFilter::class), version = 3, exportSchema = false)
 @TypeConverters(Converters::class)
 abstract class AppDatabase : RoomDatabase() {
     companion object {
@@ -28,6 +30,7 @@ abstract class AppDatabase : RoomDatabase() {
     }
 
     abstract fun profileDao(): ProfileDao
+    abstract fun searchDao(): SearchDao
 
 
 }

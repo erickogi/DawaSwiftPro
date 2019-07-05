@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+                android:id="@+id/main"
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolback"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="3dp"
+                app:cardUseCompatPadding="true">
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="vertical"
+                          android:layout_height="wrap_content">
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="2dp">
+
+                    <TextView
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:text="Order Summary"
+                            android:textColor="@color/blacklight"
+                            android:textSize="16.7sp"
+                            android:fontFamily="@font/sfpro_display_semibold"
+                    />
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Items (No) "
+                                android:textColor="@color/blacklight"
+                                android:textSize="15.7sp"
+                                android:fontFamily="@font/sfpro_display_semibold"
+                        />
+
+                        <TextView
+
+                                android:id="@+id/itemsQuantity"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text=""
+                                android:textColor="@color/blacklight"
+                                android:textSize="15.7sp"
+                                android:fontFamily="@font/sfpro_display_semibold"
+                        />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <TextView
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Value  "
+                                android:textColor="@color/blacklight"
+                                android:textSize="15.7sp"
+                                android:fontFamily="@font/sfpro_display_semibold"
+                        />
+
+                        <TextView
+
+                                android:id="@+id/itemsValue"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text=""
+                                android:textColor="@color/blacklight"
+                                android:textSize="15.7sp"
+                                android:fontFamily="@font/sfpro_display_semibold"
+                        />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <TextView
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Total    "
+                                android:textColor="@color/blacklight"
+                                android:textSize="15.7sp"
+                                android:fontFamily="@font/sfpro_display_semibold"
+                        />
+
+                        <TextView
+
+                                android:id="@+id/total"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:layout_toEndOf="@+id/shippingInfo"
+                                android:layout_weight="1"
+                                android:text=" "
+                                android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorAccent"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="2dp">
+
+                    <TextView
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:text="Delivery Cost"
+                            android:textColor="@color/blacklight"
+                            android:textSize="16.7sp"
+                            android:fontFamily="@font/sfpro_display_semibold"
+                    />
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:visibility="gone"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Distance  "
+                                android:textColor="@color/blacklight"
+                                android:textSize="15.7sp"
+                                android:fontFamily="@font/sfpro_display_semibold"
+                        />
+
+                        <TextView
+
+                                android:id="@+id/deliverydistance"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text=""
+                                android:textColor="@color/blacklight"
+                                android:textSize="15.7sp"
+                                android:fontFamily="@font/sfpro_display_semibold"
+                        />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <TextView
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Cost  "
+                                android:textColor="@color/blacklight"
+                                android:textSize="15.7sp"
+                                android:fontFamily="@font/sfpro_display_semibold"
+                        />
+
+                        <TextView
+
+                                android:id="@+id/deliverycost"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text=""
+                                android:textColor="@color/blacklight"
+                                android:textSize="15.7sp"
+                                android:fontFamily="@font/sfpro_display_semibold"
+                        />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <TextView
+
+                                android:visibility="gone"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Estimated Time    "
+                                android:textColor="@color/blacklight"
+                                android:textSize="15.7sp"
+                                android:fontFamily="@font/sfpro_display_semibold"
+                        />
+
+                        <TextView
+
+                                android:id="@+id/deliverytime"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:layout_toEndOf="@+id/shippingInfo"
+                                android:layout_weight="1"
+                                android:text=" "
+                                android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorAccent"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="2dp">
+
+                    <TextView
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:text="TOTAL CHECKOUT COST"
+                            android:textColor="@color/blacklight"
+                            android:textSize="16.7sp"
+                            android:fontFamily="@font/sfpro_display_semibold"
+                    />
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Ksh  "
+                                android:textColor="@color/blacklight"
+                                android:textSize="16.7sp"
+                                android:fontFamily="@font/sfpro_display_semibold"
+                        />
+
+                        <TextView
+
+                                android:id="@+id/totalcost"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text=""
+                                android:textColor="@color/blacklight"
+                                android:textSize="16.7sp"
+                                android:fontFamily="@font/sfpro_display_semibold"
+                        />
+
+                    </LinearLayout>
+
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorAccent"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:orientation="vertical"
+                              android:id="@+id/destinations"
+
+                              android:layout_height="wrap_content">
+
+                    <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            app:cardUseCompatPadding="true"
+                            android:id="@+id/payment_card_mpesa"
+                            android:layout_height="wrap_content">
+
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:padding="3dp"
+                                      android:orientation="vertical"
+                                      android:layout_height="match_parent">
+
+                            <LinearLayout
+                                    android:background="@color/white"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:padding="12dp">
+
+
+                                <TextView
+                                        android:fontFamily="@font/sf_pro_display_medium"
+
+                                        android:padding="3dp"
+                                        android:textStyle="bold"
+                                        android:textColor="@android:color/black"
+                                        android:id="@+id/txt_title"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Enter Your Mpesa Number"
+                                        android:textSize="16.8sp"/>
+
+                                <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+
+
+                                        android:layout_marginTop="4dp"
+                                        android:orientation="horizontal"
+                                        android:padding="4dp">
+
+
+                                    <TextView
+                                            android:id="@+id/txt_ke"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_vertical"
+                                            android:layout_marginStart="1dp"
+                                            android:text="@string/ke"
+                                            android:textSize="18.5sp"/>
+
+                                    <com.google.android.material.textfield.TextInputLayout
+                                            android:id="@+id/til_phone"
+                                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="3dp"
+                                            android:padding="4dp"
+
+                                            app:endIconDrawable="@string/next"
+
+                                            app:boxCornerRadiusTopStart="1dp"
+                                            app:boxCornerRadiusTopEnd="1dp"
+                                            app:boxCornerRadiusBottomStart="1dp"
+                                            app:boxCornerRadiusBottomEnd="1dp"
+
+                                            app:boxStrokeWidth="1dp"
+                                            app:boxBackgroundMode="outline"
+                                            app:boxStrokeColor="@color/colorPrimary"
+                                            app:counterEnabled="true"
+                                            app:counterMaxLength="11"
+                                    >
+
+                                        <com.google.android.material.textfield.TextInputEditText
+                                                android:id="@+id/edt_phone"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+
+                                                app:helperText="7** *** ***"
+                                                app:helperTextEnabled="true"
+                                                android:hint="@string/phone_hint"
+                                                android:inputType="phone"
+
+                                                android:maxLength="11"
+
+
+                                                app:counterEnabled="true"
+                                                app:counterMaxLength="11"/>
+
+                                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            app:cardUseCompatPadding="true"
+                            android:id="@+id/payment_proceed"
+                            android:layout_height="wrap_content">
+
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:padding="3dp"
+                                      android:orientation="vertical"
+                                      android:layout_height="match_parent">
+
+
+                            <com.google.android.material.checkbox.MaterialCheckBox
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/checkbox_save"
+                                    android:visibility="gone"
+                                    android:text="Save these details for next time"
+                                    android:layout_height="wrap_content"/>
+                            <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/btn_pay"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:padding="0dp"
+                                    android:paddingBottom="0dp"
+                                    android:visibility="gone"
+
+                                    android:layout_marginTop="20dp"
+
+                                    android:textColor="@color/white"
+                                    app:cornerRadius="5dp"
+                                    app:rippleColor="@color/colorPrimary"
+                                    android:textStyle="bold"
+                                    app:backgroundTint="@color/colorPrimary"
+                                    style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
+                                    android:text="Pay"/>
+
+
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+
+    <include layout="@layout/loading_avi"/>
+
+
+</RelativeLayout>

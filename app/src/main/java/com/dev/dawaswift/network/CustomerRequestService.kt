@@ -8,9 +8,6 @@
 
 import RequestService.getRetrofit
 import com.google.gson.GsonBuilder
-import okhttp3.OkHttpClient
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
 
 /**
  * @author kogi
@@ -21,14 +18,9 @@ object CustomerRequestService {
         .create()
 
 
+    fun getService(token: String?): CustomerEndPoints {
+        var baseUrll = BaseUrls().LIVE
 
-
-
-    fun getService(token: String?, baseUrl: String): CustomerEndPoints {
-        var baseUrll=BaseUrls().MOCKDAWASIFT
-        if(baseUrl==null||baseUrl==""){
-            baseUrll=baseUrl
-        }
         if (token == null) {
             return getRetrofit("", baseUrll).create(CustomerEndPoints::class.java)
 

@@ -1,24 +1,27 @@
 package com.dev.dawaswift.repository
 
+import CustomerRequestService
 import NetworkUtils
 import android.app.Application
 import android.content.Context
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import com.dev.common.R
 import com.dev.common.data.local.AppDatabase
 import com.dev.common.data.local.PrefrenceManager
 import com.dev.common.data.local.daos.ProfileDao
+import com.dev.common.data.local.daos.SearchDao
+import com.dev.common.models.ProductSearchAndFilter
 import com.dev.common.models.custom.Resource
 import com.dev.common.models.oauth.Oauth
 import com.dev.common.models.oauth.Profile
 import com.dev.common.utils.AgriException
 import com.dev.common.utils.ErrorUtils
 import com.dev.common.utils.FailureUtils
-import com.dev.common.R
 import com.dev.dawaswift.models.Product.Product
 import com.dev.dawaswift.models.Product.ProductResponse
-import com.dev.dawaswift.models.Product.ProductSearchAndFilter
 import com.dev.dawaswift.models.Product.ProductsResponse
+import com.dev.dawaswift.models.Product.TagsResponse
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -28,9 +31,11 @@ import retrofit2.Response
 
 class ProductsRepository(application: Application) {
     private val profileDao: ProfileDao
+    private val searchDao: SearchDao
     private val db: AppDatabase = AppDatabase.getDatabase(application)!!
     private val prefrenceManager: PrefrenceManager = PrefrenceManager(application)
     val productsObservable = MutableLiveData<Resource<ProductsResponse>>()
+    val tagsObservable = MutableLiveData<Resource<TagsResponse>>()
     val popularProductsObservable = MutableLiveData<Resource<ProductsResponse>>()
     val favoriteObservable = MutableLiveData<Resource<ProductsResponse>>()
     val productObservable = MutableLiveData<Resource<ProductResponse>>()
@@ -39,6 +44,7 @@ class ProductsRepository(application: Application) {
 
     init {
         profileDao = db.profileDao()
+        searchDao = db.searchDao()
         context = application.applicationContext
     }
 
@@ -48,6 +54,16 @@ class ProductsRepository(application: Application) {
             executeProducts(productSearchAndFilter)
         } else {
             setNetworkError(Observable.Products)
+        }
+    }
+
+
+    fun getTags() {
+        setIsLoading(Observable.TAGS)
+        if (NetworkUtils.isConnected(context)) {
+            executeTags()
+        } else {
+            setNetworkError(Observable.TAGS)
         }
     }
 
@@ -81,7 +97,7 @@ class ProductsRepository(application: Application) {
 
     private fun executeProducts(productSearchAndFilter: ProductSearchAndFilter) {
         GlobalScope.launch(context = Dispatchers.Main) {
-            val call = CustomerRequestService.getService(fetchProfile().token, "http://calista.co.ke/dawaswift_mock/").getProducts(productSearchAndFilter)
+            val call = CustomerRequestService.getService(fetchProfile().token).getProducts(productSearchAndFilter)
             call.enqueue(object : Callback<ProductsResponse> {
                 override fun onFailure(call: Call<ProductsResponse>?, t: Throwable?) {
                     onFailure(Observable.Products, t, FailureUtils().parseError(call, t))
@@ -94,9 +110,24 @@ class ProductsRepository(application: Application) {
         }
     }
 
+    private fun executeTags() {
+        GlobalScope.launch(context = Dispatchers.Main) {
+            val call = CustomerRequestService.getService(fetchProfile().token).getTags()
+            call.enqueue(object : Callback<TagsResponse> {
+                override fun onFailure(call: Call<TagsResponse>?, t: Throwable?) {
+                    onFailure(Observable.TAGS, t, FailureUtils().parseError(call, t))
+                }
+
+                override fun onResponse(call: Call<TagsResponse>?, response: Response<TagsResponse>?) {
+                    onResponseTags(response, Observable.TAGS)
+                }
+            })
+        }
+    }
+
     private fun executePopularProducts(productSearchAndFilter: ProductSearchAndFilter) {
         GlobalScope.launch(context = Dispatchers.Main) {
-            val call = CustomerRequestService.getService(fetchProfile().token, "http://calista.co.ke/dawaswift_mock/").getPopularProducts(productSearchAndFilter)
+            val call = CustomerRequestService.getService(fetchProfile().token).getPopularProducts()
             call.enqueue(object : Callback<ProductsResponse> {
                 override fun onFailure(call: Call<ProductsResponse>?, t: Throwable?) {
                     onFailure(Observable.POPULAR_PRODUCTS, t, FailureUtils().parseError(call, t))
@@ -110,7 +141,7 @@ class ProductsRepository(application: Application) {
     }
     private fun executeProduct(product: Product) {
         GlobalScope.launch(context = Dispatchers.Main) {
-            val call = CustomerRequestService.getService(fetchProfile().token, "http://calista.co.ke/dawaswift_mock/").getProduct(product)
+            val call = CustomerRequestService.getService(fetchProfile().token).getProduct(product)
             call.enqueue(object : Callback<ProductResponse> {
                 override fun onFailure(call: Call<ProductResponse>?, t: Throwable?) {
                     onFailure(Observable.Product, t, FailureUtils().parseError(call, t))
@@ -125,7 +156,7 @@ class ProductsRepository(application: Application) {
 
     private fun executeFavoriteProducts() {
         GlobalScope.launch(context = Dispatchers.Main) {
-            val call = CustomerRequestService.getService(fetchProfile().token, "http://calista.co.ke/dawaswift_mock/").getFavoriteProducts(fetchProfile())
+            val call = CustomerRequestService.getService(fetchProfile().token).getFavoriteProducts(fetchProfile())
             call.enqueue(object : Callback<ProductsResponse> {
                 override fun onFailure(call: Call<ProductsResponse>?, t: Throwable?) {
                     onFailure(Observable.FAVORITE_PRODUCTS, t, FailureUtils().parseError(call, t))
@@ -182,6 +213,30 @@ class ProductsRepository(application: Application) {
             setIsError(observable, "", AgriException("Error Loading Data"))
         }
     }
+
+    private fun onResponseTags(response: Response<TagsResponse>?, observable: Observable) {
+
+        if (response != null) {
+            if (response.isSuccessful) {
+                if (response.body()?.statusCode!! > 0 && response.body()?.success!!) {
+                    setIsSuccesful(observable, response.body()!!)
+
+
+                } else {
+                    response.body()?.statusMessage?.let {
+                        setIsError(
+                            observable, it,
+                            AgriException(it, it, response.body()?.errors)
+                        )
+                    }
+                }
+            } else {
+                setIsError(observable, "", ErrorUtils().parseError(response))
+            }
+        } else {
+            setIsError(observable, "", AgriException("Error Loading Data"))
+        }
+    }
     private fun onResponseSingle(response: Response<ProductResponse>?, observable: Observable) {
 
         if (response != null) {
@@ -213,6 +268,7 @@ class ProductsRepository(application: Application) {
             Observable.POPULAR_PRODUCTS -> popularProductsObservable.postValue(Resource.loading(null))
             Observable.FAVORITE_PRODUCTS -> favoriteObservable.postValue(Resource.loading(null))
             Observable.Product -> productObservable.postValue(Resource.loading(null))
+            Observable.TAGS -> tagsObservable.postValue(Resource.loading(null))
         }
     }
 
@@ -222,6 +278,7 @@ class ProductsRepository(application: Application) {
             Observable.POPULAR_PRODUCTS -> popularProductsObservable.postValue(Resource.success(data as ProductsResponse))
             Observable.FAVORITE_PRODUCTS -> favoriteObservable.postValue(Resource.success(data as ProductsResponse))
             Observable.Product -> productObservable.postValue(Resource.success(data as ProductResponse))
+            Observable.TAGS -> tagsObservable.postValue(Resource.success(data as TagsResponse))
         }
 
     }
@@ -232,11 +289,13 @@ class ProductsRepository(application: Application) {
             Observable.POPULAR_PRODUCTS -> popularProductsObservable.postValue(Resource.error(message, null, exception))
             Observable.FAVORITE_PRODUCTS -> favoriteObservable.postValue(Resource.error(message, null, exception))
             Observable.Product -> productObservable.postValue(Resource.error(message, null, exception))
+            Observable.TAGS -> tagsObservable.postValue(Resource.error(message, null, exception))
         }
     }
 
     enum class Observable {
         Products,
+        TAGS,
         Product,
         POPULAR_PRODUCTS,
         FAVORITE_PRODUCTS
@@ -252,7 +311,38 @@ class ProductsRepository(application: Application) {
         return profileDao.getProfile()
     }
 
+    fun saveSearch(data: ProductSearchAndFilter) {
+        searchDao.delete()
+        searchDao.insert(data)
+    }
+
+    fun getSearch(): LiveData<ProductSearchAndFilter> {
+        return searchDao.getSearch()
+    }
+
+    fun fetchSearch(): ProductSearchAndFilter {
+
+        var search = searchDao.fetch()
+
+
+        if (search == null) {
+            search = ProductSearchAndFilter()
+        }
+        return search
+    }
+
+
+
     fun fetchProfile(): Profile {
-        return profileDao.fetch()
+
+        var p = profileDao.fetch()
+
+        if (p == null) {
+            p = Profile()
+        }
+        if (p.token == null) {
+            p.token = ""
+        }
+        return p
     }
 }

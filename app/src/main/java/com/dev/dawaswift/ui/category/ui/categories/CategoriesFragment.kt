@@ -1,15 +1,13 @@
 package com.dev.dawaswift.ui.category.ui.categories
 
-import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
-import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.DefaultItemAnimator
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.dev.common.data.Constants
 import com.dev.common.models.custom.Status
@@ -18,8 +16,7 @@ import com.dev.common.utils.viewUtils.ViewUtils
 import com.dev.dawaswift.R
 import com.dev.dawaswift.adapters.category.CategoryAdapter
 import com.dev.dawaswift.models.category.Category
-import com.dev.dawaswift.models.checkout.CheckOut
-import com.google.gson.Gson
+import com.dev.dawaswift.ui.category.Categories
 import kotlinx.android.synthetic.main.categories_fragment.*
 import java.util.*
 
@@ -83,17 +80,33 @@ class CategoriesFragment : Fragment() {
                 override fun onClickListener(position: Int) {
 
                     var fragment=SubCategoriesFragment()
-
                     fragment
                     .arguments= Bundle().apply {
                         putSerializable(Constants().CATEGORY, categories?.get(position))
                     }
                     activity!!.supportFragmentManager.beginTransaction().replace(R.id.container, fragment).addToBackStack("SUB").commit()
 
+
                 }
 
                 override fun onLongClickListener(position: Int) {
 
+                    val search = viewModel.fetchSearch()
+
+                    search.subCategoryId = null
+                    search.subcategoryName = null
+
+                    search.subCategoryItemId = null
+                    search.subcategoryItemName = null
+
+
+                    search.categoryId = categories!![position].id
+                    search.categoryName = categories!![position].name
+
+                    viewModel.saveSearch(search)
+
+
+                    (activity as Categories).onselection()
 
                 }
             })
