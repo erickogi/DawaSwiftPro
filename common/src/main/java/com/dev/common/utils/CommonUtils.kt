@@ -75,6 +75,32 @@ class CommonUtils {
         txtYear.text = year_date.format(date)
     }
 
+    fun displayFormattedDate(
+        actualDate: String,
+        txtDay: TextView,
+        txtMonth: TextView,
+        txtYear: TextView,
+        txtTime: TextView
+    ) {
+        val sdf = SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
+
+
+        val month_date = SimpleDateFormat("MMM ", Locale.ENGLISH)
+        val day_date = SimpleDateFormat("dd ", Locale.ENGLISH)
+        val year_date = SimpleDateFormat("yyyy", Locale.ENGLISH)
+        val time = SimpleDateFormat("HH:mm:ss", Locale.ENGLISH)
+
+
+        val date = sdf.parse(actualDate)
+
+        //val month_name = month_date.format(date)
+
+
+        txtDay.text = day_date.format(date)
+        txtMonth.text = month_date.format(date)
+        txtYear.text = year_date.format(date)
+        txtTime.text = time.format(date)
+    }
 
     fun roundOff(number: String?): Double {
 
@@ -88,6 +114,22 @@ class CommonUtils {
         } catch (x: Exception) {
             Log.d("roundsfsa", "Error \n" + x.toString())
             return 0.0
+        }
+
+    }
+
+    fun roundOffD(number: Double?): String {
+
+        try {
+
+            val number3digits: Double = String.format("%.3f", number).toDouble()
+            val number2digits: Double = String.format("%.2f", number3digits).toDouble()
+            val solution: String = String.format("%.1f", number2digits)
+            return solution
+
+        } catch (x: Exception) {
+            Log.d("roundsfsa", "Error \n" + x.toString())
+            return ""
         }
 
     }
@@ -178,5 +220,6 @@ class CommonUtils {
 
         //imageview.setImageBitmap(decodedImage)
     }
+
 
 }

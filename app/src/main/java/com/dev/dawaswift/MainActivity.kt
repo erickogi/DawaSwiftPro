@@ -13,7 +13,6 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-import com.dev.cabinzz.ui.main.ProfileFragment
 import com.dev.common.data.local.PrefrenceManager
 import com.dev.common.listeners.OnViewItemClick
 import com.dev.common.models.oauth.Oauth
@@ -22,6 +21,7 @@ import com.dev.common.utils.viewUtils.SimpleDialogModel
 import com.dev.common.utils.viewUtils.ViewUtils
 import com.dev.dawaswift.ui.MainFragment
 import com.dev.dawaswift.ui.OrdersFragment
+import com.dev.dawaswift.ui.ProfileFragment
 import com.dev.dawaswift.ui.productview.MenuFragment
 import com.google.android.gms.common.api.GoogleApiClient
 import com.google.android.gms.location.LocationRequest

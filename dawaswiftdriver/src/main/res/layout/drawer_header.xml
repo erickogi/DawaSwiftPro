@@ -5,16 +5,16 @@
     android:layout_height="wrap_content">
 
     <ImageView
-        android:id="@+id/navigation_background"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/header_material"
-        app:layout_constraintDimensionRatio="h,16:9"/>
+            android:id="@+id/navigation_background"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo"
+            app:layout_constraintDimensionRatio="h,16:9"/>
 
     <TextView
         android:id="@+id/navigation_header_name"
@@ -39,14 +39,14 @@
         android:layout_marginLeft="8dp" />
 
     <com.dev.common.utils.CircleImageView
-        android:id="@+id/navigation_header_image"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_marginBottom="4dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:src="@drawable/user_placeholder"
-        app:layout_constraintBottom_toTopOf="@+id/navigation_header_name"
-        app:layout_constraintStart_toStartOf="parent" />
+            android:id="@+id/n_image"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/user_placeholder"
+            app:layout_constraintBottom_toTopOf="@+id/navigation_header_name"
+            app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+                <RelativeLayout android:layout_width="match_parent"
+                                android:layout_marginTop="15.3dp"
+                                android:layout_height="wrap_content">
+
+
+                    <com.dev.common.utils.CircleImageView
+                            android:layout_width="60dp"
+                            android:id="@+id/avatar"
+                            app:srcCompat="@drawable/ic_person_black_24dp"
+                            app:civ_border_color="@color/colorPrimary"
+                            app:civ_fill_color="@color/white"
+                            app:civ_border_width="1dp"
+                            android:layout_height="60dp"/>
+                    <LinearLayout
+                            android:layout_toEndOf="@+id/avatar"
+                            android:layout_marginStart="10dp"
+
+
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+
+                            android:orientation="vertical">
+
+
+                        <TextView
+                                android:id="@+id/names"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sfpro_display_bold"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="16.7sp"/>
+
+                        <TextView
+                                android:id="@+id/email"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2.3dp"
+                                android:fontFamily="@font/sf_pro_display_medium"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="11.7sp"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/graylight"/>
+
+
+                <LinearLayout
+                        android:padding="10dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:id="@+id/account"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/sfpro_display_semibold"
+                            android:textColor="@color/blacklight"
+                            android:textSize="13.7sp"
+                            android:text="Edit Profile  "/>
+
+                    <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            app:srcCompat="@drawable/ic_navigate_next_black_24dp"/>
+                </LinearLayout>
+
+
+                <View
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@color/graylight"/>
+
+                <LinearLayout
+                        android:visibility="gone"
+                        android:padding="10dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:id="@+id/billing"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/sfpro_display_semibold"
+                            android:textColor="@color/blacklight"
+                            android:textSize="13.7sp"
+                            android:text="Billing Address  "/>
+
+                    <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            app:srcCompat="@drawable/ic_navigate_next_black_24dp"/>
+                </LinearLayout>
+
+
+                <View
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@color/graylight"/>
+
+                <LinearLayout
+                        android:visibility="gone"
+                        android:padding="10dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:id="@+id/delivery"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/sfpro_display_semibold"
+                            android:textColor="@color/blacklight"
+                            android:textSize="13.7sp"
+                            android:text="Delivery Address  "/>
+
+                    <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            app:srcCompat="@drawable/ic_navigate_next_black_24dp"/>
+                </LinearLayout>
+
+
+                <View
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@color/graylight"/>
+
+
+                <LinearLayout
+                        android:visibility="gone"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+
+                        android:id="@+id/chats"
+                        android:padding="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+
+                        android:orientation="horizontal">
+
+                    <LinearLayout android:layout_width="0dp"
+                                  android:layout_weight="1"
+                                  android:orientation="vertical"
+                                  android:layout_height="wrap_content">
+                        <LinearLayout android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content">
+                            <TextView
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/sfpro_display_semibold"
+                                    android:textColor="@color/blacklight"
+                                    android:textSize="13.7sp"
+                                    android:text="Chats"/>
+                            <ImageView
+                                    android:id="@+id/message_notifications"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            app:srcCompat="@drawable/ic_navigate_next_black_24dp"/>
+                </LinearLayout>
+
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@color/graylight"/>
+
+
+                <LinearLayout
+                        android:padding="10dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:id="@+id/linear_log_out"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/sfpro_display_semibold"
+                            android:textColor="@color/blacklight"
+                            android:textSize="13.7sp"
+                            android:text="Logout"/>
+
+                    <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            app:srcCompat="@drawable/ic_navigate_next_black_24dp"/>
+                </LinearLayout>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@color/graylight"/>
+
+
+                <LinearLayout
+                        android:padding="10dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:id="@+id/privacy_policy"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/sfpro_display_semibold"
+                            android:textColor="@color/blacklight"
+                            android:textSize="13.7sp"
+                            android:text="Privacy Policy"/>
+
+                    <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            app:srcCompat="@drawable/ic_navigate_next_black_24dp"/>
+                </LinearLayout>
+
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@color/graylight"/>
+
+
+                <LinearLayout
+                        android:padding="10dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:id="@+id/terms"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+                    <TextView
+
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/sfpro_display_semibold"
+                            android:textColor="@color/blacklight"
+                            android:textSize="13.7sp"
+                            android:text="DawaSwift Terms of Use"/>
+
+                    <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            app:srcCompat="@drawable/ic_navigate_next_black_24dp"/>
+                </LinearLayout>
+
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@color/graylight"/>
+
+
+                <LinearLayout
+
+                        android:padding="10dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:id="@+id/returnpolicy"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+                    <TextView
+
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/sfpro_display_semibold"
+                            android:textColor="@color/blacklight"
+                            android:textSize="13.7sp"
+                            android:text="DawaSwift Return and Refund Policy"/>
+
+                    <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            app:srcCompat="@drawable/ic_navigate_next_black_24dp"/>
+                </LinearLayout>
+
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@color/graylight"/>
+
+
+            </LinearLayout>
+
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="18.3dp"
+                    android:background="@color/smokegray"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <include layout="@layout/loading_avi"/>
+</RelativeLayout>

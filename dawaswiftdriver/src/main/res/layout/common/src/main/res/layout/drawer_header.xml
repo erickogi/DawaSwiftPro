@@ -38,7 +38,7 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginLeft="8dp" />
 
-    <de.hdodenhof.circleimageview.CircleImageView
+    <com.dev.common.utils.CircleImageView
         android:id="@+id/navigation_header_image"
         android:layout_width="64dp"
         android:layout_height="64dp"

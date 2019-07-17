@@ -58,7 +58,7 @@
     <string name="about_driver_description">Tufike Driver Taxi application.</string>
     <string name="request_list_label">Request List</string>
     <string name="drawer_statistics">Statistics</string>
-    <string name="toolbar_driver_status">Driver status </string>
+    <string name="toolbar_driver_status">Driver status</string>
     <string name="request_accept">ACCEPT</string>
     <string name="request_decline">DECLINE</string>
     <string name="travel_activity_buzz_button">Buzz</string>
@@ -104,7 +104,9 @@
     <string name="write_your_review_here">Write your review here…</string>
     <string name="review_action">Review</string>
     <string name="waiting_for_drivers">Request has been sent to %s drivers. waiting for response</string>
-    <string name="travel_finished_taken_from_balance">Trip has been finished and amount of Balance Amount: %.2f has been removed from your balance</string>
+    <string name="travel_finished_taken_from_balance">Trip has been finished and amount of Balance Amount: %.2f has been
+        removed from your balance
+    </string>
     <string name="travel_finished_not_sufficient_balance">Trip has been finished.Please pay %.2f in cash.</string>
     <string name="notification_driver_in_location">Driver in driverLocations</string>
     <string name="notification_requests_waiting"></string>
@@ -116,7 +118,9 @@
     <string name="error_point_pickup_null">No Pickup Point Selected.</string>
     <string name="error_point_dropoff_null">No drop Off Point Selected.</string>
     <string name="account_charge_success">Wallet credit has been charged Successfully.</string>
-    <string name="charge_account_detail">Please enter the amount you want to charge your account. then you can easily pay it using android pay or credit card info you have entered in the above card.</string>
+    <string name="charge_account_detail">Please enter the amount you want to charge your account. then you can easily
+        pay it using android pay or credit card info you have entered in the above card.
+    </string>
     <string name="origin">Origin</string>
     <string name="destination">Destination</string>
     <string name="unknown_location">Unknown</string>
@@ -131,7 +135,9 @@
     <string name="error_400">Error Happened During payment.</string>
     <string name="error_404">No Online Driver Found.</string>
     <string name="error_410">Your version is outdated. Update to new version.</string>
-    <string name="error_411">Your profile has been created but as a driver your profile needs to be evaluated and enabled from dashboard.</string>
+    <string name="error_411">Your profile has been created but as a driver your profile needs to be evaluated and
+        enabled from dashboard.
+    </string>
     <string name="error_412">Your profile has been disabled. Please contact support for help in this.</string>
     <string name="error_303">No Close Driver Found.</string>
     <string name="error_304">No Route found.</string>
@@ -145,10 +151,13 @@
     <string name="waiting_passenger">Waiting for Passenger to accept.</string>
     <string name="trip_mode">Trip Mode</string>
     <string name="error_select_trip_mode">You have to select a trip mode to start travel.</string>
-    <string name="error_no_trip_mode_found">No trip mode enabled for you. Contact administrator to enable your tariffs. The travel is going to be canceled now.</string>
+    <string name="error_no_trip_mode_found">No trip mode enabled for you. Contact administrator to enable your tariffs.
+        The travel is going to be canceled now.
+    </string>
     <string name="info_travel_hidden">Travel info hide successful.</string>
     <string name="charge_amount">Amount</string>
-    <string name="message_permission_denied"><![CDATA[If you reject permission,you can not use this service  Please turn on permissions at [Setting] > [Permission]]]></string>
+    <string name="message_permission_denied">
+        <![CDATA[If you reject permission,you can not use this service  Please turn on permissions at [Setting] > [Permission]]]></string>
     <string name="direct_call_rider">Call Rider</string>
     <string name="confirm_pickup_location">Confirm pickup Location</string>
     <string name="confirm_destination_location">Confirm destination Location</string>
@@ -218,7 +227,9 @@
     <string name="title_verify">Verify code</string>
     <string name="select_payment_method">Select payment method:</string>
     <string name="current_balance">Current balance</string>
-    <string name="question_hide_travel">Are you sure you want to hide travel? this action is not reversible however the travel info is still available for operator.</string>
+    <string name="question_hide_travel">Are you sure you want to hide travel? this action is not reversible however the
+        travel info is still available for operator.
+    </string>
     <string name="question_delete_address">Are you sure you want to delete this address?</string>
     <string name="message_enable_gps">Please enable GPS before proceeding.</string>
     <string name="message_internet_connection">Please enable Data or WiFi as an internet connection</string>
@@ -245,8 +256,11 @@
     <string name="travel_fee_dialog_content">Enter the fee of travel:</string>
     <string name="travel_fee_dialog_hint">Amount</string>
     <string name="travel_number_title">No.: %d</string>
-    <string name="recovery_travel_message_rider">An unfinished travel was found for you. do you want to resume it?</string>
-    <string name="recovery_travel_driver">An unfinished travel was found for you. you will be taken to screen in order to finish it</string>
+    <string name="recovery_travel_message_rider">An unfinished travel was found for you. do you want to resume it?
+    </string>
+    <string name="recovery_travel_driver">An unfinished travel was found for you. you will be taken to screen in order
+        to finish it
+    </string>
     <string name="drawer_transactions">Transactions</string>
     <string name="drawer_coupons">Coupons</string>
     <string name="drawer_promotions">Promotions</string>
@@ -262,6 +276,11 @@
     <string name="firebase_email" translatable="false">erickimani15@gmail.com</string>
     <string name="firebase_password" translatable="false">qwerty</string>
 
-    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyArhBu7Usq_ZoHsA4G-M5wjAl6pZZr8LKU</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyArhBu7Usq_ZoHsA4G-M5wjAl6pZZr8LKU
+    </string>
+
+    <string name="default_notification_channel_id">354</string>
+
 
 </resources>

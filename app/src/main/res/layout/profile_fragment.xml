@@ -6,7 +6,7 @@
         android:id="@+id/profile"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.profile.ProfileActivity">
+        tools:context="com.dev.common.profile.ProfileActivity">
 
     <include layout="@layout/toolback_bar"
              android:visibility="visible"/>

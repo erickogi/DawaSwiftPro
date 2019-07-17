@@ -1,6 +1,10 @@
 package com.dev.common.data
 
 class Constants {
+    val TRIP_ONGOING: Int = 1
+    val TRIP_ENDED: Int = 2
+    val TRIP_NOT_STARTED: Int = 0
+
     var SP_SIGN_IN: Int = 10001
     var GP_SIGN_IN: Int = 133
 

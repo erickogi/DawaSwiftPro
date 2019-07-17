@@ -1,22 +1,31 @@
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-
-    <data />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+    <include layout="@layout/toolback_bar"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_height="match_parent"
+            android:id="@+id/view"
+            android:layout_below="@+id/toolback">
 
         <fragment
-            android:id="@+id/map"
-            android:name="com.google.android.gms.maps.SupportMapFragment"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginBottom="16dp"
-            app:layout_constraintBottom_toTopOf="@+id/distance_label"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="16dp"
+                android:layout_margin="4dp"
+
+
+                app:layout_constraintBottom_toTopOf="@+id/distance_label"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
         <LinearLayout
             android:id="@+id/layout_actions"
             android:layout_width="wrap_content"
@@ -30,6 +39,10 @@
                 android:id="@+id/in_location_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+
+                android:visibility="gone"
+                android:layout_margin="5dp"
+                android:padding="5dp"
                 android:layout_marginTop="16dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:clickable="true"
@@ -37,17 +50,7 @@
                 android:tint="#9E9E9E"
                 app:srcCompat="@drawable/in_location"
                 android:focusable="true" />
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/call_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:clickable="true"
-                android:onClick="onCallDriverClicked"
-                android:tint="#9E9E9E"
-                app:srcCompat="@drawable/call"
-                android:focusable="true" />
+
         </LinearLayout>
         <TextView
             android:id="@+id/distance_label"
@@ -95,25 +98,27 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/cost_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginStart="16dp"
-            android:text="@string/cost"
-            app:layout_constraintBottom_toTopOf="@+id/cost_text"
-            app:layout_constraintStart_toStartOf="parent" />
+                android:visibility="gone"
+                android:id="@+id/cost_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:text="@string/cost"
+                app:layout_constraintBottom_toTopOf="@+id/cost_text"
+                app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/cost_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:text="-"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            app:layout_constraintBottom_toTopOf="@id/layout_buttons"
-            app:layout_constraintStart_toStartOf="@+id/cost_label" />
+
+                android:id="@+id/cost_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintBottom_toTopOf="@id/layout_buttons"
+                app:layout_constraintStart_toStartOf="@+id/cost_label" />
 
         <LinearLayout
             android:id="@+id/layout_buttons"
@@ -127,6 +132,45 @@
             android:orientation="vertical"
             android:showDividers="middle"
             app:layout_constraintBottom_toBottomOf="parent">
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:id="@+id/linear_call"
+                          android:clickable="true"
+                          android:focusable="true"
+                          android:focusableInTouchMode="true"
+                          android:layout_marginBottom="6dp"
+                          android:background="@drawable/bg_gray"
+                          android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/call_button"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_marginTop="16dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:onClick="onCallDriverClicked"
+                        android:tint="#9E9E9E"
+                        app:srcCompat="@drawable/call"
+                        android:focusable="true"/>
+
+                <TextView
+                        android:textColor="@color/blacklight"
+
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:text="Call Client"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        app:layout_constraintBottom_toTopOf="@id/layout_buttons"
+                        app:layout_constraintStart_toStartOf="@+id/cost_label"/>
+
+
+            </LinearLayout>
 
             <ng.max.slideview.SlideView
                 android:id="@+id/slide_start"
@@ -142,32 +186,33 @@
                 app:sv_slideTextColor="@color/textblack" />
 
             <ng.max.slideview.SlideView
-                android:id="@+id/slide_finish"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:visibility="gone"
-                app:layout_constraintBottom_toTopOf="@id/slide_cancel"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:sv_buttonBackgroundColor="@color/accent_orange"
-                app:sv_buttonImage="@drawable/finish_travel"
-                app:sv_slideBackgroundColor="@color/accent_grey"
-                app:sv_slideText="@string/finish_travel"
-                app:sv_slideTextColor="@color/textblack" />
+                    android:id="@+id/slide_finish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toTopOf="@id/slide_cancel"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:sv_buttonBackgroundColor="@color/accent_orange"
+                    app:sv_buttonImage="@drawable/finish_travel"
+                    app:sv_slideBackgroundColor="@color/accent_grey"
+                    app:sv_slideText="@string/finish_travel"
+                    app:sv_slideTextColor="@color/textblack" />
 
             <ng.max.slideview.SlideView
-                android:id="@+id/slide_cancel"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:sv_buttonBackgroundColor="@color/accent_red"
-                app:sv_buttonImage="@drawable/cancel"
-                app:sv_reverseSlide="true"
-                app:sv_slideBackgroundColor="@color/accent_grey"
-                app:sv_slideText="@string/cancel_travel"
-                app:sv_slideTextColor="@color/textblack" />
+                    android:visibility="gone"
+                    android:id="@+id/slide_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:sv_buttonBackgroundColor="@color/accent_red"
+                    app:sv_buttonImage="@drawable/cancel"
+                    app:sv_reverseSlide="true"
+                    app:sv_slideBackgroundColor="@color/accent_grey"
+                    app:sv_slideText="@string/cancel_travel"
+                    app:sv_slideTextColor="@color/textblack" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
-</layout>
+</RelativeLayout>

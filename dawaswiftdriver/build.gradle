@@ -67,15 +67,20 @@ dependencies {
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.0.1'
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.0.1"
     implementation 'com.afollestad.material-dialogs:core:3.0.0-alpha3'
-    implementation 'com.google.firebase:firebase-core:16.0.9'
+    implementation 'com.google.firebase:firebase-core:17.0.0'
+
+    implementation 'com.google.firebase:firebase-messaging:19.0.1'
     implementation 'com.stepstone.stepper:material-stepper:4.3.1'
 
     api 'com.google.android.gms:play-services-maps:16.1.0'
     api 'com.google.android.gms:play-services-location:16.0.0'
     api 'com.google.maps.android:android-maps-utils:0.5'
     api 'com.afollestad.material-dialogs:core:0.9.6.0'
+    api 'com.google.maps:google-maps-services:0.2.9'
+
+    implementation 'com.google.firebase:firebase-auth:18.0.0'
+    implementation 'com.google.firebase:firebase-database:18.0.0'
 
 
 }
 apply plugin: 'com.google.gms.google-services'
-

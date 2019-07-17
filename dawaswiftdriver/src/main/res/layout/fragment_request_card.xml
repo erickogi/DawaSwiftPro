@@ -29,42 +29,44 @@
                 app:layout_constraintTop_toBottomOf="@id/button_accept" /-->
 
             <ImageView
-                android:id="@+id/image_location"
-                android:layout_width="24dp"
-                android:layout_height="72dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_destination"
-                tools:ignore="ContentDescription" />
+                    android:id="@+id/image_location"
+                    android:layout_width="24dp"
+                    android:layout_height="122dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_destination"
+                    tools:ignore="ContentDescription" />
 
             <TextView
-                android:id="@+id/label_from"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="16dp"
-                android:text="@string/from"
-                app:layout_constraintStart_toEndOf="@+id/image_location"
-                app:layout_constraintTop_toTopOf="parent" />
+                    android:id="@+id/label_from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Pick Up Points"
+                    app:layout_constraintStart_toEndOf="@+id/image_location"
+                    app:layout_constraintTop_toTopOf="parent" />
+
 
             <TextView
-                android:id="@+id/text_from"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:layout_marginStart="8dp"
-                android:ellipsize="marquee"
-                android:fadingEdge="horizontal"
-                android:singleLine="true"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/image_location"
-                app:layout_constraintTop_toBottomOf="@+id/label_from" />
+                    android:id="@+id/pick_up"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:singleLine="false"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/image_location"
+                    app:layout_constraintTop_toBottomOf="@+id/label_from" />
+
 
             <TextView
                 android:id="@+id/label_to"
@@ -77,19 +79,19 @@
                 app:layout_constraintStart_toEndOf="@+id/image_location" />
 
             <TextView
-                android:id="@+id/text_to"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:layout_marginStart="8dp"
-                android:ellipsize="marquee"
-                android:fadingEdge="horizontal"
-                android:singleLine="true"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/image_location"
-                app:layout_constraintTop_toBottomOf="@+id/label_to" />
+                    android:id="@+id/drop_off"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:singleLine="true"
+                    android:textSize="13.7sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/image_location"
+                    app:layout_constraintTop_toBottomOf="@+id/label_to" />
 
             <ImageView
                 android:id="@+id/image_distance"
@@ -127,75 +129,75 @@
                 app:layout_constraintBaseline_toBaselineOf="@id/label_distance"
                 app:layout_constraintStart_toEndOf="@+id/label_distance" />
 
+            <!--            <ImageView-->
+            <!--                android:id="@+id/image_from_you"-->
+            <!--                android:layout_width="24dp"-->
+            <!--                android:layout_height="24dp"-->
+            <!--                android:layout_marginLeft="16dp"-->
+            <!--                android:layout_marginStart="16dp"-->
+            <!--                android:layout_marginTop="16dp"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/image_distance"-->
+            <!--                app:srcCompat="@drawable/ic_near_me"-->
+            <!--                tools:ignore="ContentDescription" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/label_from_you"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="8dp"-->
+            <!--                android:layout_marginStart="8dp"-->
+            <!--                android:text="@string/request_card_distance_from_you"-->
+            <!--                android:textSize="16sp"-->
+            <!--                app:layout_constraintBottom_toBottomOf="@+id/image_from_you"-->
+            <!--                app:layout_constraintStart_toEndOf="@+id/image_from_you"-->
+            <!--                app:layout_constraintTop_toTopOf="@+id/image_from_you" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/text_distance_from_you"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="8dp"-->
+            <!--                android:layout_marginStart="8dp"-->
+            <!--                android:textSize="20sp"-->
+            <!--                android:textStyle="bold"-->
+            <!--                app:layout_constraintBaseline_toBaselineOf="@id/label_from_you"-->
+            <!--                app:layout_constraintStart_toEndOf="@id/label_from_you" />-->
+
             <ImageView
-                android:id="@+id/image_from_you"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/image_distance"
-                app:srcCompat="@drawable/ic_near_me"
-                tools:ignore="ContentDescription" />
+                    android:id="@+id/image_cost"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/image_distance"
+                    app:srcCompat="@drawable/travel_card_cost"
+                    tools:ignore="ContentDescription" />
 
             <TextView
-                android:id="@+id/label_from_you"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:layout_marginStart="8dp"
-                android:text="@string/request_card_distance_from_you"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="@+id/image_from_you"
-                app:layout_constraintStart_toEndOf="@+id/image_from_you"
-                app:layout_constraintTop_toTopOf="@+id/image_from_you" />
+                    android:id="@+id/label_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:text="Earnings"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/image_cost"
+                    app:layout_constraintStart_toEndOf="@+id/image_cost"
+                    app:layout_constraintTop_toTopOf="@+id/image_cost" />
 
             <TextView
-                android:id="@+id/text_from_you"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:layout_marginStart="8dp"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintBaseline_toBaselineOf="@id/label_from_you"
-                app:layout_constraintStart_toEndOf="@id/label_from_you" />
-
-            <ImageView
-                android:id="@+id/image_cost"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/image_from_you"
-                app:srcCompat="@drawable/travel_card_cost"
-                tools:ignore="ContentDescription" />
-
-            <TextView
-                android:id="@+id/label_cost"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:layout_marginStart="8dp"
-                android:text="@string/request_card_cost"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="@+id/image_cost"
-                app:layout_constraintStart_toEndOf="@+id/image_cost"
-                app:layout_constraintTop_toTopOf="@+id/image_cost" />
-
-            <TextView
-                android:id="@+id/text_cost"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:layout_marginStart="8dp"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintBaseline_toBaselineOf="@id/label_cost"
-                app:layout_constraintStart_toEndOf="@id/label_cost" />
+                    android:id="@+id/text_earning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBaseline_toBaselineOf="@id/label_cost"
+                    app:layout_constraintStart_toEndOf="@id/label_cost" />
 
 
             <Button

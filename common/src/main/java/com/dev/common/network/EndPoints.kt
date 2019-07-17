@@ -6,6 +6,10 @@
  *
  */
 
+import com.dev.common.models.driver.requests.RequestActionResponse
+import com.dev.common.models.driver.requests.RequestResponse
+import com.dev.common.models.driver.requests.TripRequest
+import com.dev.common.models.driver.trips.TripsResponse
 import com.dev.common.models.location.LocationSearchModel
 import com.dev.common.models.location.LocationsResponse
 import com.dev.common.models.oauth.ImageUploadResponse
@@ -14,10 +18,7 @@ import com.dev.common.models.oauth.Profile
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import retrofit2.Call
-import retrofit2.http.Body
-import retrofit2.http.Multipart
-import retrofit2.http.POST
-import retrofit2.http.Part
+import retrofit2.http.*
 
 /**
  * @author kogi
@@ -78,6 +79,33 @@ interface EndPoints {
 
     @POST("wards.json")
     fun getWards(@Body locationSearchModel: LocationSearchModel): Call<LocationsResponse>
+
+
+    @GET("trip/requests.php")
+    fun getRequests(): Call<RequestResponse>
+
+
+    @GET("trip/fetch.php")
+    fun getTrips(): Call<TripsResponse>
+
+
+    @POST("trip/accept.php")
+    fun acceptTrip(@Body id: TripRequest): Call<RequestActionResponse>
+
+
+    @POST("trip/reject.php")
+    fun rejectTrip(@Body id: TripRequest): Call<RequestActionResponse>
+
+
+    @GET("trip/current.php")
+    fun currentTrip(): Call<RequestActionResponse>
+
+
+    @POST("trip/begin.php")
+    fun beginTrip(@Body id: TripRequest): Call<RequestActionResponse>
+
+    @POST("trip/end.php")
+    fun endTrip(@Body id: TripRequest): Call<RequestActionResponse>
 
 
     @Multipart

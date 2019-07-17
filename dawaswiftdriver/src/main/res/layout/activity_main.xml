@@ -5,8 +5,13 @@
         <!--xmlns:app="http://schemas.android.com/apk/res-auto">-->
 
 
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 <androidx.drawerlayout.widget.DrawerLayout
-        android:id="@+id/drawer_layout"
+        android:id="@+id/drawerLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -15,6 +20,7 @@
     <androidx.coordinatorlayout.widget.CoordinatorLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
 
         <com.google.android.material.appbar.AppBarLayout
                 android:id="@+id/appbarLayout"
@@ -63,6 +69,8 @@
                     android:name="com.google.android.gms.maps.SupportMapFragment"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
+
+
         </LinearLayout>
 
         <androidx.cardview.widget.CardView
@@ -86,6 +94,7 @@
                         android:text="@string/request_list_label"
                         android:textAlignment="center"
                         android:textSize="20sp" />
+
                 <androidx.viewpager.widget.ViewPager
                         android:id="@+id/requests_view_pager"
                         android:layout_width="match_parent"
@@ -96,6 +105,8 @@
                         android:paddingBottom="0dp"
                         android:paddingLeft="@dimen/card_padding"
                         android:paddingRight="@dimen/card_padding"/>
+
+
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -107,9 +118,10 @@
                 app:srcCompat="@drawable/refresh"
                 app:layout_anchor="@id/bottom_sheet"
                 app:layout_anchorGravity="top|end"
-                android:onClick="onRefreshRequestsClicked"
                 android:clickable="true"
                 android:focusable="true"/>
+
+
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
     <com.google.android.material.navigation.NavigationView
             android:id="@+id/navigation_view"
@@ -119,4 +131,8 @@
             app:headerLayout="@layout/drawer_header"
             app:menu="@menu/main_drawer" />
 </androidx.drawerlayout.widget.DrawerLayout>
+
+    <include layout="@layout/loading_avi"/>
+
+</RelativeLayout>
 <!--</layout>-->

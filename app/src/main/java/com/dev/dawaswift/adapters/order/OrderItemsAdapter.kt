@@ -37,7 +37,7 @@ class OrderItemsAdapter(
 
 
         holder.status.text = model.statusName
-        holder.quantity.text = "" + model.itemsCount
+        holder.quantity.text = " " + model.itemsCount
         holder.value.text = "Ksh " + model.totalAmount
 
 

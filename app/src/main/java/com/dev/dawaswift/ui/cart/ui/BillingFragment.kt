@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
+import com.dev.common.profile.ui.profile.ProfileViewModel
 import com.dev.dawaswift.R
-import com.dev.dawaswift.ui.profile.ui.profile.ProfileViewModel
 import com.stepstone.stepper.BlockingStep
 import com.stepstone.stepper.StepperLayout
 import com.stepstone.stepper.VerificationError

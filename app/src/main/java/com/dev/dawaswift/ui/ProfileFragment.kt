@@ -1,4 +1,4 @@
-package com.dev.cabinzz.ui.main
+package com.dev.dawaswift.ui
 
 import android.content.Intent
 import android.os.Bundle
@@ -11,16 +11,15 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.dev.common.listeners.OnViewItemClick
 import com.dev.common.models.custom.Status
+import com.dev.common.profile.ProfileActivity
 import com.dev.common.ui.web.WebviewActivity
 import com.dev.common.utils.CommonUtils
 import com.dev.common.utils.viewUtils.SimpleDialogModel
 import com.dev.common.utils.viewUtils.ViewUtils
 import com.dev.dawaswift.R
 import com.dev.dawaswift.SplashActivity
-import com.dev.dawaswift.ui.MainViewModel
 import com.dev.dawaswift.ui.cart.delivery.CreateDelivery
 import com.dev.dawaswift.ui.chat.ChatActivity
-import com.dev.dawaswift.ui.profile.ProfileActivity
 import kotlinx.android.synthetic.main.profile.*
 
 class ProfileFragment : Fragment() {
@@ -52,7 +51,8 @@ class ProfileFragment : Fragment() {
 
         linear_log_out.setOnClickListener {
 
-          ViewUtils.simpleYesNoDialog(context!!,
+            ViewUtils.simpleYesNoDialog(
+                context!!,
                 "Dawaswift",
                 "Please confirm that you want to log out",
                 SimpleDialogModel("Yes Proceed", "No", null),

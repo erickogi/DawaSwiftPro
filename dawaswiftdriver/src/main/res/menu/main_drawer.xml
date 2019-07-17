@@ -1,26 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/nav_item_travels"
-        android:icon="@drawable/nav_item_travels"
-        android:title="@string/drawer_travels" />
+            android:id="@+id/nav_item_travels"
+            android:icon="@drawable/nav_item_travels"
+            android:title="My Trips"/>
     <item
-        android:id="@+id/nav_item_statistics"
-        android:icon="@drawable/nav_item_statistics"
-        android:title="@string/drawer_statistics" />
+            android:visible="false"
+            android:id="@+id/nav_item_statistics"
+            android:icon="@drawable/nav_item_statistics"
+            android:title="@string/drawer_statistics" />
     <item
-        android:id="@+id/nav_item_charge_account"
-        android:icon="@drawable/nav_item_charge_account"
-        android:title="@string/drawer_charge_account" />
+            android:visible="false"
+            android:id="@+id/nav_item_charge_account"
+            android:icon="@drawable/nav_item_charge_account"
+            android:title="@string/drawer_charge_account" />
     <item
-        android:id="@+id/nav_item_profile"
-        android:icon="@drawable/nav_item_edit_profile"
-        android:title="@string/drawer_edit_profile" />
+            android:id="@+id/nav_item_profile"
+            android:icon="@drawable/nav_item_edit_profile"
+            android:title="Profile"/>
 
     <item
-        android:id="@+id/nav_item_transactions"
-        android:icon="@drawable/nav_item_transactions"
-        android:title="@string/drawer_transactions" />
+            android:visible="false"
+            android:id="@+id/nav_item_transactions"
+            android:icon="@drawable/nav_item_transactions"
+            android:title="@string/drawer_transactions" />
 
     <item android:title="@string/drawer_support">
         <menu>
