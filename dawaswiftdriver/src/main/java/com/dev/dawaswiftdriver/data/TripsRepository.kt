@@ -12,6 +12,8 @@ import com.dev.common.data.local.AppDatabase
 import com.dev.common.data.local.PrefrenceManager
 import com.dev.common.data.local.daos.ProfileDao
 import com.dev.common.models.custom.Resource
+import com.dev.common.models.driver.balance.BalanceQuery
+import com.dev.common.models.driver.balance.BalanceResponse
 import com.dev.common.models.driver.requests.RequestActionResponse
 import com.dev.common.models.driver.requests.RequestResponse
 import com.dev.common.models.driver.requests.TripRequest
@@ -40,6 +42,7 @@ class TripsRepository(application: Application) {
     val requestBeginObservable = MutableLiveData<Resource<RequestActionResponse>>()
     val requestEndObservable = MutableLiveData<Resource<RequestActionResponse>>()
     val requestCurrentObservable = MutableLiveData<Resource<RequestActionResponse>>()
+    val balanceObservable = MutableLiveData<Resource<BalanceResponse>>()
 
     private val context: Context
 
@@ -108,6 +111,16 @@ class TripsRepository(application: Application) {
             executeCurrentRequest(Observable.TRIPCURRENT)
         } else {
             setNetworkError(Observable.TRIPCURRENT)
+        }
+    }
+
+
+    fun balance(balanceQuery: BalanceQuery) {
+        setIsLoading(Observable.BALANCE)
+        if (NetworkUtils.isConnected(context)) {
+            executeBalance(Observable.BALANCE, balanceQuery)
+        } else {
+            setNetworkError(Observable.BALANCE)
         }
     }
 
@@ -247,6 +260,27 @@ class TripsRepository(application: Application) {
         }
     }
 
+    private fun executeBalance(obs: Observable, balanceQuery: BalanceQuery) {
+
+        Log.d("ONRSTART", obs.name + "-->  GET BALANCE  " + Gson().toJson(balanceQuery))
+
+        GlobalScope.launch(context = Dispatchers.Main) {
+            val call = RequestService.getService(fetchProfile().token).balances(balanceQuery)
+            call.enqueue(object : Callback<BalanceResponse> {
+                override fun onFailure(call: Call<BalanceResponse>?, t: Throwable?) {
+                    onFailure(obs, t, FailureUtils().parseError(call, t))
+                }
+
+                override fun onResponse(
+                    call: Call<BalanceResponse>?,
+                    response: Response<BalanceResponse>?
+                ) {
+                    onResponse(response, obs)
+                }
+            })
+        }
+    }
+
 
     private fun setNetworkError(observable: Observable) {
         setIsError(
@@ -273,6 +307,7 @@ class TripsRepository(application: Application) {
             Observable.TRIPBEGIN -> onResponseTrip(response as Response<RequestActionResponse>, observable)
             Observable.TRIPEND -> onResponseTrip(response as Response<RequestActionResponse>, observable)
             Observable.TRIPCURRENT -> onResponseTrip(response as Response<RequestActionResponse>, observable)
+            Observable.BALANCE -> onResponseBalance(response as Response<BalanceResponse>, observable)
 
         }
 
@@ -351,6 +386,30 @@ class TripsRepository(application: Application) {
         }
     }
 
+    private fun onResponseBalance(response: Response<BalanceResponse>?, observable: Observable) {
+
+        if (response != null) {
+            if (response.isSuccessful) {
+                if (response.body()?.statusCode!! > 0 && response.body()?.success!!) {
+                    setIsSuccesful(observable, response.body()!!)
+
+
+                } else {
+                    response.body()?.statusMessage?.let {
+                        setIsError(
+                            observable, it,
+                            AgriException(it, it, response.body()?.errors)
+                        )
+                    }
+                }
+            } else {
+                setIsError(observable, "", ErrorUtils().parseError(response))
+            }
+        } else {
+            setIsError(observable, "", AgriException("Error Loading Data"))
+        }
+    }
+
 
     private fun setIsLoading(observable: Observable) {
         when (observable) {
@@ -361,6 +420,7 @@ class TripsRepository(application: Application) {
             Observable.TRIPBEGIN -> requestBeginObservable.postValue(Resource.loading(null))
             Observable.TRIPEND -> requestEndObservable.postValue(Resource.loading(null))
             Observable.TRIPCURRENT -> requestCurrentObservable.postValue(Resource.loading(null))
+            Observable.BALANCE -> balanceObservable.postValue(Resource.loading(null))
         }
     }
 
@@ -373,6 +433,7 @@ class TripsRepository(application: Application) {
             Observable.TRIPBEGIN -> requestBeginObservable.postValue(Resource.success(data as RequestActionResponse))
             Observable.TRIPEND -> requestEndObservable.postValue(Resource.success(data as RequestActionResponse))
             Observable.TRIPCURRENT -> requestCurrentObservable.postValue(Resource.success(data as RequestActionResponse))
+            Observable.BALANCE -> balanceObservable.postValue(Resource.success(data as BalanceResponse))
         }
 
     }
@@ -386,6 +447,7 @@ class TripsRepository(application: Application) {
             Observable.TRIPBEGIN -> requestBeginObservable.postValue(Resource.error(message, null, exception))
             Observable.TRIPEND -> requestEndObservable.postValue(Resource.error(message, null, exception))
             Observable.TRIPCURRENT -> requestCurrentObservable.postValue(Resource.error(message, null, exception))
+            Observable.BALANCE -> balanceObservable.postValue(Resource.error(message, null, exception))
         }
     }
 
@@ -396,7 +458,8 @@ class TripsRepository(application: Application) {
         TRIPBEGIN,
         TRIPEND,
         TRIPCURRENT,
-        REQUESTS
+        REQUESTS,
+        BALANCE
     }
 
     fun saveProfile(data: Oauth) {

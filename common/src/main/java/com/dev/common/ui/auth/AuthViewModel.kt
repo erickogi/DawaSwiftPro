@@ -8,6 +8,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
 import com.dev.common.data.repository.LocationRepository
 import com.dev.common.data.repository.OauthRepository
+import com.dev.common.models.NotificationsResponse
 import com.dev.common.models.custom.Resource
 import com.dev.common.models.location.LocationSearchModel
 import com.dev.common.models.location.LocationsResponse
@@ -29,6 +30,7 @@ class AuthViewModel(application: Application) : AndroidViewModel(application) {
     private val updateProfileObservable = MediatorLiveData<Resource<Oauth>>()
     private val updatePasswordObservable = MediatorLiveData<Resource<Oauth>>()
     private val uploadImageObservable = MediatorLiveData<Resource<ImageUploadResponse>>()
+    private val notificationObservable = MediatorLiveData<Resource<NotificationsResponse>>()
 
 
     private val countiesObservable = MediatorLiveData<Resource<LocationsResponse>>()
@@ -39,6 +41,11 @@ class AuthViewModel(application: Application) : AndroidViewModel(application) {
     init {
         uploadImageObservable.addSource(oauthRepository.uploadImageObservable) { data ->
             uploadImageObservable.setValue(
+                data
+            )
+        }
+        notificationObservable.addSource(oauthRepository.notificationsObservable) { data ->
+            notificationObservable.setValue(
                 data
             )
         }
@@ -155,6 +162,16 @@ class AuthViewModel(application: Application) : AndroidViewModel(application) {
 
     fun observeCreateProfile(): LiveData<Resource<Oauth>> {
         return createProfileObservable
+    }
+
+
+    //NOTITFICATIONS
+    fun notifications() {
+        oauthRepository.notifications()
+    }
+
+    fun observeNotifications(): LiveData<Resource<NotificationsResponse>> {
+        return notificationObservable
     }
 
 

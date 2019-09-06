@@ -49,6 +49,7 @@
                             android:paddingStart="5dp"
                             android:paddingEnd="5dp"/>
                     <Switch
+                            android:enabled="true"
                             android:id="@+id/switch_connection"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -132,7 +133,11 @@
             app:menu="@menu/main_drawer" />
 </androidx.drawerlayout.widget.DrawerLayout>
 
-    <include layout="@layout/loading_avi"/>
+    <include layout="@layout/loading_avi"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerInParent="true"
+             android:visibility="invisible"/>
 
 </RelativeLayout>
 <!--</layout>-->

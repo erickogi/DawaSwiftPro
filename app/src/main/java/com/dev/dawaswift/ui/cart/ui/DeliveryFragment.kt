@@ -7,7 +7,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
@@ -23,60 +22,57 @@ import com.dev.dawaswift.GeoLocationUtills
 import com.dev.dawaswift.adapters.delivery.DeliveryAdapter
 import com.dev.dawaswift.models.Address.Address
 import com.dev.dawaswift.ui.CommonMainViewModel
-import com.dev.dawaswift.ui.cart.CartActivity
 import com.google.android.material.textfield.TextInputEditText
 import com.google.gson.Gson
 import com.schibstedspain.leku.*
-import com.stepstone.stepper.BlockingStep
-import com.stepstone.stepper.StepperLayout
-import com.stepstone.stepper.VerificationError
 import kotlinx.android.synthetic.main.delivery_fragment.*
 
 
-class DeliveryFragment : Fragment(), BlockingStep {
-    override fun onBackClicked(callback: StepperLayout.OnBackClickedCallback?) {
-        callback?.goToPrevStep()
-    }
-
-    override fun onSelected() {
-
-        viewModel.fetchAddress()
-
-    }
-
-    override fun onCompleteClicked(callback: StepperLayout.OnCompleteClickedCallback?) {
-        callback?.complete()
-    }
-
-    override fun onNextClicked(callback: StepperLayout.OnNextClickedCallback?) {
-
-
-        callback?.goToNextStep()
-    }
-
-    override fun verifyStep(): VerificationError? {
-
-        if (selectedAddress != null) {
-            (activity as CartActivity).setAddress(selectedAddress!!)
-            return null
-        } else {
-            if (items != null && items.size == 1) {
-                selectedAddress = items[0]
-                (activity as CartActivity).setAddress(selectedAddress!!)
-
-                return null
-
-            }
-            (activity as CartActivity).setAddress(null)
-
-            return VerificationError("Select or add a delivery address")
-        }
-    }
-
-    override fun onError(error: VerificationError) {
-
-        Toast.makeText(context!!, error.errorMessage, Toast.LENGTH_LONG).show()
-    }
+class DeliveryFragment : Fragment() {
+//    , BlockingStep {
+//    override fun onBackClicked(callback: StepperLayout.OnBackClickedCallback?) {
+//        callback?.goToPrevStep()
+//    }
+//
+//    override fun onSelected() {
+//
+//        viewModel.fetchAddress()
+//
+//    }
+//
+//    override fun onCompleteClicked(callback: StepperLayout.OnCompleteClickedCallback?) {
+//        callback?.complete()
+//    }
+//
+//    override fun onNextClicked(callback: StepperLayout.OnNextClickedCallback?) {
+//
+//
+//        callback?.goToNextStep()
+//    }
+//
+//    override fun verifyStep(): VerificationError? {
+//
+//        if (selectedAddress != null) {
+//            (activity as CartActivity).setAddress(selectedAddress!!)
+//            return null
+//        } else {
+//            if (items != null && items.size == 1) {
+//                selectedAddress = items[0]
+//                (activity as CartActivity).setAddress(selectedAddress!!)
+//
+//                return null
+//
+//            }
+//            (activity as CartActivity).setAddress(null)
+//
+//            return VerificationError("Select or add a delivery address")
+//        }
+//    }
+//
+//    override fun onError(error: VerificationError) {
+//
+//        Toast.makeText(context!!, error.errorMessage, Toast.LENGTH_LONG).show()
+//    }
 
 
     companion object {
@@ -106,8 +102,6 @@ class DeliveryFragment : Fragment(), BlockingStep {
             showPlacePicker()
 
         }
-
-
         viewModel.observeAddress().observe(this, Observer {
 
             ViewUtils.setStatus(
@@ -360,6 +354,27 @@ class DeliveryFragment : Fragment(), BlockingStep {
     private fun initDats() {
 
         viewModel.fetchAddress()
+    }
+
+    fun start() {
+        viewModel.fetchAddress()
+
+    }
+
+    fun getSelectedAddress(): Address? {
+
+
+        return selectedAddress
+    }
+
+    fun getItems(): List<Address>? {
+        return items
+
+    }
+
+    fun setSelectedAddress(items: Address) {
+
+        selectedAddress = items
     }
 
 

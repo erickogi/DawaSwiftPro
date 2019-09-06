@@ -46,4 +46,10 @@ class Constants {
     val subcategoryitem = 7
 
 
+    val ROLE_CODE: String = "ROLECODE"
+
+    val ROLE_DRIVER: Int = 13
+    val ROLE_CLIENT: Int = 1
+
+
 }

@@ -11,6 +11,11 @@
             android:title="Orders"/>
 
 
+    <item
+
+            android:id="@+id/navigation_notifications"
+            android:icon="@drawable/ic_notifications_none_black_24dp"
+            android:title="Notifications"/>
 
 
     <item

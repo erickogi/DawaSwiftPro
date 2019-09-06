@@ -6,6 +6,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
 import com.dev.common.data.repository.OauthRepository
 import com.dev.common.models.custom.Resource
+import com.dev.common.models.driver.balance.BalanceQuery
+import com.dev.common.models.driver.balance.BalanceResponse
 import com.dev.common.models.driver.requests.RequestActionResponse
 import com.dev.common.models.driver.requests.RequestResponse
 import com.dev.common.models.driver.requests.TripRequest
@@ -25,6 +27,7 @@ class TripsViewModel(application: Application) : AndroidViewModel(application) {
     val requestBeginObservable = MediatorLiveData<Resource<RequestActionResponse>>()
     val requestEndObservable = MediatorLiveData<Resource<RequestActionResponse>>()
     val requestCurrentObservable = MediatorLiveData<Resource<RequestActionResponse>>()
+    val balanceObservable = MediatorLiveData<Resource<BalanceResponse>>()
 
 
     init {
@@ -58,6 +61,12 @@ class TripsViewModel(application: Application) : AndroidViewModel(application) {
 
         requestCurrentObservable.addSource(tripsRepository.requestCurrentObservable) { data ->
             requestCurrentObservable.setValue(
+                data
+            )
+        }
+
+        balanceObservable.addSource(tripsRepository.balanceObservable) { data ->
+            balanceObservable.setValue(
                 data
             )
         }
@@ -143,6 +152,15 @@ class TripsViewModel(application: Application) : AndroidViewModel(application) {
     fun requestCurrent() {
         tripsRepository.current()
     }
+
+    fun observeBalance(): LiveData<Resource<BalanceResponse>> {
+        return balanceObservable
+    }
+
+    fun balance(balanceQuery: BalanceQuery) {
+        tripsRepository.balance(balanceQuery)
+    }
+
 
 
 }

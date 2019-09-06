@@ -12,6 +12,7 @@ import com.dev.common.R
 import com.dev.common.data.local.AppDatabase
 import com.dev.common.data.local.PrefrenceManager
 import com.dev.common.data.local.daos.ProfileDao
+import com.dev.common.models.NotificationsResponse
 import com.dev.common.models.custom.Resource
 import com.dev.common.models.oauth.ImageUploadResponse
 import com.dev.common.models.oauth.Oauth
@@ -46,6 +47,7 @@ class OauthRepository(application: Application) {
     val createProfileObservable = MutableLiveData<Resource<Oauth>>()
     val switchProfileObservable = MutableLiveData<Resource<Oauth>>()
     val uploadImageObservable = MutableLiveData<Resource<ImageUploadResponse>>()
+    val notificationsObservable = MutableLiveData<Resource<NotificationsResponse>>()
 
 
 
@@ -123,6 +125,16 @@ class OauthRepository(application: Application) {
             excuteCreateAccount(parameters)
         } else {
             setNetworkError(Observable.CREATE_PROFILE)
+
+        }
+    }
+
+    fun notifications() {
+        setIsLoading(Observable.NOTIFICATIONS)
+        if (NetworkUtils.isConnected(context)) {
+            excuteNotifications()
+        } else {
+            setNetworkError(Observable.NOTIFICATIONS)
 
         }
     }
@@ -288,6 +300,26 @@ class OauthRepository(application: Application) {
         }
     }
 
+    private fun excuteNotifications() {
+        Log.d("CallOnStart", "NOTIFIATIONS  " + Gson().toJson(""))
+
+        GlobalScope.launch(context = Dispatchers.Main) {
+            val call = RequestService.getService(fetchProfile().token).getNotification()
+            call.enqueue(object : Callback<NotificationsResponse> {
+                override fun onFailure(call: Call<NotificationsResponse>?, t: Throwable?) {
+                    onFailure(Observable.NOTIFICATIONS, t, FailureUtils().parseError(call, t))
+                }
+
+                override fun onResponse(
+                    call: Call<NotificationsResponse>?,
+                    response: Response<NotificationsResponse>?
+                ) {
+                    onResponseNotifications(response, Observable.NOTIFICATIONS)
+                }
+            })
+        }
+    }
+
     private fun excuteUpdatePassword(parameters: Oauth) {
         var outh: Profile = Profile()
         outh.password = parameters.profile?.password
@@ -378,6 +410,32 @@ class OauthRepository(application: Application) {
         }
     }
 
+    private fun onResponseNotifications(response: Response<NotificationsResponse>?, observable: Observable) {
+        Log.d("CallOnResponse", "" + observable.name + " ----- " + Gson().toJson(response))
+        if (response != null) {
+            if (response.isSuccessful) {
+                if (response.body()?.statusCode!! > 0 && response.body()?.success!!) {
+                    setIsSuccesful(observable, response.body()!!)
+
+                    if (observable == Observable.CREATE_PROFILE || observable == Observable.UPDATE_PROFILE) {
+                        saveProfile(response.body() as Oauth)
+                    }
+                } else {
+                    response.body()?.statusMessage?.let {
+                        setIsError(
+                            observable, it,
+                            AgriException(it, it, response.body()?.errors)
+                        )
+                    }
+                }
+            } else {
+                setIsError(observable, "", ErrorUtils().parseError(response))
+            }
+        } else {
+            setIsError(observable, "", AgriException("Error Loading Data"))
+        }
+    }
+
     private fun onResponseImage(response: Response<ImageUploadResponse>?, observable: Observable) {
         Log.d("CallOnResponse", "" + observable.name + " ----- " + Gson().toJson(response))
         if (response != null) {
@@ -415,6 +473,7 @@ class OauthRepository(application: Application) {
             Observable.UPDATE_PASSWORD -> updatePasswordObservable.postValue(Resource.loading(null))
             Observable.SWITCH_PROFILE -> switchProfileObservable.postValue(Resource.loading(null))
             Observable.UPLOAD_IMAGE -> uploadImageObservable.postValue(Resource.loading(null))
+            Observable.NOTIFICATIONS -> notificationsObservable.postValue(Resource.loading(null))
 
         }
     }
@@ -431,6 +490,7 @@ class OauthRepository(application: Application) {
             Observable.UPDATE_PASSWORD -> updatePasswordObservable.postValue(Resource.success(data as Oauth))
             Observable.SWITCH_PROFILE -> switchProfileObservable.postValue(Resource.success(data as Oauth))
             Observable.UPLOAD_IMAGE -> uploadImageObservable.postValue(Resource.success(data as ImageUploadResponse))
+            Observable.NOTIFICATIONS -> notificationsObservable.postValue(Resource.success(data as NotificationsResponse))
 
         }
 
@@ -448,6 +508,7 @@ class OauthRepository(application: Application) {
             Observable.UPDATE_PASSWORD -> updatePasswordObservable.postValue(Resource.error(message, null, exception))
             Observable.SWITCH_PROFILE -> switchProfileObservable.postValue(Resource.error(message, null, exception))
             Observable.UPLOAD_IMAGE -> uploadImageObservable.postValue(Resource.error(message, null, exception))
+            Observable.NOTIFICATIONS -> notificationsObservable.postValue(Resource.error(message, null, exception))
 
         }
     }
@@ -463,7 +524,8 @@ class OauthRepository(application: Application) {
         UPLOAD_IMAGE,
 
         SWITCH_PROFILE,
-        CREATE_PROFILE
+        CREATE_PROFILE,
+        NOTIFICATIONS
     }
 
     fun saveProfile(data: Oauth) {

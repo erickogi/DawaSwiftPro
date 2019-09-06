@@ -8,10 +8,10 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-import com.dev.common.listeners.OnViewItemClick
 import com.dev.common.models.custom.Status
 import com.dev.common.utils.Validator
 import com.dev.common.utils.textWatchers.PhoneTextWatcher
+import com.dev.common.utils.viewUtils.OnViewItemClick
 import com.dev.common.utils.viewUtils.SimpleDialogModel
 import com.dev.common.utils.viewUtils.ViewUtils
 import com.dev.dawaswift.R
@@ -215,7 +215,16 @@ class CheckOut : Fragment(), BlockingStep {
         viewModel.viewCart()
 
         var add = (activity as CartActivity).getAddress()
-        viewModel.stepOne(SelectedAddress(add?.latitude, add?.longitude))
+        var sa = SelectedAddress(add?.latitude, add?.longitude)
+        try {
+            sa.id = add?.id
+
+            sa.name = add?.name
+        } catch (x: Exception) {
+            x.printStackTrace()
+        }
+
+        viewModel.stepOne(sa)
 
 
     }

@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.dev.common.models.driver.requests.PickUpPoint
 import com.dev.common.utils.viewUtils.ViewUtils
 import com.dev.dawaswift.R
 import com.dev.dawaswift.adapters.cart.CheckOutStepperAdapter
@@ -51,6 +52,10 @@ class CartActivity : AppCompatActivity(), StepperLayout.StepperListener {
 
     fun getAddress(): Address? {
         return selectedAddress
+    }
+
+    fun setPickUp(selectedPickup: List<PickUpPoint>) {
+
     }
 
 }

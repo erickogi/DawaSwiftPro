@@ -1,8 +1,10 @@
 package com.dev.dawaswiftdriver.views
 
 import android.Manifest
+import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
+import android.content.IntentFilter
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.graphics.drawable.BitmapDrawable
@@ -21,12 +23,13 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.GravityCompat
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import com.afollestad.materialdialogs.MaterialDialog
 import com.dev.common.data.local.PrefrenceManager
-import com.dev.common.listeners.OnViewItemClick
 import com.dev.common.models.custom.Status
 import com.dev.common.models.driver.requests.TripRequest
 import com.dev.common.utils.CommonUtils
+import com.dev.common.utils.viewUtils.OnViewItemClick
 import com.dev.common.utils.viewUtils.SimpleDialogModel
 import com.dev.common.utils.viewUtils.ViewUtils
 import com.dev.dawaswiftdriver.R
@@ -61,6 +64,7 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener, 
             R.id.nav_item_travels -> startActivity(Intent(this@MainActivity, Trips::class.java))
             R.id.nav_item_profile -> startActivity(Intent(this@MainActivity, Profile::class.java))
             R.id.nav_item_about -> startActivity(Intent(this@MainActivity, Profile::class.java))
+            R.id.nav_item_charge_account -> startActivity(Intent(this@MainActivity, BalanceActivity::class.java))
             R.id.nav_item_exit -> logout()
 
         }
@@ -161,6 +165,17 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener, 
     private lateinit var viewModel: TripsViewModel
 
     private var trips: List<TripRequest> = ArrayList()
+
+    override fun onResume() {
+        super.onResume()
+        viewModel.requestCurrent()
+        viewModel.requests()
+        switch_connection.isActivated = true
+        switch_connection.isChecked = true
+
+
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -188,7 +203,6 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener, 
 
             }
         })
-        viewModel.requestCurrent()
         viewModel.observeAccept().observe(this, Observer {
 
             ViewUtils.setStatus(
@@ -205,7 +219,8 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener, 
 
                 if (it.data != null && it.data!!.data != null) {
 
-                    startActivity(Intent(this@MainActivity, TravelActivity::class.java))
+                    startActivityForResult(Intent(this@MainActivity, TravelActivity::class.java), 100)
+
 
                 }
 
@@ -235,6 +250,18 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener, 
                 requests_view_pager.adapter = requestCardsAdapter
                 requests_view_pager.offscreenPageLimit = 3
 
+                val bottomSheetBehavior = BottomSheetBehavior.from<View>(bottom_sheet)
+                bottomSheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
+
+                if (requestCardsAdapter!!.count < 1) {
+                    val bottomSheetBehavior = BottomSheetBehavior.from<View>(bottom_sheet)
+                    bottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
+
+                }
+            } else {
+
+                val bottomSheetBehavior = BottomSheetBehavior.from<View>(bottom_sheet)
+                bottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
 
             }
 
@@ -263,6 +290,8 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener, 
 
         mapFragment = supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment
         mapFragment!!.getMapAsync(this)
+
+
         requestCardsAdapter =
             RequestsFragmentPagerAdapter(supportFragmentManager, ArrayList())
         window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
@@ -283,7 +312,11 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener, 
 
             if (it != null) {
 
-                CommonUtils().loadImage(this.applicationContext, it.avatar, n_image as ImageView)
+                try {
+                    CommonUtils().loadImage(this.applicationContext, it.avatar, n_image as ImageView)
+                } catch (x: Exception) {
+                    x.toString()
+                }
 
             }
         })
@@ -392,5 +425,46 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener, 
         viewModel.requestCurrent()
         viewModel.requests()
 
+    }
+
+//    @Override
+//    public void onStart() {
+//        super.onStart();
+//        LocalBroadcastManager.getInstance(getActivity()).registerReceiver((receiver),
+//                new IntentFilter(PushNotificationService.REQUEST_ACCEPT)
+//        );
+//    }
+//
+//
+//
+//    @Override
+//        public void onStop() {
+//             super.onStop();
+//LocalBroadcastManager.getInstance(getActivity()).unregisterReceiver(receiver);
+//
+//        }
+
+    var receiver = object : BroadcastReceiver() {
+        override fun onReceive(context: Context?, intent: Intent?) {
+            viewModel.requestCurrent()
+            viewModel.requests()
+
+        }
+    }
+
+    override fun onStart() {
+        super.onStart()
+        LocalBroadcastManager.getInstance(this).registerReceiver(
+            (receiver),
+            IntentFilter("REQUEST")
+        )
+    }
+
+    override fun onStop() {
+        super.onStop()
+        LocalBroadcastManager.getInstance(this).registerReceiver(
+            (receiver),
+            IntentFilter("REQUEST")
+        )
     }
 }

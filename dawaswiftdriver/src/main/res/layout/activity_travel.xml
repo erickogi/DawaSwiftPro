@@ -215,4 +215,6 @@
                     app:sv_slideTextColor="@color/textblack" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
+    <include layout="@layout/loading_avi"/>
+
 </RelativeLayout>

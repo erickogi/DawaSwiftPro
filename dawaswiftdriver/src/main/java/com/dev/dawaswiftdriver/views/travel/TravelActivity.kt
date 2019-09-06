@@ -14,17 +14,18 @@ import android.os.Bundle
 import android.os.Handler
 import android.util.Log
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.dev.common.data.Constants
-import com.dev.common.listeners.OnViewItemClick
 import com.dev.common.models.custom.Status
 import com.dev.common.models.driver.requests.PickUpPoint
 import com.dev.common.models.driver.requests.TripRequest
 import com.dev.common.models.oauth.Profile
+import com.dev.common.utils.viewUtils.OnViewItemClick
 import com.dev.common.utils.viewUtils.SimpleDialogModel
 import com.dev.common.utils.viewUtils.ViewUtils
 import com.dev.dawaswiftdriver.R
@@ -231,6 +232,12 @@ class TravelActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener
 
                 viewModel.requestCurrent()
 
+                try {
+                    Toast.makeText(this, it.data?.message, Toast.LENGTH_LONG).show()
+                } catch (x: Exception) {
+                    x.printStackTrace()
+                }
+
 
             }
         })
@@ -259,10 +266,10 @@ class TravelActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener
         linear_call.setOnClickListener {
             checkPermission()
         }
-        slide_start.setOnClickListener {
+        slide_start.setOnSlideCompleteListener {
             viewModel.requestBegin(tripRequest!!)
         }
-        slide_finish.setOnClickListener {
+        slide_finish.setOnSlideCompleteListener {
 
             viewModel.requestEnd(tripRequest!!)
 
@@ -332,8 +339,11 @@ class TravelActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener
         val bitmapdrawhime = resources.getDrawable(R.drawable.homeong) as BitmapDrawable
         val b = bitmapdraw.bitmap
         val bhome = bitmapdrawhime.bitmap
+
         val smallMarker = Bitmap.createScaledBitmap(b, width, height, false)
         val smallMarkerhome = Bitmap.createScaledBitmap(bhome, width, height, false)
+
+
         var markerPlaces: MutableList<LatLng> = ArrayList()
         var markerPlacesl: MutableList<com.google.maps.model.LatLng> = ArrayList()
 
@@ -451,6 +461,8 @@ class TravelActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener
                 MarkerOptions()
                     .position(latLng)
                     .icon(BitmapDescriptorFactory.fromBitmap(smallMarker))
+                    .title("My Location").snippet("" + latLng.latitude + "  " + latLng.longitude)
+
             )
         else {
 

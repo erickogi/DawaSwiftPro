@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView android:layout_width="match_parent"
+              android:text="Click on two dates to select as first and laso date of your range"
+              android:textColor="@color/blacklight"
+              android:textSize="14.7sp"
+              android:layout_alignParentTop="true"
+              android:id="@+id/title"
+              android:textAlignment="center"
+              android:layout_marginStart="3dp"
+              android:padding="4dp"
+              android:fontFamily="@font/sfpro_display_bold"
+
+              android:layout_height="wrap_content"/>
+
+    <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                                       xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                       android:layout_width="match_parent"
+                                                       android:layout_height="wrap_content"
+                                                       app:cardCornerRadius="3dp"
+                                                       app:cardElevation="3dp"
+
+                                                       android:layout_above="@+id/yesBtn"
+                                                       android:layout_below="@+id/title"
+                                                       app:cardUseCompatPadding="true">
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="6dp">
+            <com.savvi.rangedatepicker.CalendarPickerView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/calendar_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="16dp"
+                    android:scrollbarStyle="outsideOverlay"
+                    android:clipToPadding="false"
+                    app:tsquare_dividerColor="@color/transferent"
+                    app:tsquare_headerTextColor="@color/colorPrimary"
+            />
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <Button android:layout_width="match_parent"
+            android:id="@+id/yesBtn"
+            android:text="OKAY"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="12dp"
+            android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

@@ -97,6 +97,7 @@ class CartFragment : Fragment(), BlockingStep {
                     override fun add(pos: Int) {
                         if ((items as ArrayList<CartItem>)[pos].quantity!! < 15) {
 
+
                             viewModel.addCart(
                                 AddItem(
                                     (items as ArrayList<CartItem>)[pos].productId,

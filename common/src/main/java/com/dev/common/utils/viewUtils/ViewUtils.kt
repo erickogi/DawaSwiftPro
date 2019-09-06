@@ -11,10 +11,9 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.FragmentActivity
-import com.dev.common.listeners.OnViewItemClick
+import com.dev.common.R
 import com.dev.common.models.custom.Status
 import com.dev.common.utils.AgriException
-import com.dev.common.R
 import com.google.android.material.snackbar.Snackbar
 import com.google.gson.Gson
 import com.wang.avi.AVLoadingIndicatorView

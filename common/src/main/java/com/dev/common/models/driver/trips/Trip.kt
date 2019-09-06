@@ -3,9 +3,10 @@ package com.dev.common.models.driver.trips
 import com.dev.common.models.driver.requests.TripRequest
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 
-class Trip {
+class Trip : Serializable {
     @SerializedName("id")
     @Expose
     var id: Int? = null

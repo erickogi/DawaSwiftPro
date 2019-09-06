@@ -67,7 +67,12 @@ class SplashActivity : AppCompatActivity() {
         if (!isFinishing) {
 
             if (PrefrenceManager(this).getLoginStatus() == 0) {
-                startActivityForResult(Intent(this@SplashActivity, AuthActivity::class.java), Constants().SP_SIGN_IN)
+                //startActivityForResult(Intent(this@SplashActivity, AuthActivity::class.java), Constants().GP_SIGN_IN)
+
+
+                val intent = Intent(this@SplashActivity, AuthActivity::class.java)
+                intent.putExtra(Constants().ROLE_CODE, Constants().ROLE_DRIVER)
+                startActivityForResult(intent, Constants().GP_SIGN_IN)
 
             } else {
                 startApp()

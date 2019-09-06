@@ -1,4 +1,4 @@
-package com.dev.common.listeners
+package com.dev.common.utils.viewUtils
 
 
 interface OnViewItemClick {

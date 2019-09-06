@@ -228,6 +228,7 @@ public class KGDirectionsUtils {
 
     public void setPoly(com.google.maps.model.LatLng origin, com.google.maps.model.LatLng dest, GoogleMap mMsap, List<com.google.maps.model.LatLng> markerPoints, TextView timet, TextView distancet) {
 
+        // PlaceDetailsRequest  placeDetailsRequest=request(origin,dest)
 
         DirectionsResult results = request(origin, dest, markerPoints.toArray(new com.google.maps.model.LatLng[markerPoints.size()]));
         setupGoogleMapScreenSettings(mMsap);

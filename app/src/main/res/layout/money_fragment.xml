@@ -17,7 +17,7 @@
             android:id="@+id/message"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Send, Withdraw or Save Money on DawaSwift\n Earn Interest"
+            android:text="Your NextPesa Balance  is 0.00 Ksh"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -27,6 +27,7 @@
             android:textSize="15.7sp"
             android:fontFamily="@font/sfpro_display_semibold"
 
+            android:visibility="gone"
             android:layout_centerInParent="true"
             android:padding="12dp"
             android:textAlignment="center"

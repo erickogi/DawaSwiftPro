@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".views.BalanceActivity">
+    <include layout="@layout/toolback_bar"/>
+
+
+    <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                                       xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                       android:layout_width="match_parent"
+                                                       android:layout_height="wrap_content"
+                                                       app:cardCornerRadius="3dp"
+                                                       app:cardElevation="3dp"
+                                                       android:layout_below="@+id/toolback"
+                                                       app:cardUseCompatPadding="true">
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="6dp">
+            <TextView android:layout_width="match_parent"
+                      android:text="Click below to choose a date range"
+                      android:textColor="@color/blacklight"
+                      android:textSize="14.7sp"
+                      android:layout_marginStart="3dp"
+                      android:padding="4dp"
+                      android:fontFamily="@font/sfpro_display_bold"
+
+                      android:layout_height="wrap_content"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_dob"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:padding="4dp"
+
+
+                    app:boxCornerRadiusTopStart="1dp"
+                    app:boxCornerRadiusTopEnd="1dp"
+                    app:boxCornerRadiusBottomStart="1dp"
+                    app:boxCornerRadiusBottomEnd="1dp"
+                    app:hintTextColor="@color/blacklight"
+                    android:textColorHint="@color/blacklight"
+                    app:helperTextTextColor="@color/blacklight"
+
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    app:boxStrokeWidth="1dp"
+                    app:boxBackgroundMode="outline"
+                    app:boxStrokeColor="@color/colorPrimary"
+
+            >
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_dob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:textStyle="bold"
+                        android:textColor="@color/blacklight"
+                        android:textColorHint="@color/blacklight"
+                        android:textColorHighlight="@color/blacklight"
+
+
+                        android:focusableInTouchMode="false"
+                        android:focusable="false"
+                        app:helperText="Date Range"
+                        app:helperTextEnabled="true"
+                        android:hint="Date Range"
+                        android:lines="2"
+                        android:inputType="textMultiLine"
+
+
+                />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <include layout="@layout/loading_avi"
+                     android:layout_width="wrap_content"
+                     android:layout_gravity="center_horizontal"
+                     android:layout_height="wrap_content"
+                     android:visibility="invisible"
+            />
+
+            <com.google.android.material.card.MaterialCardView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="6dp"
+                    android:layout_marginTop="12dp"
+
+                    android:id="@+id/view"
+                    android:layout_below="@+id/toolback"
+                    app:cardUseCompatPadding="true">
+
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="6dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/til_earnings"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:padding="4dp"
+
+
+                            app:boxCornerRadiusTopStart="1dp"
+                            app:boxCornerRadiusTopEnd="1dp"
+                            app:boxCornerRadiusBottomStart="1dp"
+                            app:boxCornerRadiusBottomEnd="1dp"
+
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            app:boxStrokeWidth="1dp"
+                            app:boxBackgroundMode="outline"
+                            app:boxStrokeColor="@color/colorPrimary"
+
+                    >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_earnings"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:textStyle="bold"
+                                android:focusableInTouchMode="false"
+                                android:focusable="false"
+                                app:helperText="Date Range"
+                                app:helperTextEnabled="true"
+                                android:hint="Earnings"
+                                android:inputType="text"
+
+
+                        />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/til_distance"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:padding="4dp"
+
+
+                            app:boxCornerRadiusTopStart="1dp"
+                            app:boxCornerRadiusTopEnd="1dp"
+                            app:boxCornerRadiusBottomStart="1dp"
+                            app:boxCornerRadiusBottomEnd="1dp"
+
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            app:boxStrokeWidth="1dp"
+                            app:boxBackgroundMode="outline"
+                            app:boxStrokeColor="@color/colorPrimary"
+
+                    >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_distance"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+
+                                android:focusableInTouchMode="false"
+                                android:focusable="false"
+                                app:helperText="Date Range"
+                                app:helperTextEnabled="true"
+                                android:hint="Distance Covered"
+                                android:inputType="text"
+
+
+                        />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/til_trips"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:padding="4dp"
+                            android:textStyle="bold"
+
+
+                            app:boxCornerRadiusTopStart="1dp"
+                            app:boxCornerRadiusTopEnd="1dp"
+                            app:boxCornerRadiusBottomStart="1dp"
+                            app:boxCornerRadiusBottomEnd="1dp"
+
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            app:boxStrokeWidth="1dp"
+                            app:boxBackgroundMode="outline"
+                            app:boxStrokeColor="@color/colorPrimary"
+
+                    >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_trips"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+
+                                android:focusableInTouchMode="false"
+                                android:focusable="false"
+                                app:helperText="Date Range"
+                                app:helperTextEnabled="true"
+                                android:hint="Trips"
+                                android:inputType="text"
+
+
+                        />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>

@@ -14,9 +14,10 @@ import androidx.core.content.ContextCompat
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.dev.common.data.local.PrefrenceManager
-import com.dev.common.listeners.OnViewItemClick
 import com.dev.common.models.oauth.Oauth
 import com.dev.common.ui.auth.AuthViewModel
+import com.dev.common.ui.main.NotificationsFragment
+import com.dev.common.utils.viewUtils.OnViewItemClick
 import com.dev.common.utils.viewUtils.SimpleDialogModel
 import com.dev.common.utils.viewUtils.ViewUtils
 import com.dev.dawaswift.ui.MainFragment
@@ -28,6 +29,7 @@ import com.google.android.gms.location.LocationRequest
 import com.google.android.gms.location.LocationServices
 import com.google.android.gms.location.LocationSettingsRequest
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.bottomnavigation.LabelVisibilityMode
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -49,6 +51,8 @@ class MainActivity : AppCompatActivity() {
             .replace(R.id.container, MainFragment.newInstance())
             .commitNow()
         setHomeSelectedNav()
+        navigation.labelVisibilityMode = LabelVisibilityMode.LABEL_VISIBILITY_LABELED
+
         //val badge = navigation.showBadge(R.id.navigation_profile)
         //badge.number = 2
         viewModel.liveProfile().observe(this, Observer {
@@ -118,6 +122,13 @@ class MainActivity : AppCompatActivity() {
 
                 supportFragmentManager.beginTransaction().replace(R.id.container, OrdersFragment.newInstance())
                     .addToBackStack("Fav").commit()
+
+                return@OnNavigationItemSelectedListener true
+            }
+            R.id.navigation_notifications -> {
+                popOutFragments()
+                supportFragmentManager.beginTransaction().replace(R.id.container, NotificationsFragment.newInstance())
+                    .addToBackStack("NOTI").commit()
 
                 return@OnNavigationItemSelectedListener true
             }

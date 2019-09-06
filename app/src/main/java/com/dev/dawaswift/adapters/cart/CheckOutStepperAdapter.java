@@ -7,7 +7,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.FragmentManager;
 import com.dev.dawaswift.ui.cart.ui.CartFragment;
 import com.dev.dawaswift.ui.cart.ui.CheckOut;
-import com.dev.dawaswift.ui.cart.ui.DeliveryFragment;
+import com.dev.dawaswift.ui.cart.ui.DeliveryFeatures;
 import com.stepstone.stepper.Step;
 import com.stepstone.stepper.adapter.AbstractFragmentStepAdapter;
 import com.stepstone.stepper.viewmodel.StepViewModel;
@@ -33,7 +33,7 @@ public class CheckOutStepperAdapter extends AbstractFragmentStepAdapter {
                 step1.setArguments(b1);
                 return step1;
             case 1:
-                final DeliveryFragment step2 = new DeliveryFragment();
+                final DeliveryFeatures step2 = new DeliveryFeatures();
                 Bundle b2 = new Bundle();
                 b2.putInt(CURRENT_STEP_POSITION_KEY, position);
                 step2.setArguments(b2);

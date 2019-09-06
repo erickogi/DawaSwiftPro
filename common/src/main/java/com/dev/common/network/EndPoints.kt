@@ -6,6 +6,9 @@
  *
  */
 
+import com.dev.common.models.NotificationsResponse
+import com.dev.common.models.driver.balance.BalanceQuery
+import com.dev.common.models.driver.balance.BalanceResponse
 import com.dev.common.models.driver.requests.RequestActionResponse
 import com.dev.common.models.driver.requests.RequestResponse
 import com.dev.common.models.driver.requests.TripRequest
@@ -81,19 +84,24 @@ interface EndPoints {
     fun getWards(@Body locationSearchModel: LocationSearchModel): Call<LocationsResponse>
 
 
-    @GET("trip/requests.php")
+    @GET("request/fetch.php")
     fun getRequests(): Call<RequestResponse>
+
+    @GET("notification/fetch")
+    fun getNotification(): Call<NotificationsResponse>
+
+
 
 
     @GET("trip/fetch.php")
     fun getTrips(): Call<TripsResponse>
 
 
-    @POST("trip/accept.php")
+    @POST("request/accept.php")
     fun acceptTrip(@Body id: TripRequest): Call<RequestActionResponse>
 
 
-    @POST("trip/reject.php")
+    @POST("request/reject.php")
     fun rejectTrip(@Body id: TripRequest): Call<RequestActionResponse>
 
 
@@ -107,6 +115,9 @@ interface EndPoints {
     @POST("trip/end.php")
     fun endTrip(@Body id: TripRequest): Call<RequestActionResponse>
 
+
+    @POST("trip/balance.php")
+    fun balances(@Body id: BalanceQuery): Call<BalanceResponse>
 
     @Multipart
     @POST("v3.php")

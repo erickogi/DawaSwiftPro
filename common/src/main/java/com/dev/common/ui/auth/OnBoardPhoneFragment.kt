@@ -16,6 +16,7 @@ import com.dev.common.listeners.ReplaceFragmentListener
 import com.dev.common.models.custom.Status
 import com.dev.common.models.oauth.Oauth
 import com.dev.common.models.oauth.Profile
+import com.dev.common.ui.AuthActivity
 import com.dev.common.utils.Validator
 import com.dev.common.utils.textWatchers.PhoneTextWatcher
 import com.dev.common.utils.viewUtils.ViewUtils
@@ -55,7 +56,9 @@ class OnBoardPhoneFragment : Fragment(), View.OnClickListener {
         if (oauth == null) {
             oauth = Oauth(Profile())
         }
+
         oauth.profile?.mobile = Validator.getPhoneNumber(edt_phone)
+        oauth.profile?.roleId = (activity as AuthActivity).role
 
         return oauth
 

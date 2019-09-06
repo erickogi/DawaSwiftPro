@@ -4,11 +4,11 @@
     <color name="colorPrimary">#77B655</color>
     <color name="colorPrimaryDark">#77B655</color>
     <color name="colorAccent">#030089</color>
+    <color name="textblack">#232121</color>
 
 
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
-    <color name="textblack">#232121</color>
 
     <color name="textSub">#76818a</color>
 

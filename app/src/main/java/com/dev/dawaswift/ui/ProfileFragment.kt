@@ -9,11 +9,11 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-import com.dev.common.listeners.OnViewItemClick
 import com.dev.common.models.custom.Status
 import com.dev.common.profile.ProfileActivity
 import com.dev.common.ui.web.WebviewActivity
 import com.dev.common.utils.CommonUtils
+import com.dev.common.utils.viewUtils.OnViewItemClick
 import com.dev.common.utils.viewUtils.SimpleDialogModel
 import com.dev.common.utils.viewUtils.ViewUtils
 import com.dev.dawaswift.R

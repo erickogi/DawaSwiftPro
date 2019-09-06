@@ -10,10 +10,16 @@
             android:icon="@drawable/nav_item_statistics"
             android:title="@string/drawer_statistics" />
     <item
-            android:visible="false"
+            android:visible="true"
             android:id="@+id/nav_item_charge_account"
             android:icon="@drawable/nav_item_charge_account"
             android:title="@string/drawer_charge_account" />
+
+    <item
+            android:id="@+id/nav_item_notifications"
+            android:icon="@drawable/ic_notifications_black_24dp"
+            android:title="Notifications"/>
+
     <item
             android:id="@+id/nav_item_profile"
             android:icon="@drawable/nav_item_edit_profile"

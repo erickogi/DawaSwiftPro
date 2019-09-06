@@ -79,6 +79,16 @@ class TripsFragment : Fragment() {
                     override fun onClickListener(position: Int) {
 
 
+                        var fragment = TripFragment()
+                        fragment
+                            .arguments = Bundle().apply {
+                            putSerializable("data", items.get(position))
+                        }
+                        activity!!.supportFragmentManager.beginTransaction().replace(R.id.container, fragment)
+                            .addToBackStack("SUB").commit()
+
+
+
                     }
 
                     override fun onLongClickListener(position: Int) {

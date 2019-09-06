@@ -13,10 +13,10 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.dev.common.data.Constants
-import com.dev.common.listeners.OnViewItemClick
 import com.dev.common.models.custom.Status
 import com.dev.common.models.location.LocationSearchModel
 import com.dev.common.utils.OnRecyclerViewItemClick
+import com.dev.common.utils.viewUtils.OnViewItemClick
 import com.dev.common.utils.viewUtils.SimpleDialogModel
 import com.dev.common.utils.viewUtils.ViewUtils
 import com.dev.dawaswift.GeoLocationUtills

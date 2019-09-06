@@ -75,6 +75,53 @@ class CommonUtils {
         txtYear.text = year_date.format(date)
     }
 
+    fun getDateRange(): Pair<Date, Date> {
+        val begining: Date
+        val end: Date
+
+        run {
+            val calendar = getCalendarForNow()
+            calendar.set(
+                Calendar.DAY_OF_MONTH,
+                calendar.getActualMinimum(Calendar.DAY_OF_MONTH)
+            )
+            setTimeToBeginningOfDay(calendar)
+            begining = calendar.time
+        }
+
+        run {
+            val calendar = getCalendarForNow()
+            calendar.set(
+                Calendar.DAY_OF_MONTH,
+                calendar.getActualMaximum(Calendar.DAY_OF_MONTH)
+            )
+            setTimeToEndofDay(calendar)
+            end = calendar.time
+        }
+
+
+        return Pair(begining, end)
+    }
+
+    private fun getCalendarForNow(): Calendar {
+        val calendar = GregorianCalendar.getInstance()
+        calendar.time = Date()
+        return calendar
+    }
+
+    private fun setTimeToBeginningOfDay(calendar: Calendar) {
+        calendar.set(Calendar.HOUR_OF_DAY, 0)
+        calendar.set(Calendar.MINUTE, 0)
+        calendar.set(Calendar.SECOND, 0)
+        calendar.set(Calendar.MILLISECOND, 0)
+    }
+
+    private fun setTimeToEndofDay(calendar: Calendar) {
+        calendar.set(Calendar.HOUR_OF_DAY, 23)
+        calendar.set(Calendar.MINUTE, 59)
+        calendar.set(Calendar.SECOND, 59)
+        calendar.set(Calendar.MILLISECOND, 999)
+    }
     fun displayFormattedDate(
         actualDate: String,
         txtDay: TextView,
@@ -100,6 +147,25 @@ class CommonUtils {
         txtMonth.text = month_date.format(date)
         txtYear.text = year_date.format(date)
         txtTime.text = time.format(date)
+    }
+
+    fun getDisplayDate(date: String?): String? {
+        val sdf = SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
+
+
+        val month_date = SimpleDateFormat("MMM ", Locale.ENGLISH)
+        val day_date = SimpleDateFormat("dd ", Locale.ENGLISH)
+        val year_date = SimpleDateFormat("yyyy", Locale.ENGLISH)
+        val time = SimpleDateFormat("HH:mm:ss", Locale.ENGLISH)
+
+
+        val date = sdf.parse(date)
+
+        return day_date.format(date) + "   " + month_date.format(date) + "  " + year_date.format(date)
+
+
+        //val month_name = month_date.format(date)
+
     }
 
     fun roundOff(number: String?): Double {

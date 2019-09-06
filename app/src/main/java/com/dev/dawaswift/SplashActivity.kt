@@ -20,7 +20,9 @@ class SplashActivity : AppCompatActivity() {
         if (!isFinishing) {
 
             if (PrefrenceManager(this).getLoginStatus() == 0) {
-                startActivityForResult(Intent(this@SplashActivity, AuthActivity::class.java), Constants().SP_SIGN_IN)
+                val intent = Intent(this@SplashActivity, AuthActivity::class.java)
+                intent.putExtra(Constants().ROLE_CODE, Constants().ROLE_CLIENT)
+                startActivityForResult(intent, Constants().SP_SIGN_IN)
 
             } else {
                 startApp()
@@ -37,6 +39,8 @@ class SplashActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splash)
         ViewUtils().makeFullScreen(this)
         viewModel = ViewModelProviders.of(this).get(AuthViewModel::class.java)
+
+
 
 
 
@@ -64,6 +68,8 @@ class SplashActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
+
+
         ViewUtils().makeFullScreen(this)
         mDelayHandler = Handler()
         mDelayHandler!!.postDelayed(mRunnable, SPLASH_DELAY)
@@ -111,3 +117,5 @@ class SplashActivity : AppCompatActivity() {
 
 
 }
+
+

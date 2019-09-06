@@ -10,16 +10,17 @@ import android.os.Build
 import android.util.Log
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
+import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import com.dev.common.data.local.PrefrenceManager
 import com.dev.common.data.repository.OauthRepository
 import com.dev.common.models.oauth.Oauth
 import com.dev.common.models.oauth.Profile
-import com.dev.dawaswiftdriver.R
 import com.dev.dawaswiftdriver.views.MainActivity
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
 import org.json.JSONObject
 import java.util.*
+
 
 class FirebaseService : FirebaseMessagingService() {
     val name = "dawaswiftNotifications"
@@ -57,6 +58,12 @@ class FirebaseService : FirebaseMessagingService() {
             handleNow(remoteMessage.data.toString())
 
         }
+
+        val broadcaster = LocalBroadcastManager.getInstance(baseContext)
+
+        val intent = Intent("REQUEST")
+        broadcaster.sendBroadcast(intent)
+
     }
 
     private fun handleNow(result: String) {
@@ -114,7 +121,7 @@ class FirebaseService : FirebaseMessagingService() {
             val defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION)
 
             val mBuilder = NotificationCompat.Builder(applicationContext, "default")
-                .setSmallIcon(R.mipmap.ic_launcher) // notification icon
+                .setSmallIcon(com.dev.dawaswiftdriver.R.mipmap.ic_launcher) // notification icon
                 .setContentTitle(title) // title for notification
                 .setContentText(content)// message for notification
                 .setSound(defaultSoundUri) // set alarm sound for notification
@@ -126,7 +133,7 @@ class FirebaseService : FirebaseMessagingService() {
             }
             mNotificationManager.notify(Random().nextInt(), mBuilder.build())
             var builder = NotificationCompat.Builder(this, name)
-                .setSmallIcon(R.drawable.logo)
+                .setSmallIcon(com.dev.dawaswiftdriver.R.drawable.logo)
                 .setContentTitle(title)
                 .setContentText(content)
                 .setStyle(

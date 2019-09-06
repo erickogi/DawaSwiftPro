@@ -5,15 +5,15 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
-import com.dev.common.utils.AccountActionsConstanr
-import com.dev.common.data.FRAGMENTS_NAV_KEYS
+import com.dev.common.R
 import com.dev.common.data.Constants
+import com.dev.common.data.FRAGMENTS_NAV_KEYS
 import com.dev.common.data.local.PrefrenceManager
 import com.dev.common.listeners.BackPressHandler
 import com.dev.common.listeners.ReplaceFragmentListener
 import com.dev.common.models.oauth.Oauth
-import com.dev.common.R
 import com.dev.common.ui.auth.*
+import com.dev.common.utils.AccountActionsConstanr
 import com.dev.common.utils.viewUtils.ViewUtils
 
 class AuthActivity : AppCompatActivity(), ReplaceFragmentListener {
@@ -111,11 +111,16 @@ class AuthActivity : AppCompatActivity(), ReplaceFragmentListener {
 
     private lateinit var prefrenceManager: PrefrenceManager
 
+
+    var role: Int = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.auth_activity)
         prefrenceManager = PrefrenceManager(this)
         viewModel = ViewModelProviders.of(this).get(AuthViewModel::class.java)
+
+        role = intent.getIntExtra(Constants().ROLE_CODE, 0)
+
 
         if (savedInstanceState == null) {
 
@@ -144,6 +149,7 @@ class AuthActivity : AppCompatActivity(), ReplaceFragmentListener {
     }
 
     fun setOauthObject(oauth: Oauth) {
+        oauth.profile?.roleId = role
         prefrenceManager.saveProfile(oauth)
         viewModel.saveProfile(oauth)
 

@@ -257,5 +257,6 @@
     <string name="price_per_night">Price Per Night</string>
     <string name="house_rules">House Rules</string>
     <string name="cancellation_policy">Cancellation Policy</string>
+    <string name="notifications">Notifications</string>
 
 </resources>

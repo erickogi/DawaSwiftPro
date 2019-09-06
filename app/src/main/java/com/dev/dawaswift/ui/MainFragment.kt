@@ -59,6 +59,8 @@ class MainFragment : Fragment() {
 
 
 
+
+
         initCategories()
         initViewHealthAreas()
         initPopularProducts()

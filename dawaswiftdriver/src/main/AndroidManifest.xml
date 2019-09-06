@@ -4,6 +4,7 @@
           package="com.dev.dawaswiftdriver">
 
     <dist:module dist:instant="true"/>
+
     <uses-permission android:name="android.permission.CALL_PHONE"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
@@ -17,25 +18,37 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".views.account.MyProfile"
-                  android:configChanges="orientation"
-                  android:screenOrientation="portrait"
-                  android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".views.DateRange">
         </activity>
-        <activity android:name=".views.account.ui.myprofile.Profile"
-                  android:configChanges="orientation"
-                  android:screenOrientation="portrait"
-                  android:theme="@style/AppTheme.NoActionBar">
+        <activity
+                android:name=".views.BalanceActivity"
+                android:configChanges="orientation"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".views.travel.Trips"
-                  android:configChanges="orientation"
-                  android:screenOrientation="portrait"
-                  android:theme="@style/AppTheme.NoActionBar">
+        <activity
+                android:name=".views.account.MyProfile"
+                android:configChanges="orientation"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".views.travel.TravelActivity"
-                  android:configChanges="orientation"
-                  android:screenOrientation="portrait"
-                  android:theme="@style/AppTheme.NoActionBar">
+        <activity
+                android:name=".views.account.ui.myprofile.Profile"
+                android:configChanges="orientation"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".views.travel.Trips"
+                android:configChanges="orientation"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".views.travel.TravelActivity"
+                android:configChanges="orientation"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
 
         <meta-data
@@ -61,7 +74,6 @@
                 android:name=".views.MainActivity"
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>
-
 
         <meta-data
                 android:name="com.google.firebase.messaging.default_notification_icon"

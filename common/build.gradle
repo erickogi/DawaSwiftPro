@@ -89,9 +89,12 @@ dependencies {
     }
 
     api 'gun0912.ted:tedpermission:2.2.2'
+    api 'com.savvi.datepicker:rangepicker:1.2.0'
     api project(':imagepicker')
     api project(':otpview')
     api project(':badge')
+    implementation 'com.github.RohitSurwase.UCE-Handler:uce_handler:1.3'
+
     //api project(':slider')
     implementation 'com.nineoldandroids:library:2.4.0'
 
