@@ -85,27 +85,7 @@ class SplashActivity : AppCompatActivity() {
                 startApp()
             }
         }
-//        if (requestCode == RC_SIGN_IN) {
-//            val task: Task<GoogleSignInAccount> = GoogleSignIn.getSignedInAccountFromIntent(data)
-//            try {
-//                val account = task.getResult(ApiException::class.java)
-//
-//                var profile: ContactsContract.Profile = ContactsContract.Profile()
-//                profile.avatarUri = account?.photoUrl
-//                profile.avatar = CommonUtils().uriToString(account?.photoUrl)
-//                profile.email = account?.email
-//                profile.password = account?.id
-//                profile.firstName = account?.givenName
-//                profile.lastName = account?.familyName
-//
-//
-//
-//                viewModel.saveProfile(Oauth(profile))
-//                viewModel.verifyEmail(Oauth(profile))
-//            } catch (e: ApiException) {
-//                Toast.makeText(this, "Google sign in failed:(", Toast.LENGTH_LONG).show()
-//            }
-//        }
+
     }
 
     fun startApp() {

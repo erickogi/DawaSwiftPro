@@ -18,8 +18,9 @@ import com.dev.common.models.driver.requests.PickUpPoint
 import com.dev.common.models.location.LocationSearchModel
 import com.dev.common.utils.OnDeliveryViewItemClick
 import com.dev.dawaswift.GeoLocationUtills
-import com.dev.dawaswift.adapters.delivery.DeliveryAdapter
+import com.dev.dawaswift.adapters.delivery.PickUpPointsAdapter
 import com.dev.dawaswift.models.Address.Address
+import com.dev.dawaswift.models.Address.PickUpPoints
 import com.dev.dawaswift.ui.CommonMainViewModel
 import com.dev.dawaswift.ui.cart.CartActivity
 import com.google.android.material.textfield.TextInputEditText
@@ -47,8 +48,6 @@ class DeliveryPickupFragment : Fragment(), BlockingStep {
     }
 
     override fun onNextClicked(callback: StepperLayout.OnNextClickedCallback?) {
-
-
         callback?.goToNextStep()
     }
 
@@ -65,7 +64,7 @@ class DeliveryPickupFragment : Fragment(), BlockingStep {
                 return null
 
             }
-            (activity as CartActivity).setAddress(null)
+            (activity as CartActivity).setAddressNullPickup()
 
             return VerificationError("Select or add a delivery address")
         }
@@ -82,7 +81,7 @@ class DeliveryPickupFragment : Fragment(), BlockingStep {
     }
 
     private lateinit var viewModel: CommonMainViewModel
-    private var selectedAddress: Address? = null
+    private var selectedAddress: PickUpPoints? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -243,9 +242,9 @@ class DeliveryPickupFragment : Fragment(), BlockingStep {
 
     }
 
-    private fun update(data: List<Address>?) {
+    private fun update(data: List<PickUpPoints>?) {
         if (data != null) {
-            items = data as ArrayList<Address>
+            items = data as ArrayList<PickUpPoints>
         } else {
             items = ArrayList()
 
@@ -254,21 +253,21 @@ class DeliveryPickupFragment : Fragment(), BlockingStep {
 
     }
 
-    private lateinit var adapter: DeliveryAdapter
-    private lateinit var items: ArrayList<Address>
+    private lateinit var adapter: PickUpPointsAdapter
+    private lateinit var items: ArrayList<PickUpPoints>
 
     private fun initAddress() {
-        items = ArrayList<Address>()
+        items = ArrayList<PickUpPoints>()
         adapter = context?.let {
             activity?.let { it1 ->
-                DeliveryAdapter(1, it1, items, object : OnDeliveryViewItemClick {
+                PickUpPointsAdapter(1, it1, items, object : OnDeliveryViewItemClick {
                     override fun onEdit(position: Int) {
 
 
                     }
 
                     override fun onDelete(position: Int) {
-                        viewModel.deleteAddress(items[position])
+                        viewModel.deleteAddress(Address())
 
                     }
 

@@ -2,67 +2,69 @@
 
 <!--android:background="@drawable/splash"-->
 
-<RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
 
         android:background="@color/white">
 
 
+    <LinearLayout
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
 
+            android:background="@color/colorPrimary">
 
-    <LinearLayout android:layout_width="match_parent"
-                  android:background="@color/colorPrimary"
-                  android:id="@+id/search_bar"
+        <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
 
-                  android:layout_height="wrap_content">
-        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent"
-                                                           app:cardUseCompatPadding="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true">
 
-                                                           android:layout_marginTop="12dp"
-                                                           android:layout_marginStart="12dp"
-                                                           android:layout_marginEnd="12dp"
-                                                           app:cardCornerRadius="5dp"
-                                                           app:cardElevation="10dp"
-                                                           android:layout_height="wrap_content">
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-            <RelativeLayout android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
                 <ImageView
-                        android:padding="6dp"
                         android:id="@+id/cart"
-
                         android:layout_width="50dp"
+
                         android:layout_height="50dp"
                         android:layout_alignParentEnd="true"
-                        android:src="@drawable/ic_shopping_cart_black_24dp" android:layout_marginStart="6dp"
-                        android:layout_marginEnd="3dp"/>
+                        android:layout_marginStart="6dp"
+                        android:layout_marginEnd="3dp"
+                        android:padding="6dp"
+                        android:src="@drawable/ic_shopping_cart_black_24dp" />
 
 
                 <androidx.appcompat.widget.SearchView
                         android:id="@+id/search_view"
-                        android:layout_marginEnd="4dp"
-                        android:clickable="true"
                         style="@style/AppTheme.Toolbar"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
                         android:layout_toStartOf="@+id/cart"
                         android:background="@android:color/white"
+                        android:clickable="true"
                         android:drawablePadding="6dp"
-                        app:queryBackground="@android:color/transparent"
-
                         android:elevation="5dp"
+
                         android:hint="Find Beast Deal"
                         android:lines="1"
                         android:tag="sticky"
                         android:theme="@style/AppTheme.Toolbar"
                         app:iconifiedByDefault="true"
+                        app:queryBackground="@android:color/transparent"
                         app:queryHint="Search for products"
-                        app:searchIcon="@drawable/ic_search_black_24dp"/>
+                        app:searchIcon="@drawable/ic_search_black_24dp" />
             </RelativeLayout>
-
-
 
 
         </com.google.android.material.card.MaterialCardView>
@@ -70,116 +72,123 @@
     </LinearLayout>
 
 
-
-
-
     <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-                                           xmlns:app="http://schemas.android.com/apk/res-auto"
-                                           android:layout_width="match_parent"
-                                           android:layout_below="@+id/search_bar"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
 
-                                           android:layout_marginBottom="50dp"
-                                           android:layout_height="match_parent">
+            android:layout_below="@+id/search_bar"
+            android:layout_marginBottom="50dp">
 
 
-        <LinearLayout android:layout_width="match_parent"
-                      android:orientation="vertical"
-                      android:layout_height="match_parent">
-
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
 
             <LinearLayout
                     android:id="@+id/main_menus"
-                    android:background="@color/white"
-                    android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
                 <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/pharmacies"
                         android:layout_width="0dp"
+                        android:layout_height="130dp"
+                        android:layout_weight="1"
                         android:clickable="true"
                         android:focusable="true"
-                        android:id="@+id/pharmacies"
                         android:foreground="?android:attr/selectableItemBackground"
-                        android:layout_weight="1"
-                        app:cardForegroundColor="@android:color/transparent"
                         app:cardBackgroundColor="@color/white"
-                        app:cardElevation="3dp"
                         app:cardCornerRadius="3dp"
-                        app:cardUseCompatPadding="true"
-                        android:layout_height="130dp">
+                        app:cardElevation="3dp"
+                        app:cardForegroundColor="@android:color/transparent"
+                        app:cardUseCompatPadding="true">
+
                     <RelativeLayout
-                            android:layout_gravity="center_vertical"
-                            android:background="@color/white"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent">
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/white">
+
                         <ImageView
-                                android:background="@color/white"
                                 android:id="@+id/med_"
-                                android:layout_centerInParent="true"
-                                android:src="@drawable/meds"
-                                android:layout_centerHorizontal="true"
                                 android:layout_width="50dp"
-                                android:layout_height="50dp"/>
+                                android:layout_height="50dp"
+                                android:layout_centerInParent="true"
+                                android:layout_centerHorizontal="true"
+                                android:background="@color/white"
+                                android:src="@drawable/meds" />
 
-                        <LinearLayout android:layout_width="match_parent"
-                                      android:orientation="vertical"
-                                      android:layout_below="@+id/med_"
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/med_"
 
-                                      android:layout_height="wrap_content">
+                                android:orientation="vertical">
 
-                            <TextView android:layout_width="match_parent"
-                                      android:textAlignment="center"
-                                      android:textColor="@color/blacklight"
-                                      android:textSize="13.7sp"
-                                      android:fontFamily="@font/sfpro_display_semibold"
-                                      android:text="Pharmacies "
-                                      android:layout_height="wrap_content"/>
+                            <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/sfpro_display_semibold"
+                                    android:text="Pharmacies "
+                                    android:textAlignment="center"
+                                    android:textColor="@color/blacklight"
+                                    android:textSize="13.7sp" />
 
                         </LinearLayout>
 
                     </RelativeLayout>
 
                 </com.google.android.material.card.MaterialCardView>
+
                 <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/prescriprion"
                         android:layout_width="0dp"
+                        android:layout_height="130dp"
+                        android:layout_weight="1"
                         android:clickable="true"
                         android:focusable="true"
-                        android:id="@+id/prescriprion"
                         android:foreground="?android:attr/selectableItemBackground"
-                        android:layout_weight="1"
-                        app:cardForegroundColor="@android:color/transparent"
                         app:cardBackgroundColor="@color/white"
-                        app:cardElevation="3dp"
                         app:cardCornerRadius="3dp"
-                        app:cardUseCompatPadding="true"
-                        android:layout_height="130dp">
+                        app:cardElevation="3dp"
+                        app:cardForegroundColor="@android:color/transparent"
+                        app:cardUseCompatPadding="true">
+
                     <RelativeLayout
-                            android:layout_gravity="center_vertical"
-                            android:background="@color/white"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent">
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/white">
+
                         <ImageView
-                                android:background="@color/white"
                                 android:id="@+id/presc_"
-                                android:layout_centerInParent="true"
-                                android:src="@drawable/pres"
-                                android:layout_centerHorizontal="true"
                                 android:layout_width="50dp"
-                                android:layout_height="50dp"/>
+                                android:layout_height="50dp"
+                                android:layout_centerInParent="true"
+                                android:layout_centerHorizontal="true"
+                                android:background="@color/white"
+                                android:src="@drawable/pres" />
 
-                        <LinearLayout android:layout_width="match_parent"
-                                      android:orientation="vertical"
-                                      android:layout_below="@+id/presc_"
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/presc_"
 
-                                      android:layout_height="wrap_content">
+                                android:orientation="vertical">
 
-                            <TextView android:layout_width="match_parent"
-                                      android:textAlignment="center"
-                                      android:textColor="@color/blacklight"
-                                      android:textSize="13.7sp"
-                                      android:fontFamily="@font/sfpro_display_semibold"
-                                      android:text="Upload prescription"
-                                      android:layout_height="wrap_content"/>
+                            <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/sfpro_display_semibold"
+                                    android:text="Upload prescription"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/blacklight"
+                                    android:textSize="13.7sp" />
 
                         </LinearLayout>
 
@@ -193,108 +202,116 @@
 
 
             <com.google.android.material.card.MaterialCardView
-                    android:layout_width="match_parent"
-                    app:cardUseCompatPadding="true"
-                    app:cardCornerRadius="2dp"
-                    app:cardElevation="2dp"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:foreground="?android:attr/selectableItemBackground"
-
                     android:id="@+id/categoriescard"
-                    android:layout_height="wrap_content">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="2dp"
+
+                    app:cardElevation="2dp"
+                    app:cardUseCompatPadding="true">
 
 
-                <RelativeLayout android:layout_width="match_parent"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
 
-                                android:visibility="gone"
-                                android:padding="3dp"
-                                android:layout_height="wrap_content">
-                    <TextView android:layout_width="wrap_content"
-                              android:textColor="@color/blacklight"
-                              android:textSize="13.7sp"
-                              android:fontFamily="@font/sfpro_display_semibold"
+                        android:layout_marginEnd="4dp"
+                        android:padding="3dp"
+                        android:visibility="gone">
 
-                              android:id="@+id/categoryLabel"
-                              android:layout_alignParentStart="true"
-                              android:textStyle="bold"
-                              android:text="Categories"
-                              android:layout_height="wrap_content"/>
-                    <TextView android:layout_width="wrap_content"
-                              android:textSize="13sp"
-                              android:fontFamily="@font/sf_pro_display_medium"
+                    <TextView
+                            android:id="@+id/categoryLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
 
-                              android:layout_below="@+id/categoryLabel"
-                              android:layout_alignParentStart="true"
-                              android:text="Search Produts by categories"
-                              android:layout_height="wrap_content"/>
+                            android:fontFamily="@font/sfpro_display_semibold"
+                            android:text="Categories"
+                            android:textColor="@color/blacklight"
+                            android:textSize="13.7sp"
+                            android:textStyle="bold" />
 
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/categoryLabel"
 
-                    <TextView android:layout_width="wrap_content"
-                              android:textSize="14sp"
-                              android:textColor="@color/colorAccent"
-                              android:fontFamily="@font/sf_pro_display_medium"
-                              android:id="@+id/txtViewCategories"
-                              android:layout_marginEnd="5dp"
+                            android:layout_alignParentStart="true"
+                            android:fontFamily="@font/sf_pro_display_medium"
+                            android:text="Search Produts by categories"
+                            android:textSize="13sp" />
 
 
-                              android:layout_alignParentTop="true"
-                              android:layout_alignParentEnd="true"
-                              android:textStyle="bold"
-                              android:text="View All"
-                              android:layout_height="wrap_content"/>
+                    <TextView
+                            android:id="@+id/txtViewCategories"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="5dp"
+
+
+                            android:fontFamily="@font/sf_pro_display_medium"
+                            android:text="View All"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
 
                 </RelativeLayout>
 
                 <LinearLayout
-                        android:padding="10dp"
+                        android:layout_width="match_parent"
 
+                        android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:gravity="center_vertical"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
 
-                        android:orientation="horizontal">
-                    <com.dev.common.utils.CircleImageView android:layout_width="44dp"
-                                                          android:layout_marginEnd="8dp"
-                                                          android:src="@drawable/categories"
-                                                          android:layout_height="44dp"/>
+                        android:padding="10dp">
+
+                    <com.dev.common.utils.CircleImageView
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/categories" />
+
                     <TextView
-                            android:layout_gravity="center_vertical"
-                            android:gravity="center_vertical"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
                             android:layout_weight="1"
                             android:fontFamily="@font/sfpro_display_semibold"
+                            android:gravity="center_vertical"
+                            android:text="Categories  "
                             android:textColor="@color/blacklight"
-                            android:textSize="13.7sp"
-                            android:text="Categories  "/>
+                            android:textSize="13.7sp" />
 
                     <ImageView
                             android:layout_width="24dp"
                             android:layout_height="24dp"
-                            android:src="@drawable/ic_navigate_next_black_24dp"/>
+                            android:src="@drawable/ic_navigate_next_black_24dp" />
                 </LinearLayout>
 
 
             </com.google.android.material.card.MaterialCardView>
 
 
-
             <com.google.android.material.card.MaterialCardView
-                    android:layout_width="match_parent"
-                    app:cardUseCompatPadding="true"
-                    android:visibility="gone"
                     android:id="@+id/card_categories"
-                    android:layout_height="wrap_content">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:cardUseCompatPadding="true">
 
                 <androidx.recyclerview.widget.RecyclerView
-                        android:layout_marginTop="10dp"
-                        android:layout_width="match_parent"
                         android:id="@+id/recyclerview_categories"
-                        android:layout_height="match_parent">
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp">
 
                 </androidx.recyclerview.widget.RecyclerView>
 
@@ -303,176 +320,189 @@
 
 
             <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/healthAreascard"
                     android:layout_width="match_parent"
-                    app:cardUseCompatPadding="true"
-                    app:cardCornerRadius="2dp"
-                    app:cardElevation="2dp"
+                    android:layout_height="wrap_content"
                     android:clickable="true"
                     android:focusable="true"
                     android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="2dp"
 
-                    android:id="@+id/healthAreascard"
-                    android:layout_height="wrap_content">
+                    app:cardElevation="2dp"
+                    app:cardUseCompatPadding="true">
 
-                <RelativeLayout android:layout_width="match_parent"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
 
-                                android:visibility="gone"
-                                android:padding="3dp"
-                                android:layout_height="wrap_content">
-                    <TextView android:layout_width="wrap_content"
-                              android:textColor="@color/blacklight"
-                              android:textSize="13.7sp"
-                              android:fontFamily="@font/sfpro_display_semibold"
+                        android:layout_marginEnd="4dp"
+                        android:padding="3dp"
+                        android:visibility="gone">
 
-                              android:id="@+id/healthAreasLabels"
-                              android:layout_alignParentStart="true"
-                              android:textStyle="bold"
-                              android:text="Health Areas"
-                              android:layout_height="wrap_content"/>
-                    <TextView android:layout_width="wrap_content"
-                              android:textSize="13sp"
-                              android:fontFamily="@font/sf_pro_display_medium"
+                    <TextView
+                            android:id="@+id/healthAreasLabels"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
 
-                              android:layout_below="@+id/healthAreasLabels"
-                              android:layout_alignParentStart="true"
-                              android:text="Search Based on commonn health issues"
-                              android:layout_height="wrap_content"/>
-                    <TextView android:layout_width="wrap_content"
-                              android:textSize="14sp"
-                              android:textColor="@color/colorAccent"
-                              android:fontFamily="@font/sf_pro_display_medium"
+                            android:fontFamily="@font/sfpro_display_semibold"
+                            android:text="Health Areas"
+                            android:textColor="@color/blacklight"
+                            android:textSize="13.7sp"
+                            android:textStyle="bold" />
 
-                              android:layout_alignParentTop="true"
-                              android:layout_marginEnd="5dp"
-                              android:id="@+id/txtViewHealthAreas"
-                              android:layout_alignParentEnd="true"
-                              android:textStyle="bold"
-                              android:text="View All"
-                              android:layout_height="wrap_content"/>
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/healthAreasLabels"
+
+                            android:layout_alignParentStart="true"
+                            android:fontFamily="@font/sf_pro_display_medium"
+                            android:text="Search Based on commonn health issues"
+                            android:textSize="13sp" />
+
+                    <TextView
+                            android:id="@+id/txtViewHealthAreas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="5dp"
+                            android:fontFamily="@font/sf_pro_display_medium"
+                            android:text="View All"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
 
                 </RelativeLayout>
 
                 <LinearLayout
-                        android:padding="10dp"
+                        android:layout_width="match_parent"
 
+                        android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:gravity="center_vertical"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
 
-                        android:orientation="horizontal">
+                        android:padding="10dp">
 
-                    <com.dev.common.utils.CircleImageView android:layout_width="44dp"
-                                                          android:layout_marginEnd="8dp"
-                                                          android:src="@drawable/healthareas"
-                                                          android:layout_height="44dp"/>
+                    <com.dev.common.utils.CircleImageView
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/healthareas" />
+
                     <TextView
-                            android:layout_gravity="center_vertical"
-                            android:gravity="center_vertical"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
                             android:layout_weight="1"
                             android:fontFamily="@font/sfpro_display_semibold"
+                            android:gravity="center_vertical"
+                            android:text="Common Health Areas  "
                             android:textColor="@color/blacklight"
-                            android:textSize="13.7sp"
-                            android:text="Common Health Areas  "/>
+                            android:textSize="13.7sp" />
 
                     <ImageView
                             android:layout_width="24dp"
                             android:layout_height="24dp"
-                            android:src="@drawable/ic_navigate_next_black_24dp"/>
+                            android:src="@drawable/ic_navigate_next_black_24dp" />
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
+
             <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/moneycard"
                     android:layout_width="match_parent"
-                    app:cardUseCompatPadding="true"
-                    app:cardCornerRadius="2dp"
-                    app:cardElevation="2dp"
+                    android:layout_height="wrap_content"
                     android:clickable="true"
                     android:focusable="true"
                     android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="2dp"
 
-                    android:id="@+id/moneycard"
-                    android:layout_height="wrap_content">
+                    app:cardElevation="2dp"
+                    app:cardUseCompatPadding="true">
 
 
                 <LinearLayout
-                        android:padding="10dp"
+                        android:layout_width="match_parent"
 
+                        android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:gravity="center_vertical"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
 
-                        android:orientation="horizontal">
+                        android:padding="10dp">
 
-                    <com.dev.common.utils.CircleImageView android:layout_width="44dp"
-                                                          android:layout_marginEnd="8dp"
-                                                          android:src="@drawable/nextpesa"
-                                                          android:layout_height="44dp"/>
+                    <com.dev.common.utils.CircleImageView
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/nextpesa" />
+
                     <TextView
-                            android:layout_gravity="center_vertical"
-                            android:gravity="center_vertical"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
                             android:layout_weight="1"
                             android:fontFamily="@font/sfpro_display_semibold"
+                            android:gravity="center_vertical"
+                            android:text="@string/money"
                             android:textColor="@color/blacklight"
-                            android:textSize="13.7sp"
-                            android:text="@string/money"/>
+                            android:textSize="13.7sp" />
 
                     <ImageView
                             android:layout_width="24dp"
                             android:layout_height="24dp"
-                            android:src="@drawable/ic_navigate_next_black_24dp"/>
+                            android:src="@drawable/ic_navigate_next_black_24dp" />
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
 
 
             <com.google.android.material.card.MaterialCardView
-                    android:layout_width="match_parent"
-                    android:visibility="gone"
-                    app:cardUseCompatPadding="true"
                     android:id="@+id/card_health_areas"
-                    android:layout_height="wrap_content">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:cardUseCompatPadding="true">
 
 
                 <androidx.recyclerview.widget.RecyclerView
-                        android:layout_marginTop="10dp"
-                        android:layout_width="match_parent"
                         android:id="@+id/recyclerview_health_areas"
-                        android:layout_height="match_parent">
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp">
 
                 </androidx.recyclerview.widget.RecyclerView>
 
 
             </com.google.android.material.card.MaterialCardView>
 
-            <TextView android:layout_width="match_parent"
-                      android:textSize="13sp"
-                      android:fontFamily="@font/sf_pro_display_medium"
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
 
-                      android:padding="3dp"
-                      android:layout_marginStart="4dp"
-                      android:textStyle="bold"
-                      android:text="Popular Products"
-                      android:layout_height="wrap_content"/>
+                    android:fontFamily="@font/sf_pro_display_medium"
+                    android:padding="3dp"
+                    android:text="Popular Products"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
 
             <com.google.android.material.card.MaterialCardView
-                    android:layout_width="match_parent"
-                    app:cardUseCompatPadding="true"
                     android:id="@+id/card_popular_products"
-                    android:layout_height="match_parent">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardUseCompatPadding="true">
 
                 <androidx.recyclerview.widget.RecyclerView
-                        android:layout_marginTop="10dp"
-                        android:layout_width="match_parent"
                         android:id="@+id/recyclerview_popular_products"
-                        android:layout_height="match_parent">
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp">
 
                 </androidx.recyclerview.widget.RecyclerView>
 
@@ -482,5 +512,6 @@
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
-    <include layout="@layout/loading_avi"/>
+
+    <include layout="@layout/loading_avi" />
 </RelativeLayout>

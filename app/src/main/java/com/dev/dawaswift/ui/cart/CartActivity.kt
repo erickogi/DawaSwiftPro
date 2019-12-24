@@ -9,6 +9,7 @@ import com.dev.common.utils.viewUtils.ViewUtils
 import com.dev.dawaswift.R
 import com.dev.dawaswift.adapters.cart.CheckOutStepperAdapter
 import com.dev.dawaswift.models.Address.Address
+import com.dev.dawaswift.models.Address.PickUpPoints
 import com.stepstone.stepper.StepperLayout
 import com.stepstone.stepper.VerificationError
 import com.stepstone.stepper.adapter.StepAdapter
@@ -16,6 +17,7 @@ import kotlinx.android.synthetic.main.cart_activity.*
 
 class CartActivity : AppCompatActivity(), StepperLayout.StepperListener {
     private var selectedAddress: Address? = null
+    private var selectedPickupPoint: PickUpPoints? = null
 
     override fun onStepSelected(newStepPosition: Int) {
 
@@ -50,10 +52,25 @@ class CartActivity : AppCompatActivity(), StepperLayout.StepperListener {
         selectedAddress = address
     }
 
+    fun setAddress(address: PickUpPoints?) {
+        selectedPickupPoint = address
+    }
+
+    fun setAddressNullPickup() {
+        selectedPickupPoint = null
+    }
+
+    fun setAddressNull() {
+        selectedAddress = null
+    }
+
     fun getAddress(): Address? {
         return selectedAddress
     }
 
+    fun getAddressPickup(): PickUpPoints? {
+        return selectedPickupPoint
+    }
     fun setPickUp(selectedPickup: List<PickUpPoint>) {
 
     }

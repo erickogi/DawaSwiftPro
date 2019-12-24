@@ -10,6 +10,7 @@ class BaseUrls {
 
 
     var LIVE: String = "http://dawaswift.calista.co.ke/api/"
+    var LIVE1: String = "http://206.81.26.7:443/dawaswift/endpoints/api/"
 
 
     var IMAGE: String = "http://resource.calista.co.ke/api/upload/"

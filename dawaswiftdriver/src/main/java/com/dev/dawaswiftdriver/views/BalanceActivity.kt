@@ -61,11 +61,7 @@ class BalanceActivity : AppCompatActivity() {
             }
         })
         viewModel.balance(BalanceQuery(DateRange(start = getDate(pair!!.first), end = getDate(pair!!.second))))
-
-
         edt_dob.setOnClickListener {
-
-
             showDialog()
         }
 

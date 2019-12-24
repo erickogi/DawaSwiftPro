@@ -16,6 +16,7 @@ import com.dev.common.ui.auth.AuthViewModel
 import com.dev.common.utils.OnRecyclerViewItemClick
 import com.dev.common.utils.viewUtils.ViewUtils
 import kotlinx.android.synthetic.main.notifications_fragment.*
+import kotlinx.android.synthetic.main.toolback_bar.*
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -58,7 +59,9 @@ class NotificationsFragment : Fragment() {
         init()
         viewModel.notifications()
 
-
+        linear_back.setOnClickListener {
+            activity?.onBackPressed()
+        }
     }
 
 

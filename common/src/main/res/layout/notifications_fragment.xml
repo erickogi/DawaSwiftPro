@@ -4,16 +4,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+    <include layout="@layout/toolback_bar" />
 
     <TextView android:layout_width="wrap_content"
               android:textColor="@color/blacklight"
               android:textSize="19.7sp"
               android:fontFamily="@font/sfpro_display_bold"
 
+            android:layout_below="@+id/toolback"
+            android:visibility="gone"
               android:textStyle="bold"
               android:id="@+id/title"
               android:layout_centerHorizontal="true"
-              android:layout_alignParentTop="true"
               android:text="@string/notifications"
               android:layout_height="wrap_content"/>
 

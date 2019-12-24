@@ -30,9 +30,7 @@ class CheckOut : Fragment(), BlockingStep {
     }
 
     override fun onSelected() {
-
         init()
-
 
     }
 

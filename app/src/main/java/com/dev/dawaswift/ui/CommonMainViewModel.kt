@@ -16,10 +16,7 @@ import com.dev.dawaswift.data.CartRepository
 import com.dev.dawaswift.data.ChatRepository
 import com.dev.dawaswift.data.DeliveryRepository
 import com.dev.dawaswift.data.OrderRepository
-import com.dev.dawaswift.models.Address.Address
-import com.dev.dawaswift.models.Address.AddressResponse
-import com.dev.dawaswift.models.Address.AddressesResponse
-import com.dev.dawaswift.models.Address.SelectedAddress
+import com.dev.dawaswift.models.Address.*
 import com.dev.dawaswift.models.Order.OrderResponse
 import com.dev.dawaswift.models.Product.ProductResponse
 import com.dev.dawaswift.models.Product.ProductsResponse
@@ -382,6 +379,10 @@ class CommonMainViewModel(application: Application) : AndroidViewModel(applicati
     fun observePhamacies(): LiveData<Resource<PharmacyResponse>> {
 
         return pharmaciesObservable
+    }
+
+    fun deleteAddress(addItem: PickUpPoints) {
+
     }
 
 }

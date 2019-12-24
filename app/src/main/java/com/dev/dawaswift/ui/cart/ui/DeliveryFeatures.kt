@@ -58,7 +58,7 @@ class DeliveryFeatures : Fragment(), BlockingStep {
                 return null
 
             }
-            (activity as CartActivity).setAddress(null)
+            // (activity as CartActivity).setAddress(null)
 
             return VerificationError("Select or add a delivery or pickup address")
         }
